@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Ratings = () => {
+const Hours = () => {
 
 
     return(
         <div>
-            Ratings
+            Hours
         </div>
     )
 
 }
 
-export default Ratings
+export default Hours
