@@ -1,32 +1,32 @@
 import React, { useState, useEffect } from 'react';
-import ReactMapGL from 'react-map-gl';
+import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 
 const Map = () => {
 
 const viewPortWidth = () => {
     if(window.innerWidth < 700){
-    return window.innerWidth
-    }return window.innerWidth*.6
+    return window.innerWidth*.5
+    }return window.innerWidth*.4
 
 }
 const viewPortHeight = () => {
     if(window.innerWidth < 700){
     return window.innerHeight*.5
-    }return window.innerHeight
+    }return window.innerHeight*.5
 
 }
 const viewPortZoom = () => {
   if(window.innerWidth < 700){
   return 10
-  }return 11.75
+  }return 15
 
 }
 
 const [viewport, setViewport] = useState({
   width:viewPortWidth(),
   height:viewPortHeight(),
-  latitude: 40.7433,
-  longitude: -73.9485,
+  latitude:  40.724577,
+  longitude: -74.002860,
   zoom:viewPortZoom()
 });
 
@@ -61,7 +61,20 @@ const _onViewportChange = viewport => {
                 mapboxApiAccessToken='pk.eyJ1IjoiYmFydGNvbnNlZGluZSIsImEiOiJjazBudWVxajUwMXdlM2hwZzFzcDQ5cWR5In0.376OjUpSFMy-y-PVfAeO9A'
                 
                 onViewportChange={_onViewportChange}
+            
             >
+
+                <Marker    
+                        className="markers" 
+                        key="map" 
+                        latitude={40.724577}
+                        longitude={-74.002860}
+                        offsetLeft={-20} offsetTop={-10}>
+                    <div  >
+                                            
+                      <h1>PIN</h1>
+                    </div>
+                </Marker>
       </ReactMapGL>
     </div>
   );

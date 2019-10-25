@@ -1,14 +1,9 @@
 import React from 'react'
 
-const Sushi = () => {
-
-
+export default function Sushi() {
     return(
-        <div>
+        <div className='sushi'>
             Sushi
         </div>
     )
-
 }
-
-export default Sushi
