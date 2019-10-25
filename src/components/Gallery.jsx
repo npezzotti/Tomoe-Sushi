@@ -17,7 +17,7 @@ const responsive = {
             max: 3000,
             min: 1024
         },
-        items: 3,
+        items: 4,
         slidesToSlide: 4,
     },
     tablet: {
@@ -62,8 +62,8 @@ export default function Gallery () {
             // autoPlay={this.props.deviceType !== "mobile" ? true : false}
             autoPlaySpeed={1000}
             keyboardControl={true}
-            customTransition="all .5"
-            transitionDuration={500}
+            customTransition="transform 300ms ease-in-out"
+            transitionDuration={100}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             arrows={true}
@@ -72,14 +72,14 @@ export default function Gallery () {
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
         >
-            <div><img style={{ width: "100%", height: "100%" }} src={galleryImages[0]} /></div>
-            <div><img style={{ width: "100%", height: "100%" }} src={galleryImages[1]} /></div>
-            <div><img style={{ width: "100%", height: "100%" }} src={galleryImages[2]} /></div>
-            <div><img style={{ width: "100%", height: "100%" }} src={galleryImages[3]} /></div>
-            <div><img style={{ width: "100%", height: "100%" }} src={galleryImages[4]} /></div>
-            <div><img style={{ width: "100%", height: "100%" }} src={galleryImages[5]} /></div>
-            <div><img style={{ width: "100%", height: "100%" }} src={galleryImages[6]} /></div>
-            <div><img style={{ width: "100%", height: "100%" }} src={galleryImages[7]} /></div>
+            <div><img style={{ width: "100%", height: "100%", borderRadius: "50%", padding: "20px 0 20px 20px" }} src={galleryImages[0]} /></div>
+            <div><img style={{ width: "100%", height: "100%", borderRadius: "50%", padding: "20px 0 20px 20px" }} src={galleryImages[1]} /></div>
+            <div><img style={{ width: "100%", height: "100%", borderRadius: "50%", padding: "20px 0 20px 20px" }} src={galleryImages[2]} /></div>
+            <div><img style={{ width: "100%", height: "100%", borderRadius: "50%", padding: "20px 0 20px 20px" }} src={galleryImages[3]} /></div>
+            <div><img style={{ width: "100%", height: "100%", borderRadius: "50%", padding: "20px 0 20px 20px" }} src={galleryImages[4]} /></div>
+            <div><img style={{ width: "100%", height: "100%", borderRadius: "50%", padding: "20px 0 20px 20px" }} src={galleryImages[5]} /></div>
+            <div><img style={{ width: "100%", height: "100%", borderRadius: "50%", padding: "20px 0 20px 20px" }} src={galleryImages[6]} /></div>
+            <div><img style={{ width: "100%", height: "100%", borderRadius: "50%", padding: "20px 0 20px 20px" }} src={galleryImages[7]} /></div>
         </Carousel>
     )
 }
