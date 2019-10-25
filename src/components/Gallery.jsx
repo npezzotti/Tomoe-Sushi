@@ -62,8 +62,8 @@ export default function Gallery () {
             // autoPlay={this.props.deviceType !== "mobile" ? true : false}
             autoPlaySpeed={1000}
             keyboardControl={true}
-            customTransition="transform 300ms ease-in-out"
-            transitionDuration={100}
+            customTransition="transform 1000ms ease-in-out"
+            transitionDuration={1000}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             arrows={true}
