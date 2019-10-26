@@ -54,7 +54,7 @@ export default function Gallery () {
     return (
         <Carousel 
             responsive={responsive}
-            swipeable={false}
+            swipeable={true}
             draggable={false}
             showDots={false}
             ssr={true}
@@ -65,18 +65,11 @@ export default function Gallery () {
             containerClass="carousel-container"
             arrows={true}
             renderButtonGroupsOutside={true}
-            // deviceType={this.props.deviceType}
-            dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
         >
-            <div><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={galleryImages[0]} /></div>
-            <div><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={galleryImages[1]} /></div>
-            <div><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={galleryImages[2]} /></div>
-            <div><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={galleryImages[3]} /></div>
-            <div><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={galleryImages[4]} /></div>
-            <div><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={galleryImages[5]} /></div>
-            <div><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={galleryImages[6]} /></div>
-            <div><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={galleryImages[7]} /></div>
+            {galleryImages.map((image, index) => (
+                <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={image} /></div>
+            ))}
         </Carousel>
     )
 }
