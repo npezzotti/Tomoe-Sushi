@@ -1,31 +1,10 @@
-// react
-import React from 'react'
-
-// components
-import Allergy from './Menus/Allergy';
-import Dessert from './Menus/Dessert';
-import Dinner from './Menus/Dinner';
-import Drinks from './Menus/Drinks';
-import Kitchen from './Menus/Kitchen';
-import Lunch from './Menus/Lunch';
-
-export default function Menu(){
-    return(
-        <div className="menu">
-
-        </div>
-    )
-}
-
-
-// nathan
 
 import React, { useState } from 'react';
-import Dessert from './Menus/Dessert'
-import Drinks from './Menus/Drinks'
-import Kitchen from './Menus/Kitchen'
-import Lunch from './Menus/Lunch'
-import Sushi from './Menus/Sushi'
+import Dessert from './menus/Dessert';
+import Drinks from './menus/Drinks';
+import Kitchen from './menus/Kitchen';
+import Lunch from './menus/Lunch';
+import Sushi from './menus/Sushi';
 
 
 function Menu() {
@@ -40,7 +19,8 @@ function Menu() {
                         <div className="menu">
                             <h2 className="menu-title">{item}</h2>
                             <img className="menu-image" src="#" alt={item} />
-                        </div>)
+                        </div>
+                    )
                 })}
             </div>
             <Dessert onClick={() => changeMenu(Dessert)}/>

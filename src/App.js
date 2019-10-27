@@ -23,6 +23,7 @@ function App() {
       <Gallery />
       <PressReviews />
       <Contact />
+      <Map />
     </div>
   );
 }
