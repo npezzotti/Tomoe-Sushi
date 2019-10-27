@@ -1,11 +1,9 @@
-
 import React, { useState } from 'react';
 import Dessert from './menus/Dessert';
 import Drinks from './menus/Drinks';
 import Kitchen from './menus/Kitchen';
 import Lunch from './menus/Lunch';
 import Sushi from './menus/Sushi';
-
 
 function Menu() {
     const [menu, changeMenu] = useState(null)
@@ -23,11 +21,11 @@ function Menu() {
                     )
                 })}
             </div>
-            <Dessert onClick={() => changeMenu(Dessert)}/>
+            {/* <Dessert onClick={() => changeMenu(Dessert)}/>
             <Drinks onClick={() => changeMenu(Dessert)}/>
             <Kitchen onClick={() => changeMenu(Dessert)}/>
             <Lunch onClick={() => changeMenu(Dessert)}/>
-            <Sushi onClick={() => changeMenu(Dessert)}/>
+            <Sushi onClick={() => changeMenu(Dessert)}/> */}
         </div>
     )
 
