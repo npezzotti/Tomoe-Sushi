@@ -1,25 +1,28 @@
-{
-    "Dessert": [
-        {
-            "Dessert": [
-                {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
+[
+    {
+        "Dessert": [
+            {
+                "Dessert": [
+                    {
+                    "item":"Green Tea Ice Cream",
+                    "description": "",
+                    "price": "4.00"
+                    },
+                    {
+                    "item":"Red Bean Ice Cream",
+                    "description": "",
+                    "price": "4.00"
                 },
                 {
-                 "item":"Red Bean Ice Cream",
-                 "description": "",
-                 "price": "4.00"
-              },
-              {
-                 "item":"Extra Homeade Red Bean",
-                 "description": "",
-                 "price": "1.00"
-              } 
-            ]
-        }
-    ],
+                    "item":"Extra Homeade Red Bean",
+                    "description": "",
+                    "price": "1.00"
+                } 
+                ]
+            }
+        ]
+    },
+    {    
     "Lunch": [
         {
             "Lunch_Special_from _Sushi_Bar": [
@@ -50,7 +53,9 @@
                  }
             ]
         }
-     ],
+     ]
+    },
+    {
     "Sushi_Bar": [
         {
             "Sushi-Dinner": [
@@ -419,7 +424,9 @@
                  }
             ]
         }
-    ],
+    ]
+    },
+    {
     "Kitchen": [
         {
             "": [
@@ -758,10 +765,12 @@
              }
         ]
         }
-    ],
+    ]
+    },
+    {
     "Drinks": [
         {
-            "Soda/Juice_Beer": [
+            "Soda_Juice": [
                 {
                    "item":"Coca-Cola",
                    "description": "",
@@ -792,25 +801,19 @@
                 {
                    "item":"Asahi/Sapporo",
                    "description": "",
-                   "price": [
-                        {"12oz sm": "4.00"},
-                        {"21oz lg": "6.75"}
-                   ]
+                   "price": "12oz sm: 4.00, 21oz lg: 6.75"
                 },
                 {
                  "item":"Kirin Light",
                  "description": "",
-                 "price": [
-                    {"12oz sm": "4.00"},
-                    {"21oz lg": "6.75"}
+                 "price": "12oz sm: 4.00, 21oz lg: 6.75"
+                }
                ]
               },
               {
                  "item":"Kirin Ichiban",
                  "description": "",
-                 "price": [
-                    {"21oz lg": "6.75"}
-               ]
+                 "price": "21ozlg: 6.75"
               } 
             ],
             "Sake": [
@@ -853,7 +856,6 @@
                 "description": "",
                 "price": "4.00"
              }
-            ]
-        }
-    ]
- }
+        ]
+    }
+]
