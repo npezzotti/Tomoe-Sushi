@@ -9,7 +9,7 @@ function Menu() {
     const [menu, changeMenu] = useState(null)
     const menus = [
         {title: "LUNCH",
-        img: "../assets/images/Lunch.jpg"},
+        img: "../../assets/images/Lunch.jpg"},
         {title: "SUSHI-BAR",
         img: "../assets/images/SushiBar.jpg"},
         {title: "KITCHEN",
