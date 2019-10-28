@@ -65,6 +65,7 @@ export default function Gallery () {
             transitionDuration={1000}
             containerClass="carousel-container"
             arrows={true}
+            // focusOnSelect={true}
             renderButtonGroupsOutside={true}
             itemClass="carousel-item-padding-40-px"
             additionalTransfrom={0}
