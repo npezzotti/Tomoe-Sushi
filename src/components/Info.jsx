@@ -1,4 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+// const dateToStr = (dt) => {
+//     let hours = dt.getHours();
+//     let minutes = dt.getMinutes();
+//     let seconds = dt.getSeconds();
+//     hours   = hours === 0  ? 12           : hours;
+//     hours   = hours   > 12 ? hours - 12   : hours;
+//     minutes = minutes < 10 ? `0${minutes}`: minutes;
+//     seconds = seconds < 10 ? `0${seconds}`: seconds;
+//     let dtStr = `${dt.getMonth() + 1}/${dt.getDate()}/${dt.getYear() + 1900} ${hours}:${minutes}:${seconds}`
+//     return dtStr
+//   }
 
 const setTimeObj = () => {
     let now = new Date();
@@ -48,6 +60,7 @@ const buildTimeMsg = (timeDiff) => {
     return timeMsg
 }
 export default function Info({dt}){
+    // let [currentTime, setCurrentTime] = useState(dateToStr(new Date()))
     const {setTimeDiff} = dt
     let timeObj = setTimeObj();
     const getTimeDelta = (referenceTime) => {
@@ -76,7 +89,51 @@ export default function Info({dt}){
     setInterval(()=>{
         setTimeDiff(getTimeDelta(timeObj[new Date().getDay()]));
     }, 2500)
+    const buildHourStr = (hour, minute) => {
+        let amPm = 'AM'
+        if (hour > 12) {hour = hour - 12; amPm = 'PM'}
+        else if (hour === 0) {hour = 12}
+        if (minute < 10) {minute = `0${minute}`}
+        return `${hour}:${minute} ${amPm}`
+    }
+    const makeWeekElem = (timeObj) => {
+        let weekElem;
+        let now = new Date()
+        let today = now.getDay()
+        let daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        weekElem = daysOfTheWeek.map((weekday, idx) => {
+            let todayBool = today === idx
+            // get the 1st open and close times
+            let openCloseMsg1;
+            let openCloseMsg2;
+            let openTime1 = timeObj[idx]['open1'].getHours();
+            let closeTime1 = timeObj[idx]['close1'].getHours();
+            let currentWindow = false;
+            let refTime = timeObj[today]
+            if ((timeObj[idx]['open1'])) {
+                currentWindow = (now > refTime.open1 && now < refTime.close1 && todayBool)
+                openCloseMsg1 = <div className={`open-close ${currentWindow && 'now'}`}>{`${buildHourStr(openTime1, 0)} - ${buildHourStr(closeTime1, 0)}`}</div>
+            } else {
+                openCloseMsg1 = `Closed`
+            }
 
+            // get the 2nd open and close times
+            if (!!(timeObj[idx]['open2'])) {
+                currentWindow = (now > refTime.open2 && now < refTime.close2 && todayBool)
+                let openTime2 = timeObj[idx]['open2'].getHours();
+                let closeTime2 = timeObj[idx]['close2'].getHours();
+                openCloseMsg2 = <div className={`open-close ${currentWindow && 'now'}`}>{`${buildHourStr(openTime2, 0)} - ${buildHourStr(closeTime2, 0)}`}</div>
+            }
+            return (
+                <div className={`weekday-container ${weekday} ${todayBool && 'today'}`}>
+                    <div className="title">{weekday}</div>
+                    {openCloseMsg1}
+                    {openCloseMsg2}
+                </div>
+            )
+        })
+        return weekElem
+    }
     return(
         <div className="info" id='info'>
             <div className="info-title">Info</div>
@@ -87,14 +144,8 @@ export default function Info({dt}){
                     <div className="city-state">New York, NY 10012</div>
                 </div>
             </div>
-            <div className="weekly-times">
-                <div className="weekday monday">Monday</div>
-                <div className="weekday tuesday">Tuesday</div>
-                <div className="weekday wednesday">Wednesday</div>
-                <div className="weekday thursday">Thursday</div>
-                <div className="weekday friday">Friday</div>
-                <div className="weekday saturday">Saturday</div>
-                <div className="weekday sunday">Sunday</div>
+            <div className="week-schedule">
+                {makeWeekElem(timeObj)}
             </div>
             {/* <div className="current-time">{currentTime}</div> */}
         </div>

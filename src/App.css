@@ -8,64 +8,88 @@
 		overflow-x: hidden; 
 	}
 
-   body {
-	   width: 100%;
-	   background-image: url('./assets/images/Tomoe_Background_Final.jpg');
-	   background-repeat: no-repeat;
-	   background-size: cover;
-   }
+   	body {
+		width: 100%;
+		background-image: url('./assets/images/Tomoe_Background_Final.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+   	}
+
+   	.header {
+		background: url('../src/assets/images/Hero.jpg') center;
+		min-height: 188px;
+		background-repeat: no-repeat;
+		background-size: cover;
+   	}
+
+	.nav-item-container {
+		/* margin: 0; */
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.nav-item {
+		align-self: baseline;
+		text-decoration: none;
+		font-family: TrajanPro3;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: normal;
+		/* letter-spacing: -0.01px; */
+		color: white;
+	}
+
+	.open-until {
+		width: 92.5%;
+		text-align: right;
+		color: white;
+	}
 
 
-   .header {
-	   background: url('../src/assets/images/Hero.jpg') center;
-	   min-height: 188px;
-	   background-repeat: no-repeat;
-	   background-size: cover;
-   }
-
-   .nav-item-container {
-	   /* margin: 0; */
-	   width: 100%;
-	   display: flex;
-	   flex-direction: row;
-	   justify-content: space-evenly;
-   }
-   .nav-item {
-	   align-self: baseline;
-	   text-decoration: none;
-	   font-family: TrajanPro3;
-	   font-size: 20px;
-	   font-weight: 600;
-	   line-height: normal;
-	   /* letter-spacing: -0.01px; */
-	   color: white;
-   }
-
-   .open-until {
-	   width: 92.5%;
-	   text-align: right;
-	   color: white;
-   }
-
-
-   .center {
-	   font-size: 30px;
-   }
+	.center {
+		font-size: 30px;
+	}
 
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
 .info{
 	color: wheat;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
-	.info .weekly-times {
+	.info .info-title {
+		font-size: 50px;
+	}
+	.info .location {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+		.info .location .address {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+		}
+	.info .week-schedule {
 		display: flex;
 		flex-flow: row;
 		justify-content: center;
 	}
-		.info .weekly-times .weekday {
-			margin: 30px 40px;
+		.info .week-schedule .weekday-container {
+			margin: 30px 10px;
+			/* padding: 0 50px; */
 			color: wheat;
+			text-align: center;
 		}
+		.info .week-schedule .weekday-container.today {
+			color: red;
+		}
+			.info .week-schedule .weekday-container .open-close.now {
+				/* padding: 0 100px; */
+				font-weight: 900;
+			}
 /* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 body {
