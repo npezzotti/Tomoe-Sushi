@@ -15,6 +15,13 @@
 		right: 0;
 		margin: 10px 20px 0 0;
 	}
+
+	  .mask {
+		width: 1440px;
+		height: 701px;
+		background-color: #d8d8d8;
+	  }
+	
 	.nav .nav-item-container {}
     	.nav .nav-item-container .nav-item {
 			all: unset;
@@ -27,4 +34,8 @@
 		}
 /* //////////////////////////////////// Navigation (ABOVE) //////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
-a {}
+
+body {
+	background-image: url(./assets/images/Tomoe_Background_Final.jpg);
+}
+

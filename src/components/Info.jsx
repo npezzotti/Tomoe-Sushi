@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Info(){
     return(
-        <div className="info">
+        <div className="info" id='info'>
             Info
         </div>
     )
