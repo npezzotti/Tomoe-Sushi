@@ -52,6 +52,7 @@ const galleryImages = [
 export default function Gallery () {
     const [ index, setIndex ] = useState(0)
     return (
+        
         <Carousel 
             responsive={responsive}
             swipeable={true}
