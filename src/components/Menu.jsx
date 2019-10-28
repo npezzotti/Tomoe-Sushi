@@ -25,7 +25,10 @@ function Menu() {
             <div className="menu-list">
                 {menus.map(item => {
                     return(
-                        <div className="menu" onClick={() => changeMenu(item.title)}>
+                        <div className="menu" onClick={() => {
+                            // console.log('item title', item.title)
+                            changeMenu(item.title)
+                            }}>
                             <h2 className="menu-title">{item.title}</h2>
                             <img className="menu-image" src={item.img} alt={item.title} />
                         </div>)

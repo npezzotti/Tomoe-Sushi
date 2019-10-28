@@ -839,7 +839,7 @@
                 {
                     "item":"Kirin Ichiban",
                     "description": "",
-                    "price": "21ozlg: 6.75"
+                    "price": "21oz lg: 6.75"
                 } 
                 ]
             },
@@ -863,9 +863,7 @@
                 {
                     "item":"Cold- Nigori Sake Ginjo",
                     "description": "",
-                    "price": [
-                        {"10 oz": "15.00"}
-                    ]
+                    "price": "10 oz: 15.00"
                 }  
                 ]
             },

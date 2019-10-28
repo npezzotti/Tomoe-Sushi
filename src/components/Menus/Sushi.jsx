@@ -5,7 +5,7 @@ const menu = json
 
 export default function Sushi() {
     return(
-        <div className="menu-container">
+        <div className="menu-container" style={{color: "white"}}>
             <h3 className="menu-category">Sushi Dinner</h3>
             {menu[2].Sushi_Bar[0].Sushi_Dinner.map(menuItem => {
                 return(

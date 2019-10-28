@@ -5,7 +5,7 @@ const menu = json
 
 export default function Kitchen(){
     return(
-        <div className="menu-container">
+        <div className="menu-container" style={{color: "white"}}>
             {menu[3].Kitchen[0].unDefined.map(menuItem => {
                 return(
                     <div className="menu-info-container">
