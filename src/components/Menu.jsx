@@ -13,23 +13,23 @@ export default function Menu() {
     const menus = [
         {
             title: "LUNCH",
-            img: "../assets/images/Lunch.jpg"
+            img: "./images/Lunch.jpg"
         },
         {
             title: "SUSHI-BAR",
-            img: "../assets/images/SushiBar.jpg"
+            img: "./images/SushiBar.jpg"
         },
         {
             title: "KITCHEN",
-            img: "../assets/images/Kitchen.jpg"
+            img: "./images/Kitchen.jpg"
         },
         {
             title: "DESSERT",
-            img: "../assets/images/Dessert.jpg"
+            img: "./images/Dessert.jpg"
         },
         {
             title: "DRINKS",
-            img: "../assets/images/Drinks.jpg"
+            img: "./images/Drinks.jpg"
         }
     ]
     return(
