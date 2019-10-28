@@ -34,7 +34,7 @@ export default function Menu() {
     ]
     return(
         <div>
-            <h1 className="menu-list-title">Menu:</h1>
+            <h1 className="menu-list-title" id='menu'>Menu:</h1>
             <div className="menu-list">
                 {menus.map(item => {
                     return(
