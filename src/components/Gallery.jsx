@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-/**  @type {React.CSSProperties} */
 const responsive = {
     largeDisplay : {
         breakpoint: {
@@ -50,7 +49,7 @@ const galleryImages = [
 ]
 
 export default function Gallery () {
-    const [ index, setIndex ] = useState(0)
+
     return (
         <Carousel 
             responsive={responsive}
