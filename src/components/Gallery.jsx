@@ -51,7 +51,9 @@ const galleryImages = [
 export default function Gallery () {
 
     return (
-        <Carousel 
+        <div>
+            <h1>Gallery</h1>
+            <Carousel 
             responsive={responsive}
             swipeable={true}
             draggable={false}
@@ -67,9 +69,11 @@ export default function Gallery () {
             itemClass="carousel-item-padding-40-px"
             additionalTransfrom={0}
         >
+
             {galleryImages.map((image, index) => (
                 <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={image} /></div>
             ))}
         </Carousel>
+        </div>
     )
 }
