@@ -32,18 +32,20 @@
 	.nav .nav-item-container {
 		display: flex;
 		flex-direction: row;
-		justify-content:space-around;
+		justify-content:space-evenly;
+		align-self: baseline;
 	}
     	.nav .nav-item-container .nav-item {
 			all: unset;
 			font-weight: 800;
-			padding: 0 10px;
+			/* padding: 0 10px; */
 			/* font-size: 30px; */
 			font-family: TrajanPro3;
-			font-size: 25px;
+			/* font-size: 25px;
 			font-stretch: normal;
 			font-style: normal;
-			line-height: normal;
+			line-height: normal;  */
+			align-self: baseline;
 			color: white;
 		}
 		.nav .nav-item-container .nav-item.center {
