@@ -14,7 +14,7 @@ import Info from './components/Info';
 import Nav from './components/Nav';
 import PressReviews from './components/PressReviews';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Nav />
@@ -27,4 +27,3 @@ function App() {
   );
 }
 
-export default App;

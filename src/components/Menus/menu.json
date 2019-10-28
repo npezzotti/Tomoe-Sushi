@@ -1,0 +1,52 @@
+{
+    "Dessert": [
+     
+       {
+          "item":"Green Tea Ice Cream",
+          "description": "",
+          "price": "4.00"
+       },
+       {
+        "item":"Red Bean Ice Cream",
+        "description": "",
+        "price": "4.00"
+     },
+     {
+        "item":"Extra Homeade Red Bean",
+        "description": "",
+        "price": "1.00"
+     } 
+    ],
+    "Lunch": [
+
+        {
+            "item":"Extra Homeade Red Bean",
+            "description": "",
+            "price": "1.00"
+         } 
+     ],
+    "Sushi-Bar": [
+     
+        {
+            "item":"Extra Homeade Red Bean",
+            "description": "",
+            "price": "1.00"
+         } 
+     ],
+     "Kitchen": [
+     
+     {
+        "item":"Extra Homeade Red Bean",
+        "description": "",
+        "price": "1.00"
+     } 
+     ],
+    "Drinks": [
+    
+        {
+            "item":"Extra Homeade Red Bean",
+            "description": "",
+            "price": "1.00"
+         } 
+    ]
+ }
