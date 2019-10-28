@@ -51,8 +51,8 @@ const galleryImages = [
 export default function Gallery () {
 
     return (
-        <div>
-            <h1>Gallery</h1>
+        <div id="gallery">
+            <h1 style={{color: "white"}}>Gallery</h1>
             <Carousel 
             responsive={responsive}
             swipeable={true}
