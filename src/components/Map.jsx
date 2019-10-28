@@ -18,8 +18,8 @@ const viewPortHeight = () => {
 }
 const viewPortZoom = () => {
   if(window.innerWidth < 700){
-  return 15
-  }return 15
+  return 14.5
+  }return 14.5
 
 }
 
@@ -58,7 +58,8 @@ const _onViewportChange = viewport => {
                 height={viewport.height}
                 latitude={viewport.latitude}
                 longitude={viewport.longitude}
-                zoom={viewport.zoom}
+				zoom={viewport.zoom}
+				pitch={45}
                 mapStyle="mapbox://styles/bartconsedine/ck2aiog9s37ca1co3xfzyjx63"
                 mapboxApiAccessToken='pk.eyJ1IjoiYmFydGNvbnNlZGluZSIsImEiOiJjazBudWVxajUwMXdlM2hwZzFzcDQ5cWR5In0.376OjUpSFMy-y-PVfAeO9A'
                 
