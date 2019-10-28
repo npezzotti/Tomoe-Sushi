@@ -48,11 +48,11 @@ export default function Menu() {
                 })}
             </div>
             <div className="menu-content">
-                {menu==="DESSERT" && <Dessert />}
-                {menu==="LUNCH" && <Lunch />}
-                {menu==="SUSHI-BAR" && <Sushi />}
-                {menu==="KITCHEN" && <Kitchen />}
-                {menu==="DRINKS" && <Drinks />}
+                {menu==="DESSERT" && <Dessert changeMenu={changeMenu}/>}
+                {menu==="LUNCH" && <Lunch changeMenu={changeMenu}/>}
+                {menu==="SUSHI-BAR" && <Sushi changeMenu={changeMenu}/>}
+                {menu==="KITCHEN" && <Kitchen changeMenu={changeMenu}/>}
+                {menu==="DRINKS" && <Drinks changeMenu={changeMenu}/>}
             </div>
         </div>
     )
