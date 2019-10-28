@@ -49,7 +49,8 @@ const buildTimeMsg = (timeDiff) => {
     let timeMsg = `${hoursMsg} ${minutesMsg}`
     return timeMsg
 }
-export default function Info(){
+export default function Info({dt}){
+    const {setTimeDiff} = dt
     const getTimeDelta = (referenceTime) => {
         let dt = new Date()
         let msg;
@@ -72,24 +73,10 @@ export default function Info(){
         return msg
     }
 
-    const dateToStr = (dt) => {
-        let hours = dt.getHours();
-        let minutes = dt.getMinutes();
-        let seconds = dt.getSeconds();
-        hours   = hours === 0  ? 12           : hours;
-        hours   = hours   > 12 ? hours - 12   : hours;
-        minutes = minutes < 10 ? `0${minutes}`: minutes;
-        seconds = seconds < 10 ? `0${seconds}`: seconds;
-        let dtStr = `${dt.getMonth() + 1}/${dt.getDate()}/${dt.getYear() + 1900} ${hours}:${minutes}:${seconds}`
-        return dtStr
-    }
-
-    // state
-    let [currentTime, setCurrentTime] = useState(dateToStr(new Date()))
-
     // interval for timer
     setInterval(()=>{
-        setCurrentTime(getTimeDelta(timeObj[new Date().getDay()]));
+        setTimeDiff(getTimeDelta(timeObj[new Date().getDay()]));
+        // setCurrentTime()
     }, 2500)
 
     return(
@@ -104,7 +91,7 @@ export default function Info(){
                 <div className="weekday saturday">Saturday</div>
                 <div className="weekday sunday">Sunday</div>
             </div>
-            <div className="current-time">{currentTime}</div>
+            {/* <div className="current-time">{currentTime}</div> */}
         </div>
     )
 }

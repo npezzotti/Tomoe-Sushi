@@ -8,7 +8,7 @@ body {
 	   width: 100%;
    }
    .header {
-	   background: url('../src/assets/images/Hero.jpg') center;
+	   /* background: url('../src/assets/images/') center; */
 	   width: 100vw;
 	   min-height: 188px;
 	 
@@ -63,7 +63,7 @@ body {
 /* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 body {
-	background-image: url(./assets/images/Tomoe_Background_Final.jpg);
+	background-image: url("./assets/images/Tomoe_Background_Final.jpg");
 }
 
 }
