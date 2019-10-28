@@ -2,7 +2,6 @@ import React from 'react'
 import json from './menu'
 
 const menu = json
-console.log(menu[4].Drinks[0].Soda_Juice)
 
 export default function Drinks(){
     return(
