@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PressReviews(){
     return(
-        <div className="press-reviews" style={{display: "grid"}}>
+        <div className="press-reviews" id='press' style={{display: "grid"}}>
             <h1 style={{color: "white"}}>Press</h1>
             <div>
                 <img style={{width: "45%", height: "25%", marginRight: "500px"}} src={"/images/infatuation.png"} alt="infatuation" />

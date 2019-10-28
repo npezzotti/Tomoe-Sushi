@@ -1,49 +1,40 @@
 // react
-// import React from 'react'
+import React, { useState } from 'react';
 
 // components
-// import Allergy from './Menus/Allergy';
-// import Dessert from './Menus/Dessert';
-// import Dinner from './Menus/Dinner';
-// import Drinks from './Menus/Drinks';
-// import Kitchen from './Menus/Kitchen';
-// import Lunch from './Menus/Lunch';
-
-// export default function Menu(){
-//     return(
-//         <div className="menu">
-
-//         </div>
-//     )
-// }
-
-
-// nathan
-
-import React, { useState } from 'react';
 import Dessert from './Menus/Dessert.jsx'
 import Drinks from './Menus/Drinks.jsx'
 import Kitchen from './Menus/Kitchen.jsx'
 import Lunch from './Menus/Lunch.jsx'
 import Sushi from './Menus/Sushi.jsx'
 
-function Menu() {
+export default function Menu() {
     const [menu, changeMenu] = useState(null)
     const menus = [
-        {title: "LUNCH",
-        img: "../../assets/images/Lunch.jpg"},
-        {title: "SUSHI-BAR",
-        img: "../assets/images/SushiBar.jpg"},
-        {title: "KITCHEN",
-        img: "../assets/images/Kitchen.jpg"},
-        {title: "DESSERT",
-        img: "../assets/images/Dessert.jpg"},
-        {title: "DRINKS",
-        img: "../assets/images/Drinks.jpg"}
+        {
+            title: "LUNCH",
+            img: "../../assets/images/Lunch.jpg"
+        },
+        {
+            title: "SUSHI-BAR",
+            img: "../assets/images/SushiBar.jpg"
+        },
+        {
+            title: "KITCHEN",
+            img: "../assets/images/Kitchen.jpg"
+        },
+        {
+            title: "DESSERT",
+            img: "../assets/images/Dessert.jpg"
+        },
+        {
+            title: "DRINKS",
+            img: "../assets/images/Drinks.jpg"
+        }
     ]
     return(
         <div>
-            <h1 className="menu-list-title">Menu:</h1>
+            <h1 className="menu-list-title" id='menu'>Menu:</h1>
             <div className="menu-list">
                 {menus.map(item => {
                     return(
@@ -63,5 +54,3 @@ function Menu() {
         </div>
     )
 }
-
-export default Menu
