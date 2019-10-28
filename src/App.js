@@ -3,7 +3,7 @@ import React from 'react';
 
 // styling
 import './App.css';
-import ReactMapGL from 'react-map-gl';
+// import ReactMapGL from 'react-map-gl';
 
 // components
 import Map from './components/Map'
