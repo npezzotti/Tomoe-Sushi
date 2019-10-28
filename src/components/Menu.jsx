@@ -1,23 +1,36 @@
+// react
 import React, { useState } from 'react';
+
+// components
 import Dessert from './Menus/Dessert.jsx'
 import Drinks from './Menus/Drinks.jsx'
 import Kitchen from './Menus/Kitchen.jsx'
 import Lunch from './Menus/Lunch.jsx'
 import Sushi from './Menus/Sushi.jsx'
 
-function Menu() {
+export default function Menu() {
     const [menu, changeMenu] = useState(null)
     const menus = [
-        {title: "LUNCH",
-        img: "../../assets/images/Lunch.jpg"},
-        {title: "SUSHI-BAR",
-        img: "../assets/images/SushiBar.jpg"},
-        {title: "KITCHEN",
-        img: "../assets/images/Kitchen.jpg"},
-        {title: "DESSERT",
-        img: "../assets/images/Dessert.jpg"},
-        {title: "DRINKS",
-        img: "../assets/images/Drinks.jpg"}
+        {
+            title: "LUNCH",
+            img: "../../assets/images/Lunch.jpg"
+        },
+        {
+            title: "SUSHI-BAR",
+            img: "../assets/images/SushiBar.jpg"
+        },
+        {
+            title: "KITCHEN",
+            img: "../assets/images/Kitchen.jpg"
+        },
+        {
+            title: "DESSERT",
+            img: "../assets/images/Dessert.jpg"
+        },
+        {
+            title: "DRINKS",
+            img: "../assets/images/Drinks.jpg"
+        }
     ]
     return(
         <div>
@@ -41,5 +54,3 @@ function Menu() {
         </div>
     )
 }
-
-export default Menu
