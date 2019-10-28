@@ -13,7 +13,7 @@ export default function Menu() {
     const menus = [
         {
             title: "LUNCH",
-            img: "../../assets/images/Lunch.jpg"
+            img: "../assets/images/Lunch.jpg"
         },
         {
             title: "SUSHI-BAR",

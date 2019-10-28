@@ -1,25 +1,28 @@
-{
-    "Dessert": [
-        {
-            "Dessert": [
-                {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
+[
+    {
+        "Dessert": [
+            {
+                "Dessert": [
+                    {
+                    "item":"Green Tea Ice Cream",
+                    "description": "",
+                    "price": "4.00"
+                    },
+                    {
+                    "item":"Red Bean Ice Cream",
+                    "description": "",
+                    "price": "4.00"
                 },
                 {
-                 "item":"Red Bean Ice Cream",
-                 "description": "",
-                 "price": "4.00"
-              },
-              {
-                 "item":"Extra Homeade Red Bean",
-                 "description": "",
-                 "price": "1.00"
-              } 
-            ]
-        }
-    ],
+                    "item":"Extra Homeade Red Bean",
+                    "description": "",
+                    "price": "1.00"
+                } 
+                ]
+            }
+        ]
+    },
+    {    
     "Lunch": [
         {
             "Lunch_Special_from _Sushi_Bar": [
@@ -50,7 +53,9 @@
                  }
             ]
         }
-     ],
+     ]
+    },
+    {
     "Sushi_Bar": [
         {
             "Sushi-Dinner": [
@@ -163,48 +168,265 @@
                  },
                  {
                     "item":"Saki-Negi",
-                    "description": "fermented soybeans",
+                    "description": "salmon and scallion",
+                    "price": "4.75"
+                 },
+                 {
+                    "item":"Salmon Skin",
+                    "description": "fried salmon skin and cucumbers",
+                    "price": "5.50"
+                 },
+                 {
+                    "item":"Tama-Mayo",
+                    "description": "omlette, fish roe, cucumber and mayo",
                     "price": "6.00"
                  },
                  {
-                    "item":"Natto",
-                    "description": "fermented soybeans",
-                    "price": "6.00"
+                    "item":"Tekka",
+                    "description": "tuna",
+                    "price": "5.25"
                  },
                  {
-                    "item":"Natto",
-                    "description": "fermented soybeans",
-                    "price": "6.00"
+                    "item":"Spicy Hotate",
+                    "description": "spicy scallop, cucumber, and fish roe",
+                    "price": "6.50"
                  },
                  {
-                    "item":"Natto",
-                    "description": "fermented soybeans",
-                    "price": "6.00"
+                    "item":"Spicy Tekka",
+                    "description": "spicy mayo tuna",
+                    "price": "7.00"
+                 },
+                 {
+                    "item":"Spider Roll (2 rolls)",
+                    "description": "soft shell crab and cucumber",
+                    "price": "7.25"
+                 },
+                 {
+                    "item":"Tekka-Avo",
+                    "description": "tuna and avocado",
+                    "price": "14.00"
+                 },
+                 {
+                    "item":"Ume-Shiso",
+                    "description": "pickled plum and mint leaf",
+                    "price": "7.75"
+                 },
+                 {
+                    "item":"Ume-Shiso-Yamaimo",
+                    "description": "uma- shiso and mountain",
+                    "price": "4.25"
+                 },
+                 {
+                    "item":"Una-Kyu",
+                    "description": "sea urchin",
+                    "price": "4.75"
+                 },
+                 {
+                    "item":"Una-Avo",
+                    "description": "fresh water eel and cucumber",
+                    "price": "6.75"
+                 },
+                 {
+                    "item":"Uni",
+                    "description": "fresh water eel and avocado",
+                    "price": "7.50"
                  }
             ],
-            "Sushi-Dinner": [
+            "Maki_Dinner": [
                 {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
-                }
+                   "item":"Tekka (3 rolls)",
+                   "description": "tuna roll",
+                   "price": "18.75"
+                },
+                {
+                    "item":"California (3 rolls)",
+                    "description": "crabstick, avocado, cucumber, and fish roe",
+                    "price": "18.75"
+                 },
+                 {
+                    "item":"Futo (1 roll)",
+                    "description": "shrimp, egg, pickles, fish roe, and vegetables",
+                    "price": "16.25"
+                 },
+                 {
+                    "item":"Kappa (3 rolls)",
+                    "description": "cucumber roll",
+                    "price": "12.75"
+                 },
+                 {
+                    "item":"Combination",
+                    "description": "tuna, yellow tail with scallion and california roll",
+                    "price": "18.75"
+                 }
             ],
-            "Sushi-Dinner": [
+            "Sushi/Sashimi a la Carte": [
                 {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
-                }
+                   "item":"Amaebi",
+                   "description": "sweet shrimp",
+                   "price": "4.75"
+                },
+                {
+                    "item":"Anago",
+                    "description": "sea eel",
+                    "price": "5.75"
+                 },
+                 {
+                    "item":"Ebi",
+                    "description": "shrimp",
+                    "price": "4.25"
+                 },
+                 {
+                    "item":"Hamachi",
+                    "description": "regular yellow tail",
+                    "price": "5.25"
+                 },
+                 {
+                    "item":"Amaebi",
+                    "description": "yellow tail",
+                    "price": "6.00"
+                 },
+                 {
+                    "item":"Hirame",
+                    "description": "fluke",
+                    "price": "4.50"
+                 },
+                 {
+                    "item":"Hikkigai",
+                    "description": "Stimpson clam",
+                    "price": "4.00"
+                 },
+                 {
+                    "item":"Hotate",
+                    "description": "scallop",
+                    "price": "4.75"
+                 },
+                 {
+                    "item":"Ika",
+                    "description": "squid",
+                    "price": "4.25"
+                 },
+                 {
+                    "item":"Ikura",
+                    "description": "salmon roe",
+                    "price": "4.75"
+                 },
+                 {
+                    "item":"Kanikama",
+                    "description": "crabstick",
+                    "price": "4.00"
+                 },
+                 {
+                    "item":"Katsuo",
+                    "description": "bonito",
+                    "price": "4.50"
+                 },
+                 {
+                    "item":"Kanpachi",
+                    "description": "baby yellow tail",
+                    "price": "6.00"
+                 },
+                 {
+                    "item":"Maguro",
+                    "description": "tuna",
+                    "price": "5.25"
+                 },
+                 {
+                    "item":"Masago",
+                    "description": "smelt fish roe",
+                    "price": "4.00"
+                 },
+                 {
+                    "item":"Mentaiko",
+                    "description": "spicy cod fish roe",
+                    "price": "4.50"
+                 },
+                 {
+                    "item":"Mirugai",
+                    "description": "giant clam",
+                    "price": "5.50"
+                 },
+                 {
+                    "item":"Saba",
+                    "description": "mackerel",
+                    "price": "4.25"
+                 },
+                 {
+                    "item":"Saba",
+                    "description": "mackerel",
+                    "price": "4.25"
+                 },
+                 {
+                    "item":"Shima",
+                    "description": "aji striped jack",
+                    "price": "6.00"
+                 },
+                 {
+                    "item":"Shake",
+                    "description": "salmon",
+                    "price": "4.75"
+                 },
+                 {
+                    "item":"Shiro Maguro",
+                    "description": "smoked white tuna",
+                    "price": "4.50"
+                 },
+                 {
+                    "item":"Sawara",
+                    "description": "spanish mackerel",
+                    "price": "4.25"
+                 },
+                 {
+                    "item":"Tai",
+                    "description": "japanese red snapper",
+                    "price": "5.50"
+                 },
+                 {
+                    "item":"Tako",
+                    "description": "octopus",
+                    "price": "4.50"
+                 },
+                 {
+                    "item":"Tamago",
+                    "description": "sweet omlette",
+                    "price": "3.00"
+                 },
+                 {
+                    "item":"Tobiko",
+                    "description": "flying fish roe",
+                    "price": "4.50"
+                 },
+                 {
+                    "item":"Toro",
+                    "description": "fatty tuna",
+                    "price": "Market Price"
+                 },
+                 {
+                    "item":"Unagi",
+                    "description": "fresh water eel",
+                    "price": "5.75"
+                 },
+                 {
+                    "item":"Uni",
+                    "description": "sea urchin",
+                    "price": "6.75"
+                 }
             ],
-            "Sushi-Dinner": [
+            "Sashimi-Dinner": [
                 {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
-                }
+                   "item":"Sashimi Regular",
+                   "description": "assorted 12 pc of raw fish",
+                   "price": "27.50"
+                },
+                {
+                    "item":"Sashimi Deluxe",
+                    "description": "assorted 16 pc of raw fish",
+                    "price": "36.00"
+                 }
             ]
         }
-    ],
+    ]
+    },
+    {
     "Kitchen": [
         {
             "": [
@@ -543,10 +765,12 @@
              }
         ]
         }
-    ],
+    ]
+    },
+    {
     "Drinks": [
         {
-            "Soda/Juice_Beer": [
+            "Soda_Juice": [
                 {
                    "item":"Coca-Cola",
                    "description": "",
@@ -577,25 +801,19 @@
                 {
                    "item":"Asahi/Sapporo",
                    "description": "",
-                   "price": [
-                        {"12oz sm": "4.00"},
-                        {"21oz lg": "6.75"}
-                   ]
+                   "price": "12oz sm: 4.00, 21oz lg: 6.75"
                 },
                 {
                  "item":"Kirin Light",
                  "description": "",
-                 "price": [
-                    {"12oz sm": "4.00"},
-                    {"21oz lg": "6.75"}
+                 "price": "12oz sm: 4.00, 21oz lg: 6.75"
+                }
                ]
               },
               {
                  "item":"Kirin Ichiban",
                  "description": "",
-                 "price": [
-                    {"21oz lg": "6.75"}
-               ]
+                 "price": "21ozlg: 6.75"
               } 
             ],
             "Sake": [
@@ -638,7 +856,6 @@
                 "description": "",
                 "price": "4.00"
              }
-            ]
-        }
-    ]
- }
+        ]
+    }
+]

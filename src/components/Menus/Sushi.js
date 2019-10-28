@@ -1,14 +1,23 @@
 import React from 'react'
 import json from './menu'
-
 const menu = json
-console.log(menu)
 
-export default function Drinks(){
+export default function Sushi() {
     return(
-        <div className="menu-container" style={{color: "white"}}>
-        <h3 className="menu-category">Soda/Juice</h3>
-        {menu[4].Drinks[0].Soda_Juice.map(menuItem => {
+        <div className="menu-container">
+            <h3 className="menu-category">Sushi Dinner</h3>
+            {menu.map(menuItem => {
+                return(
+                    <div className="menu-info-container">
+                        <div className="menu-item-container">
+                            <div className="menu-item">{menuItem.item}</div>
+                            <div className="price">{menuItem.price}</div>
+                        </div>
+                    </div>
+                )
+            })}
+            <h3 className="menu-category">Regular Roll/Hand Roll a la Carte</h3>
+            {menu.map(menuItem => {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
@@ -19,8 +28,8 @@ export default function Drinks(){
                     </div>
                 )
             })}
-            <h3 className="menu-category">Beer</h3>
-            {menu[4].Drinks[0].Beer.map(menuItem => {
+            <h3 className="menu-category">Maki Dinner</h3>
+            {menu.map(menuItem => {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
@@ -31,8 +40,8 @@ export default function Drinks(){
                     </div>
                 )
             })}
-            <h3 className="menu-category">Sake</h3>
-            {menu[4].Drinks[0].Sake.map(menuItem => {
+            <h3 className="menu-category">Sushi/Sashimi a la Carte</h3>
+            {menu.map(menuItem => {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
@@ -43,8 +52,8 @@ export default function Drinks(){
                     </div>
                 )
             })}
-            <h3 className="menu-category">Wine</h3>
-            {menu[4].Drinks[0].Wine.map(menuItem => {
+            <h3 className="menu-category">Sashimi Dinner</h3>
+            {menu.map(menuItem => {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
