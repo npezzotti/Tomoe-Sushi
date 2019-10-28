@@ -1,14 +1,5 @@
 import React from 'react'
 
-<<<<<<< HEAD
-export default function Dessert(){
-    return(
-        <div className="dessert">
-<<<<<<< HEAD
-            Dessert
-=======
-
-=======
 const menu= [{item: "apple", price: "$15"}]
 export default function Dessert(){
     return(
@@ -25,9 +16,6 @@ export default function Dessert(){
                 )
             })}
             <h3 className="menu-category">We Have Special Dessert Menu- Please Ask Our Staff</h3>
->>>>>>> c860339ed85b34a9d3b0d08f6f1711369bae8857
->>>>>>> nathan
         </div>
     )
 }
-

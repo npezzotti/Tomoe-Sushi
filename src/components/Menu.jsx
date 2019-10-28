@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Dessert from './Menus/Dessert'
-import Drinks from './Menus/Drinks'
-import Kitchen from './Menus/Kitchen'
-import Lunch from './Menus/Lunch'
-import Sushi from './Menus/Sushi'
+import Dessert from './Menus/Dessert.jsx'
+import Drinks from './Menus/Drinks.jsx'
+import Kitchen from './Menus/Kitchen.jsx'
+import Lunch from './Menus/Lunch.jsx'
+import Sushi from './Menus/Sushi.jsx'
 
 function Menu() {
     const [menu, changeMenu] = useState(null)

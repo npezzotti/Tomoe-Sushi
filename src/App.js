@@ -15,11 +15,7 @@ import Info from './components/Info';
 import Nav from './components/Nav';
 import PressReviews from './components/PressReviews';
 
-<<<<<<< HEAD
-function App() {
-=======
 export default function App() {
->>>>>>> c860339ed85b34a9d3b0d08f6f1711369bae8857
   return (
     <div className="App">
       <Nav />
@@ -33,8 +29,3 @@ export default function App() {
     </div>
   );
 }
-
-<<<<<<< HEAD
-export default App;
-=======
->>>>>>> c860339ed85b34a9d3b0d08f6f1711369bae8857

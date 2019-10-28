@@ -1,11 +1,5 @@
 import React from 'react'
 
-<<<<<<< HEAD
-export default function Sushi() {
-    return(
-        <div className='sushi'>
-            Sushi
-=======
 const menu= [{item: "apple", price: "$15"}]
 export default function Sushi() {
     return(
@@ -65,7 +59,6 @@ export default function Sushi() {
                     </div>
                 )
             })}
->>>>>>> c860339ed85b34a9d3b0d08f6f1711369bae8857
         </div>
     )
 }
