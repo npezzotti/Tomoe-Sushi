@@ -9,15 +9,15 @@ function Menu() {
     const [menu, changeMenu] = useState(null)
     const menus = [
         {title: "LUNCH",
-        img: "../../assets/images/Lunch.jpg"},
+        img: ".../assets/images/Lunch.jpg"},
         {title: "SUSHI-BAR",
-        img: "../assets/images/SushiBar.jpg"},
+        img: ".../assets/images/SushiBar.jpg"},
         {title: "KITCHEN",
-        img: "../assets/images/Kitchen.jpg"},
+        img: ".../assets/images/Kitchen.jpg"},
         {title: "DESSERT",
-        img: "../assets/images/Dessert.jpg"},
+        img: ".../assets/images/Dessert.jpg"},
         {title: "DRINKS",
-        img: "../assets/images/Drinks.jpg"}
+        img: ".../assets/images/Drinks.jpg"}
     ]
     return(
         <div>

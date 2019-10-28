@@ -1,11 +1,5 @@
 import React from 'react'
 
-<<<<<<< HEAD
-export default function Kitchen(){
-    return(
-        <div className="kitchen">
-
-=======
 const menu= [{item: "apple", price: "$15"}]
 export default function Kitchen(){
     return(
@@ -119,7 +113,6 @@ export default function Kitchen(){
                     </div>
                 )
             })}
->>>>>>> c860339ed85b34a9d3b0d08f6f1711369bae8857
         </div>
     )
 }
