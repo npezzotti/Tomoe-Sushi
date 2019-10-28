@@ -1,59 +1,52 @@
-.App {
-  	text-align: center;
+
+body {
+	background-image: url('./assets/images/Tomoe_Background_Final.jpg');
 }
+@media(min-width: 300px){
+   body {
+	   margin: 0 auto;
+	   width: 100%;
+   }
+   .header {
+	   background: url('../src/assets/images/Hero.jpg') center;
+	   width: 100vw;
+	   min-height: 188px;
+	 
+	   background-repeat: no-repeat;
+	   background-size: cover;
+   }
 
-/* //////////////////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////// Navigation (BELOW) //////////////////////////////////// */
-/* .nav {
-	display: flex;
-	flex-flow: row;
-	text-align: center;
-	justify-content: space-around;
-} */
-	.nav .nav-time {
-		/* position: absolute;
-		right: 0;
-		font-size: 20px;
-		margin: 10px 20px 0 0;
-		color:white; */
-		font-size: 20px;
-		color:white;
-	}
+   .nav-item-container {
+	   width: 100%;
+	   display: flex;
+	   flex-direction: row;
+	   justify-content: space-evenly;
+   }
+   .nav-item {
+	   align-self: baseline;
+	   text-decoration: none;
+	   font-family: TrajanPro3;
+	   font-size: 20px;
+	   font-weight: 600;
+	   line-height: normal;
+	   letter-spacing: -0.01px;
+	   color: white;
+   }
 
-	
+   .open-until {
+	   text-align: right;
+	   color: white;
+   }
 
-	  .mask {
-		/* width: 100%;
-		height: 701px; */
-		width: 100%;
-		background-color: #d8d8d8;
-	  }
-	
-	.nav .nav-item-container {
-		display: flex;
-		flex-direction: row;
-		justify-content:space-evenly;
-		align-self: baseline;
-	}
-    	.nav .nav-item-container .nav-item {
-			all: unset;
-			font-weight: 800;
-			/* padding: 0 10px; */
-			/* font-size: 30px; */
-			font-family: TrajanPro3;
-			/* font-size: 25px;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;  */
-			align-self: baseline;
-			color: white;
-		}
-		.nav .nav-item-container .nav-item.center {
-			font-size:40px;
-		}
-/* //////////////////////////////////// Navigation (ABOVE) //////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////////////////////////////// */
+   .mask {
+	   width: 100%;
+   }
 
+   .center {
+	   font-size: 30px;
+   }
+
+<<<<<<< HEAD
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
 .info{
@@ -73,4 +66,7 @@
 body {
 	background-image: url(./assets/images/Tomoe_Background_Final.jpg);
 }
+=======
+>>>>>>> e3007d274a49988d5debcef9cbf9c1834a91e642
 
+}
