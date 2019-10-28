@@ -1,6 +1,7 @@
 import React from 'react'
+import json from './menu'
+const menu = json
 
-const menu= [{item: "apple", price: "$15"}]
 export default function Sushi() {
     return(
         <div className="menu-container">
@@ -21,6 +22,7 @@ export default function Sushi() {
                     <div className="menu-info-container">
                         <div className="menu-item-container">
                             <div className="menu-item">{menuItem.item}</div>
+                            <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
@@ -32,6 +34,7 @@ export default function Sushi() {
                     <div className="menu-info-container">
                         <div className="menu-item-container">
                             <div className="menu-item">{menuItem.item}</div>
+                            <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
@@ -43,6 +46,7 @@ export default function Sushi() {
                     <div className="menu-info-container">
                         <div className="menu-item-container">
                             <div className="menu-item">{menuItem.item}</div>
+                            <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
@@ -54,6 +58,7 @@ export default function Sushi() {
                     <div className="menu-info-container">
                         <div className="menu-item-container">
                             <div className="menu-item">{menuItem.item}</div>
+                            <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
                     </div>

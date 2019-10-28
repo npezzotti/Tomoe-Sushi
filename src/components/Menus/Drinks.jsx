@@ -1,6 +1,7 @@
 import React from 'react'
+import json from './menu'
+const menu = json
 
-const menu= [{item: "apple", price: "$15"}]
 export default function Drinks(){
     return(
         <div className="menu-container">

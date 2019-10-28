@@ -1,24 +1,120 @@
 .App {
-  text-align: center;
+  	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////// Navigation (BELOW) //////////////////////////////////// */
+.nav {
+	display: flex;
+	flex-flow: row;
+	text-align: center;
+	justify-content: center;
 }
+	.nav .nav-time {
+		position: absolute;
+		right: 0;
+		margin: 10px 20px 0 0;
+	}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	.Open-Until-1000PM {
+		width: 231px;
+		height: 20px;
+		font-family: TrajanPro3;
+		font-size: 20px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.02px;
+		text-align: right;
+		color: var(--white);
+	  }
+
+	  menu {
+		width: 80px;
+		height: 25px;
+		font-family: TrajanPro3;
+		font-size: 25px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.03px;
+		color: var(--white);
+	  }
+
+	  .Info {
+		width: 66px;
+		height: 25px;
+		font-family: TrajanPro3;
+		font-size: 25px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.03px;
+		color: var(--white);
+	  }
+
+	  .Tomoe-Sushi {
+		width: 318px;
+		height: 45px;
+		font-family: TrajanPro3;
+		font-size: 45px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.04px;
+		color: var(--white);
+	  }
+
+	  .Gallery {
+		width: 107px;
+		height: 25px;
+		font-family: TrajanPro3;
+		font-size: 25px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.03px;
+		color: var(--white);
+	  }
+
+	  .PRESS {
+		width: 78px;
+		height: 25px;
+		font-family: TrajanPro3;
+		font-size: 25px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.03px;
+		color: var(--white);
+	  }
+
+	  .mask {
+		width: 1440px;
+		height: 701px;
+		background-color: #d8d8d8;
+	  }
+	
+	.nav .nav-item-container {}
+    	.nav .nav-item-container .nav-item {
+			all: unset;
+			font-weight: 800;
+			padding: 0 10px;
+			font-size: 30px;
+		}
+		.nav .nav-item-container .nav-item.center {
+			font-size:40px;
+		}
+/* //////////////////////////////////// Navigation (ABOVE) //////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+body {
+	background-image: url(./assets/images/Tomoe_Background_Final.jpg);
 }
-
-.App-link {
-  color: #09d3ac;
-}
-
 
