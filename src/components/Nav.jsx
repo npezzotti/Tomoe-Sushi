@@ -1,8 +1,6 @@
 import React from 'react'
 
 export default function Nav({timeDiff}){
-    
-    let time = `10:00PM`
     return(
         <div>
             <p className="open-until">{timeDiff}</p>

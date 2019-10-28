@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 const setTimeObj = () => {
     let now = new Date();
@@ -35,9 +35,7 @@ const setTimeObj = () => {
     }
     return openTimeObj
 }
-let timeObj = setTimeObj();
-// 172 Thompson St
-// New York, NY 10012
+
 const buildTimeMsg = (timeDiff) => {
     let hours = Math.floor(timeDiff / 60 / 60);
     let hourStr = hours > 1 ? `hours`:`hour`;
@@ -51,6 +49,7 @@ const buildTimeMsg = (timeDiff) => {
 }
 export default function Info({dt}){
     const {setTimeDiff} = dt
+    let timeObj = setTimeObj();
     const getTimeDelta = (referenceTime) => {
         let dt = new Date()
         let msg;
@@ -76,12 +75,18 @@ export default function Info({dt}){
     // interval for timer
     setInterval(()=>{
         setTimeDiff(getTimeDelta(timeObj[new Date().getDay()]));
-        // setCurrentTime()
     }, 2500)
 
     return(
         <div className="info" id='info'>
             <div className="info-title">Info</div>
+            <div className="location">
+                <div className='pre'>Located at:</div>
+                <div className="address">
+                    <div className="street">172 Thompson St</div>
+                    <div className="city-state">New York, NY 10012</div>
+                </div>
+            </div>
             <div className="weekly-times">
                 <div className="weekday monday">Monday</div>
                 <div className="weekday tuesday">Tuesday</div>
