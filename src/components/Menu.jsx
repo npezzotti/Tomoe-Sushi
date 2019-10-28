@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import Dessert from './menus/Dessert';
-import Drinks from './menus/Drinks';
-import Kitchen from './menus/Kitchen';
-import Lunch from './menus/Lunch';
-import Sushi from './menus/Sushi';
+import Dessert from './Menus/Dessert';
+import Drinks from './Menus/Drinks';
+import Kitchen from './Menus/Kitchen';
+import Lunch from './Menus/Lunch';
+import Sushi from './Menus/Sushi';
 
 
 function Menu() {
