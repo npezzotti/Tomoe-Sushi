@@ -15,15 +15,10 @@
 	   background-size: cover;
    }
 
-   #root {
-	   /* margin: 0 auto; */
-   }
 
    .header {
 	   background: url('../src/assets/images/Hero.jpg') center;
-	   /* width: 100vw; */
-	   /* width:90%; */
-	   /* margin: 0; */
+
 	   min-height: 188px;
 	   background-repeat: no-repeat;
 	   background-size: cover;
