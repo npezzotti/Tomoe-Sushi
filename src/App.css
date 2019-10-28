@@ -27,7 +27,7 @@
 		line-height: normal;
 		letter-spacing: -0.02px;
 		text-align: right;
-		color: var(--white);
+		color:white;
 	  }
 
 	  menu {
@@ -40,7 +40,7 @@
 		font-style: normal;
 		line-height: normal;
 		letter-spacing: -0.03px;
-		color: var(--white);
+		color:white;
 	  }
 
 	  .Info {
@@ -53,7 +53,7 @@
 		font-style: normal;
 		line-height: normal;
 		letter-spacing: -0.03px;
-		color: var(--white);
+		color: white;
 	  }
 
 	  .Tomoe-Sushi {
@@ -66,7 +66,7 @@
 		font-style: normal;
 		line-height: normal;
 		letter-spacing: -0.04px;
-		color: var(--white);
+		color: white;
 	  }
 
 	  .Gallery {
@@ -79,7 +79,7 @@
 		font-style: normal;
 		line-height: normal;
 		letter-spacing: -0.03px;
-		color: var(--white);
+		color: white;
 	  }
 
 	  .PRESS {
@@ -92,7 +92,7 @@
 		font-style: normal;
 		line-height: normal;
 		letter-spacing: -0.03px;
-		color: var(--white);
+		color: white;
 	  }
 
 	  .mask {
