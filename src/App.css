@@ -352,60 +352,77 @@ body {
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	
 	/* /////////////////////////////////////   Christina  //////////////////////////////////// */
-	/* //////////////////////////////////// Press (BELOW) //////////////////////////////////// */
+/* //////////////////////////////////// Press (BELOW) //////////////////////////////////// */
+.press-Reviews {
+	display: grid;
+}
+.gridContainer {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 10px;
+	margin-left: 0px;
+}
+.fullReview {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	margin-left: 0px;
+}
+.img {
+	margin-top: 20px;
+	order: 1;
+	margin-left: 70px;
+}
+.review {
+	margin-left: 30px;
+	color: white;
+	max-width: 490px;
+	max-height: 72px;
+	overflow-wrap: break-word;
+	order: 2;
+	font-family: 'Gill Sans', sans-serif;
+	font-style: normal;
+	margin: 0;
+	margin-top: 100px;
+	font-size: 22px;
+}
+.infatuationImg {
+	height: 302px;
+	width: 511px;
+	margin-left: -20px;
+	order: 1;
+}
+.infatuationP {
+	margin-left: -20px;
+	margin-top: 80px;
+}
+.timeOutImg {
+	height: 117px;
+	width: 309px;
+	margin-top: 10px;
+}
+.timeOutP {
+	margin-bottom: 20px;
+	margin-left: 90px;
+	margin-top: 15px;
+}
+.thrillistImg {
+	height: 103px;
+	width: 298px;
+	margin: 0;
+	margin-top: 5px;
+	margin-left: 70px;
+}
+.thrillistP {
+	margin-bottom: 90px;
+	margin-left: 90px;
+	margin-top: 15px;
+}
+.thrillist {
+	margin-top: 70px;
+}
 
-	.gridContainer {
-		grid-template-columns: auto;
-	}
-	.fullReview {
-		display: grid;
-		grid-template-columns: auto auto;
-		grid-gap: 10px;
-		margin-left: 0px;
-	}
-	.img {
-		margin-top: 20px;
-	}
-	.review {
-		max-width: 490px;
-		margin-top: 100px;
-		font-family: 'Gill Sans', sans-serif;
-		font-style: normal;
-		font-size: 22px;
-		order: 2;
-	}
-	.infatuationImg {
-		width: 511px;
-		height: 302px;
-		margin-left: -20px;
-	}
-	.infatuationP {
-		margin-left: -20px;
-		margin-top: 80px;
-	}
-	.timeOutImg {
-		width: 309px;
-		margin-top: 10px;
-		height: 117px;
-	}
-	.timeOutP {
-		margin-left: 90px;
-		margin-top: 15px;
-	}
-	.thrillistImg {
-		height: 103px;
-		width: 298px;
-		margin: 0;
-		margin-left: 70px;
-	}
-	.thrillistP {
-		margin-bottom: 90px;
-		margin-left: 90px;
-		margin-top: 15px;
-	}
-	.thrillist {
-		margin-top: 70px;
-	}
-	/* //////////////////////////////////// Press (ABOVE) /////////////////////////////////////// */
-	/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////// Press (ABOVE) /////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
 }
