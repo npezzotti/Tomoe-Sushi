@@ -71,7 +71,7 @@ export default function Gallery () {
 
     return (
         <div id="gallery">
-            <h1 style={{color: "white"}}>Gallery</h1>
+            <h1 style={{color: "white", textAlign: "center"}}>Gallery</h1>
             <Carousel 
                 responsive={responsive}
                 swipeable={true}

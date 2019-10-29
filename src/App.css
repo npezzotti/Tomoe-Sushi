@@ -53,9 +53,6 @@
 
 	/* Christina - Press Reviews */
 	.press-Reviews {
-		/* display: flex;
-		flex-flow: wrap;
-		justify-content: space-around;  */
 		display: grid;
 	}
 
@@ -71,7 +68,6 @@
 	}
 
 	.img {
-		height: 125px;
 		width: 125px; 
 		margin-top: 33px;
 		order: 1;
@@ -91,8 +87,7 @@
 	}
 
 	.infatuationImg {
-		height: 240px;
-		width: 175px;
+		width: 290px;
 		margin-top: -30px;
 		order: 1;
 	}
@@ -115,10 +110,12 @@
 		margin: 0;
 		margin-top: 5px;
 		margin-left: 20px;
+		width: 190px;
 	}
 
 	.thrillist {
 		margin-top: -20px;
+		margin-left: 20px;
 	}
 
 /* ////////////////////////////////////////////////////////////////////////////////////// */
@@ -195,12 +192,14 @@
 	body {
 		background-image: url("./assets/images/Tomoe_Background_Final.jpg");
 	}
-
-	.menu-image {
-		width: 10%;
-		height: 10%;
-		border-radius: 50%;
+	.menu-title {
+		color: white;
 	}
+	.menu-image {
+		width: 50%;
+		height: 65%;
+		border-radius: 50%;
+		}
 
 	.menu-container {
 		display: flex;
