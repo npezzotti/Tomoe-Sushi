@@ -112,7 +112,7 @@ body {
 
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
-	.info{
+	.info {
 		color: wheat;
 		display: flex;
 		flex-flow: column;
@@ -126,9 +126,6 @@ body {
 			flex-flow: column;
 			align-items: center;
 		}
-			.info .info-title {
-				font-size: 50px;
-			}
 			.info .info-content {
 				display: flex;
 				flex-flow: row;
@@ -224,7 +221,6 @@ body {
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 0 10px;
-
 	}
 		.menu-item-container .menu-item {
 			white-space: nowrap;
@@ -241,20 +237,10 @@ body {
 		.menu-item-container .price{
 			text-align: right;
 		}
-			.info .week-schedule .weekday-container .open-close.now {
-				/* padding: 0 100px; */
-				font-weight: 900;
-			}
-	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
-	/* ////////////////////////////////////////////////////////////////////////////////////// */
 
 	.close-button {
 		font-size: 42px;
 		color: gray;
-	}
-	.menu-image {
-		width: 80%;
-		height: 80%;
 	}
 }
 
@@ -294,6 +280,8 @@ body {
 
 	.menu-list-title, .menu-title {
 		color: white;
+		justify-self: center;
+		align-self: center;
 	}
 
 	.menu-title-container {
@@ -301,11 +289,6 @@ body {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.menu-title {
-		justify-self: center;
-		align-self: center;
 	}
 
 	.menu {
@@ -319,43 +302,9 @@ body {
 
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
-	.info{
-		color: wheat;
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-	}
-		.info .info-title {
-			font-size: 50px;
-		}
-		.info .location {
-			display: flex;
-			flex-flow: column;
-			align-items: center;
-		}
-			.info .location .address {
-				display: flex;
-				flex-flow: column;
-				align-items: center;
-			}
-		.info .week-schedule {
-			display: flex;
-			flex-flow: row;
-			justify-content: center;
-		}
 			.info .week-schedule .weekday-container {
 				margin: 30px 10px;
-				/* padding: 0 50px; */
-				color: wheat;
-				text-align: center;
 			}
-			.info .week-schedule .weekday-container.today {
-				color: red;
-			}
-				.info .week-schedule .weekday-container .open-close.now {
-					/* padding: 0 100px; */
-					font-weight: 900;
-				}
 	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	
