@@ -66,6 +66,7 @@ export default function Gallery () {
                 containerClass="carousel-container"
                 arrows={true}
                 renderButtonGroupsOutside={true}
+                centerMode={true}
                 itemClass="carousel-item-padding-40-px"
                 additionalTransfrom={0}
             >
