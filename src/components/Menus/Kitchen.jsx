@@ -67,7 +67,7 @@ export default function Kitchen(props){
                     </div>
                 )
             })}
-            <h3 className="menu-category">Dinner</h3><p>comes with rice</p>
+            <h3 className="menu-category">Dinner</h3><p className="menu-category-sub-header">-comes with rice</p>
             {menu[3].Kitchen[5].Dinner.map(menuItem => {
                 return(
                     <div className="menu-info-container">

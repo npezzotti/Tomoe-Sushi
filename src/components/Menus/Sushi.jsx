@@ -20,7 +20,7 @@ export default function Sushi(props) {
                     </div>
                 )
             })}
-            <h3 className="menu-category">Regular Roll/Hand Roll a la Carte</h3>
+            <h3 className="menu-category">Regular Roll/Hand Roll a la Carte</h3><p className="menu-category-sub-header">*Vegetable Roll</p>
             {menu[2].Sushi_Bar[1].Regular_Roll_Hand_Roll_a_la_Carte.map(menuItem => {
                 return(
                     <div className="menu-info-container">
