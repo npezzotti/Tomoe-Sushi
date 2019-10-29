@@ -76,7 +76,7 @@ const _onViewportChange = viewport => {
 						>
                     <div  >
                                             
-                      <img height="50px" alt="pin" src={`images/pin.png`}/>
+                      <img height="50px" alt="pin" src={`/cropped_images/pin.png`}/>
                     </div>
                 </Marker>
       </ReactMapGL>
