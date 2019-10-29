@@ -188,14 +188,22 @@ body {
 		align-items: center;
 		font-family: TrajanPro3;
 	}
-	.menu-title {
-		font-size: 16px;
+	.menu-title-container {
+		font-family: TrajanPro3;
 		color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.menu-title {
+		color: white;
+		font-size: 16px;
 		font-family: TrajanPro3;
 	}
 	.menu-image {
 		width: 50%;
-		height: 65%;
+		height: 50%;
 		border-radius: 50%;
 	}
 
@@ -203,7 +211,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		padding: 30px;
-		margin: 30px;
 	}
 	.menu-list-title {
 		align-self: center;
@@ -230,7 +237,7 @@ body {
 			font-weight: 700;
 		}
 		.menu-item-container .description, .menu-item-container .price {
-			width:100%
+			width:100%;
 		}
 		.menu-item-container .description{
 			font-weight: 200;
