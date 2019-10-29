@@ -1,17 +1,5 @@
 import React from 'react'
 
-// const dateToStr = (dt) => {
-//     let hours = dt.getHours();
-//     let minutes = dt.getMinutes();
-//     let seconds = dt.getSeconds();
-//     hours   = hours === 0  ? 12           : hours;
-//     hours   = hours   > 12 ? hours - 12   : hours;
-//     minutes = minutes < 10 ? `0${minutes}`: minutes;
-//     seconds = seconds < 10 ? `0${seconds}`: seconds;
-//     let dtStr = `${dt.getMonth() + 1}/${dt.getDate()}/${dt.getYear() + 1900} ${hours}:${minutes}:${seconds}`
-//     return dtStr
-//   }
-
 const setTimeObj = () => {
     let now = new Date();
     let year = now.getFullYear();
@@ -60,7 +48,6 @@ const buildTimeMsg = (timeDiff) => {
     return timeMsg
 }
 export default function Info({dt}){
-    // let [currentTime, setCurrentTime] = useState(dateToStr(new Date()))
     const {setTimeDiff} = dt
     let timeObj = setTimeObj();
     const getTimeDelta = (referenceTime) => {
@@ -105,7 +92,6 @@ export default function Info({dt}){
             let todayBool = today === idx
             // get the 1st open and close times
             let openCloseMsg1;
-            let openCloseMsg2;
             let openTime1 = timeObj[idx]['open1'].getHours();
             let closeTime1 = timeObj[idx]['close1'].getHours();
             let currentWindow = false;
@@ -118,6 +104,7 @@ export default function Info({dt}){
             }
 
             // get the 2nd open and close times
+            let openCloseMsg2;
             if (!!(timeObj[idx]['open2'])) {
                 currentWindow = (now > refTime.open2 && now < refTime.close2 && todayBool)
                 let openTime2 = timeObj[idx]['open2'].getHours();
