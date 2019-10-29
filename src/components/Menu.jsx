@@ -33,15 +33,16 @@ export default function Menu() {
         }
     ]
     return(
+        <div><div className="menu-title-container"><h1 className="menu-list-title" id='menu'>MENU</h1></div>
         <div className="menu-container">
-            <h1 className="menu-list-title" id='menu'>Menu:</h1>
+            
             <div className="menu-list">
                 {menus.map(item => {
                     return(
                         <div className="menu" onClick={() => {
                             changeMenu(item.title)
                             }}>
-                            <h2 className="menu-title">{item.title}</h2>
+                            <h2 className="menu-title" style= {{textDecoration: menu===item.title ? "underline" : "none" }}>{item.title}</h2>
                             <img className="menu-image" src={item.img} alt={item.title} />
                         </div>)
                 })}
@@ -53,6 +54,7 @@ export default function Menu() {
                 {menu==="KITCHEN" && <Kitchen changeMenu={changeMenu}/>}
                 {menu==="DRINKS" && <Drinks changeMenu={changeMenu}/>}
             </div>
+        </div>
         </div>
     )
 }

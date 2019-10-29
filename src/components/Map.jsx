@@ -64,7 +64,7 @@ const _onViewportChange = viewport => {
                 mapboxApiAccessToken='pk.eyJ1IjoiYmFydGNvbnNlZGluZSIsImEiOiJjazBudWVxajUwMXdlM2hwZzFzcDQ5cWR5In0.376OjUpSFMy-y-PVfAeO9A'
                 
                 onViewportChange={_onViewportChange}
-            
+                dragPan={false}
             >
 
                 <Marker    

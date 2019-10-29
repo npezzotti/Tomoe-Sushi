@@ -71,7 +71,7 @@ export default function Gallery () {
 
     return (
         <div id="gallery">
-            <h1 style={{color: "white"}}>Gallery</h1>
+            <h1 style={{color: "white", textAlign: "center"}}>Gallery</h1>
             <Carousel 
                 responsive={responsive}
                 swipeable={true}
@@ -90,7 +90,7 @@ export default function Gallery () {
             >
 
                 {galleryImages.map((image, index) => (
-                    <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={image} alt='' /></div>
+                    <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px" }} src={image} alt='' /></div>
                 ))}
             </Carousel>
         </div>
