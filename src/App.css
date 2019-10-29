@@ -195,14 +195,21 @@
 	body {
 		background-image: url("./assets/images/Tomoe_Background_Final.jpg");
 	}
+	.menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: TrajanPro3;
+	}
 	.menu-title {
 		color: white;
+		font-family: TrajanPro3;
 	}
 	.menu-image {
 		width: 50%;
 		height: 65%;
 		border-radius: 50%;
-		}
+	}
 
 	.menu-container {
 		display: flex;
@@ -239,6 +246,10 @@
 		}
 		.menu-item-container .price{
 			text-align: right;
+		}
+		.close-button {
+			font-size: 42px;
+			color: gray;
 		}
 }
 
