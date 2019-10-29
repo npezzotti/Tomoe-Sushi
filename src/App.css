@@ -213,6 +213,9 @@ body {
 	.menu-category {
 		align-self: center;
 	}
+	.menu-content {
+		background: rgba(0, 0, 0, .3);
+	}
 	.menu-item-container {
 		display: flex;
 		flex-direction: row;
