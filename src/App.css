@@ -245,7 +245,7 @@ body {
 
    	.header {
 		background: url('../src/assets/images/Hero.jpg') center;
-		min-height: 188px;
+		min-height: 488px;
 		background-repeat: no-repeat;
 		background-size: cover;
    	}
