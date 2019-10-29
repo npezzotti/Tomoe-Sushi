@@ -4,7 +4,7 @@ export default function PressReviews(){
     
     return(
         <div className="press-reviews" id='press'>
-            <h1 style={{color: "white"}}>Press</h1>
+            <h1 className="press-title" style={{color: "white", textAlign: "center"}}>Press</h1>
             <div className="gridContainer">
                 <div className="infatuation fullReview">
                     <p className="infatuationP review">
