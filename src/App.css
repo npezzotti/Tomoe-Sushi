@@ -1,3 +1,4 @@
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -283,7 +284,12 @@ body {
 		/* letter-spacing: -0.01px; */
 		color: white;
 	}
-	
+	.center {
+		font-size: 48px;
+	}
+	.menu-title-container {
+		font-size: 28px;
+	}
 	.menu-container {
 		justify-content: space-around;
 	}
@@ -306,6 +312,7 @@ body {
 	.menu-title {
 		justify-self: center;
 		align-self: center;
+		font-size: 24px;
 	}
 
 	.menu {
