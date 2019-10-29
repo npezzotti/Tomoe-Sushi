@@ -237,7 +237,7 @@ body {
 			font-weight: 700;
 		}
 		.menu-item-container .description, .menu-item-container .price {
-			width:100%
+			width:100%;
 		}
 		.menu-item-container .description{
 			font-weight: 200;
