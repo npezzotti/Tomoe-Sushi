@@ -33,7 +33,7 @@ export default function Menu() {
         }
     ]
     return(
-        <div><div className="menu-title-container"><h1 className="menu-list-title" id='menu'>Menu:</h1></div>
+        <div><div className="menu-title-container"><h1 className="menu-list-title" id='menu'>MENU</h1></div>
         <div className="menu-container">
             
             <div className="menu-list">
