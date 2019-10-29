@@ -185,6 +185,9 @@ body {
 		align-items: center;
 		font-family: TrajanPro3;
 	}
+	.menu-title-container {
+		font-family: TrajanPro3;
+	}
 	.menu-title {
 		font-size: 16px;
 		color: white;
