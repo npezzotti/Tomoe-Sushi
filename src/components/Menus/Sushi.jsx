@@ -1,6 +1,5 @@
 import React from 'react'
-import json from './menu'
-// import { Icon } from '@opuscapita/react-icons';
+import json from './menu';
 
 
 const menu = json
@@ -8,7 +7,7 @@ const menu = json
 export default function Sushi(props) {
     return(
         <div className="menu-container" style={{color: "white"}}>
-        {/* <Icon className="remove-button" type="indicator" name="remove" onClick={props.changeMenu}/> */}
+        <div className="close-button" onClick={() => props.changeMenu(null)}>&times;</div>
             <h3 className="menu-category">Sushi Dinner</h3>
             {menu[2].Sushi_Bar[0].Sushi_Dinner.map(menuItem => {
                 return(
