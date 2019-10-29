@@ -244,10 +244,7 @@ body {
 @media(min-width: 700px){
 
    	.header {
-		background: url('../src/assets/images/Hero.jpg') center;
 		min-height: 488px;
-		background-repeat: no-repeat;
-		background-size: cover;
    	}
 	.nav-item-container {
 		/* margin: 0; */
