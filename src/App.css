@@ -126,6 +126,7 @@ body {
 			flex-flow: column;
 			width: 100%;
 			justify-content: space-between;
+			/* margin: 0 20px; */
 		}
 			.info .info-content .location {
 				display: flex;
@@ -133,7 +134,8 @@ body {
 				align-items: center;
 				margin: 30px 150px;
 			}
-				.info .info-content .location .address {
+				.info .info-content .location .location-map {}
+				.info .info-content .location .location-map .address {
 					display: flex;
 					flex-flow: column;
 					align-items: center;
@@ -147,6 +149,8 @@ body {
 				margin: auto;
 			}
 				.info .info-content .week-schedule .weekday-container {
+					/* margin: 5px 10px; */
+					/* padding: 0 50px; */
 					display: flex;
 					flex-flow: row;
 					width: 100%;
