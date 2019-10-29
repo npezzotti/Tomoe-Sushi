@@ -8,7 +8,7 @@ const menu = json
 export default function Dessert(props){
     return(
         <div className="menu-container" style={{color: "white"}}>
-        <Icon className="remove-button" type="indicator" name="remove" onClick={props.changeMenu}/>
+        <Icon className="remove-button" type="indicator" name="remove" onClick={() => props.changeMenu(null)} />/>
             <h3 className="menu-category">Dessert</h3>
             {menu[0].Dessert[0].Dessert.map(menuItem => {
                 return(
