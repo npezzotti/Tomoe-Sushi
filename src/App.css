@@ -196,9 +196,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		font-family: TrajanPro3;
 	}
 	.menu-title {
 		color: white;
+		font-family: TrajanPro3;
 	}
 	.menu-image {
 		width: 50%;
@@ -241,6 +243,10 @@
 		}
 		.menu-item-container .price{
 			text-align: right;
+		}
+		.close-button {
+			font-size: 42px;
+			color: gray;
 		}
 }
 
