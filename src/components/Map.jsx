@@ -18,8 +18,8 @@ const viewPortHeight = () => {
 }
 const viewPortZoom = () => {
   if(window.innerWidth < 700){
-  return 14.5
-  }return 14.5
+  return 15
+  }return 15
 
 }
 
@@ -70,8 +70,8 @@ const _onViewportChange = viewport => {
                 <Marker    
                         className="markers" 
                         key="map" 
-                        latitude={40.724577}
-                        longitude={-74.002860}
+                        latitude={40.724}
+                        longitude={-74.0032}
                         offsetLeft={-10} offsetTop={-50}
 						>
                     <div  >
