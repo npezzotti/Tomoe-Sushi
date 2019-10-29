@@ -1,4 +1,8 @@
-import React from 'react'
+// react
+import React from 'react';
+
+// components
+import Map from './Map';
 
 const setTimeObj = () => {
     let now = new Date();
@@ -114,8 +118,10 @@ export default function Info({dt}){
             return (
                 <div className={`weekday-container ${weekday} ${todayBool && 'today'}`}>
                     <div className="title">{weekday}</div>
-                    {openCloseMsg1}
-                    {openCloseMsg2}
+                    <div className="open-close-container">
+                        {openCloseMsg1}
+                        {openCloseMsg2}
+                    </div>
                 </div>
             )
         })
@@ -124,15 +130,22 @@ export default function Info({dt}){
     return(
         <div className="info" id='info'>
             <div className="info-title">Info</div>
-            <div className="location">
-                <div className='pre'>Located at:</div>
-                <div className="address">
-                    <div className="street">172 Thompson St</div>
-                    <div className="city-state">New York, NY 10012</div>
+            <div className="info-content">
+                <div className="location">
+                    <div className="location-text">
+                        <div className='pre'>Located at:</div>
+                        <div className="address">
+                            <div className="street">172 Thompson St</div>
+                            <div className="city-state">New York, NY 10012</div>
+                        </div>
+                    </div>
+                    <div className="location-map">
+                        <Map />
+                    </div>
                 </div>
-            </div>
-            <div className="week-schedule">
-                {makeWeekElem(timeObj)}
+                <div className="week-schedule">
+                    {makeWeekElem(timeObj)}
+                </div>
             </div>
             {/* <div className="current-time">{currentTime}</div> */}
         </div>
