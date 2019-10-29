@@ -1,27 +1,24 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden; 
+}
+
+body {
+	background-image: url('./assets/images/Tomoe_Background_Final.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 @media(min-width: 300px){
-	html,body
-	{
-		width: 100%;
-		height: 100%;
-		margin: 0px;
-		padding: 0px;
-		overflow-x: hidden; 
-	}
-
-   	body {
-		width: 100%;
-		background-image: url('./assets/images/Tomoe_Background_Final.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-   	}
-
    	.header {
 		background: url('../src/assets/images/Hero.jpg') center;
 		min-height: 188px;
 		background-repeat: no-repeat;
 		background-size: cover;
    	}
-
 	.nav-item-container {
 		/* margin: 0; */
 		width: 100%;
@@ -46,90 +43,74 @@
 		color: white;
 	}
 
-
 	.center {
 		font-size: 30px;
 	}
 
-	/* Christina - Press Reviews */
+	/* /////////////////////////////////////   Christina  //////////////////////////////////// */
+	/* //////////////////////////////////// Press (BELOW) //////////////////////////////////// */
 	.press-Reviews {
 		display: grid;
 	}
-
 	.gridContainer {
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-gap: 10px;
 		margin-left: 0px;
 	}
-
 	.fullReview {
 		margin-top: 10px;
 	}
-
 	.img {
 		width: 125px; 
 		margin-top: 33px;
 		order: 1;
 		margin-left: 70px;
 	}
-
 	.review {
-		margin-left: 30px;
-		color: white;
 		max-width: 300px;
 		max-height: 72px;
+		margin-left: 30px;
+		color: white;
 		overflow-wrap: break-word;
 		order: 2;
 		font-family: 'Gill Sans', sans-serif;
 		font-style: italic;
 		margin: 0;
 	}
-
 	.infatuationImg {
 		width: 290px;
 		margin-top: -30px;
 		order: 1;
 	}
-
 	.infatuationP {
 		margin-left: 20px;
 	}
-
 	.timeOutImg {
 		width: 190px;
 		margin-right: 100px;
 		margin: 0;
 	}
-
 	.timeOutP {
 		margin-bottom: 20px;
 	}
-
 	.thrillistImg {
 		margin: 0;
 		margin-top: 5px;
 		margin-left: 20px;
 		width: 190px;
 	}
-
 	.thrillist {
 		margin-top: -20px;
 		margin-left: 20px;
 	}
+	/* //////////////////////////////////// Press (ABOVE) /////////////////////////////////////// */
+	/* ///////////////////////////////////////////////////////////////////////////////////////// */
 
-/* ////////////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
-.info{
-	color: wheat;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-	.info .info-title {
-		font-size: 50px;
-	}
-	.info .location {
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
+	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
+	.info{
+		color: wheat;
 		display: flex;
 		flex-flow: column;
 		align-items: center;
@@ -137,61 +118,67 @@
 		.info .info-title {
 			font-size: 50px;
 		}
-		.info .info-content {
+		.info .location {
 			display: flex;
-			flex-flow: row;
-			width: 100%;
-			justify-content: space-between;
+			flex-flow: column;
+			align-items: center;
 		}
-			.info .info-content .location {
-				display: flex;
-				flex-flow: column;
-				align-items: center;
-				margin: 0 150px;
+			.info .info-title {
+				font-size: 50px;
 			}
-				.info .info-content .location .address {
+			.info .info-content {
+				display: flex;
+				flex-flow: row;
+				width: 100%;
+				justify-content: space-between;
+			}
+				.info .info-content .location {
 					display: flex;
 					flex-flow: column;
 					align-items: center;
+					margin: 0 150px;
 				}
-			
-			.info .info-content .week-schedule {
-				display: flex;
-				flex-flow: column;
-				justify-content: center;
-			}
-				.info .info-content .week-schedule .weekday-container {
-					display: flex;
-					flex-flow: row;
-					margin: 5px 10px;
-					/* padding: 0 50px; */
-					color: wheat;
-					text-align: center;
-					justify-content: space-between;
-				}
-				.info .info-content .week-schedule .weekday-container.today {
-					color: rgb(235, 146, 146);
-				}
-					.info .info-content .week-schedule .weekday-container .title {
-						width: 125px;
-						text-align: right;
-						margin: 0 10px;
-					}
-					.info .info-content .week-schedule .weekday-container .open-close-container {
+					.info .info-content .location .address {
 						display: flex;
 						flex-flow: column;
-						justify-content: left;
-						text-align: left;
+						align-items: center;
 					}
-						.info .info-content .week-schedule .weekday-container .open-close-container .open-close.now {
-							/* padding: 0 100px; */
-							font-weight: 900;
+				
+				.info .info-content .week-schedule {
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+				}
+					.info .info-content .week-schedule .weekday-container {
+						display: flex;
+						flex-flow: row;
+						margin: 5px 10px;
+						/* padding: 0 50px; */
+						color: wheat;
+						text-align: center;
+						justify-content: space-between;
+					}
+					.info .info-content .week-schedule .weekday-container.today {
+						color: rgb(235, 146, 146);
+					}
+						.info .info-content .week-schedule .weekday-container .title {
+							width: 125px;
+							text-align: right;
+							margin: 0 10px;
 						}
+						.info .info-content .week-schedule .weekday-container .open-close-container {
+							display: flex;
+							flex-flow: column;
+							justify-content: left;
+							text-align: left;
+						}
+							.info .info-content .week-schedule .weekday-container .open-close-container .open-close.now {
+								/* padding: 0 100px; */
+								font-weight: 900;
+							}
 	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
-	body {
-		background-image: url("./assets/images/Tomoe_Background_Final.jpg");
-	}
+
 	.menu {
 		display: flex;
 		flex-direction: column;
@@ -212,10 +199,8 @@
 	.menu-container {
 		display: flex;
 		flex-direction: column;
+		padding: 30px;
 		margin: 30px;
-	}
-	.menu-content {
-		background-color:rgba(0, 0, 0, .35);
 	}
 	.menu-list-title {
 		align-self: center;
@@ -250,92 +235,179 @@
 		.menu-item-container .price{
 			text-align: right;
 		}
-		.close-button {
-			font-size: 42px;
-			color: gray;
-		}
+			.info .week-schedule .weekday-container .open-close.now {
+				/* padding: 0 100px; */
+				font-weight: 900;
+			}
+	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+	.close-button {
+		font-size: 42px;
+		color: gray;
+	}
+	.menu-image {
+		width: 80%;
+		height: 80%;
+	}
 }
 
-@media(min-width: 600px) {
-	/* Christina - Press Reviews */
-	.press-Reviews {
-		display: grid;
+@media(min-width: 700px){
+
+   	.header {
+		background: url('../src/assets/images/Hero.jpg') center;
+		min-height: 188px;
+		background-repeat: no-repeat;
+		background-size: cover;
+   	}
+	.nav-item-container {
+		/* margin: 0; */
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
+	.nav-item {
+		align-self: baseline;
+		text-decoration: none;
+		font-family: TrajanPro3;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: normal;
+		/* letter-spacing: -0.01px; */
+		color: white;
+	}
+	
+	.menu-container {
+		justify-content: space-around;
+	}
+
+	.menu-item {
+		font-weight: 600;
+	}
+
+	.menu-list-title, .menu-title {
+		color: white;
+	}
+
+	.menu-title-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu-title {
+		justify-self: center;
+		align-self: center;
+	}
+
+	.menu {
+		justify-items: center;
+		align-items: center;
+	}
+	.menu-image {
+		min-width: 80%;
+		min-height: 80%;
+	}
+
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
+	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
+	.info{
+		color: wheat;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+		.info .info-title {
+			font-size: 50px;
+		}
+		.info .location {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+		}
+			.info .location .address {
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+			}
+		.info .week-schedule {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+		}
+			.info .week-schedule .weekday-container {
+				margin: 30px 10px;
+				/* padding: 0 50px; */
+				color: wheat;
+				text-align: center;
+			}
+			.info .week-schedule .weekday-container.today {
+				color: red;
+			}
+				.info .week-schedule .weekday-container .open-close.now {
+					/* padding: 0 100px; */
+					font-weight: 900;
+				}
+	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
+	
+	/* /////////////////////////////////////   Christina  //////////////////////////////////// */
+	/* //////////////////////////////////// Press (BELOW) //////////////////////////////////// */
 
 	.gridContainer {
-		display: grid;
 		grid-template-columns: auto;
-		grid-gap: 10px;
-		margin-left: 0px;
 	}
-
 	.fullReview {
-		margin-top: 10px;
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-gap: 10px;
 		margin-left: 0px;
 	}
-
 	.img {
 		margin-top: 20px;
-		order: 1;
-		margin-left: 70px;
 	}
-
 	.review {
-		margin-left: 30px;
-		color: white;
 		max-width: 490px;
-		max-height: 72px;
-		overflow-wrap: break-word;
-		order: 2;
+		margin-top: 100px;
 		font-family: 'Gill Sans', sans-serif;
 		font-style: normal;
-		margin: 0;
-		margin-top: 100px;
 		font-size: 22px;
+		order: 2;
 	}
-
 	.infatuationImg {
-		height: 302px;
 		width: 511px;
+		height: 302px;
 		margin-left: -20px;
-		order: 1;
 	}
-
 	.infatuationP {
 		margin-left: -20px;
 		margin-top: 80px;
 	}
-
 	.timeOutImg {
-		height: 117px;
 		width: 309px;
 		margin-top: 10px;
+		height: 117px;
 	}
-
 	.timeOutP {
-		margin-bottom: 20px;
 		margin-left: 90px;
 		margin-top: 15px;
 	}
-
 	.thrillistImg {
 		height: 103px;
 		width: 298px;
 		margin: 0;
-		margin-top: 5px;
 		margin-left: 70px;
 	}
-
 	.thrillistP {
 		margin-bottom: 90px;
 		margin-left: 90px;
 		margin-top: 15px;
 	}
-
 	.thrillist {
 		margin-top: 70px;
 	}
+	/* //////////////////////////////////// Press (ABOVE) /////////////////////////////////////// */
+	/* ////////////////////////////////////////////////////////////////////////////////////////// */
 }

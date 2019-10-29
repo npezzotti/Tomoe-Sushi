@@ -33,8 +33,9 @@ export default function Menu() {
         }
     ]
     return(
+        <div><div className="menu-title-container"><h1 className="menu-list-title" id='menu'>Menu:</h1></div>
         <div className="menu-container">
-            <h1 className="menu-list-title" id='menu'>Menu:</h1>
+            
             <div className="menu-list">
                 {menus.map(item => {
                     return(
@@ -53,6 +54,7 @@ export default function Menu() {
                 {menu==="KITCHEN" && <Kitchen changeMenu={changeMenu}/>}
                 {menu==="DRINKS" && <Drinks changeMenu={changeMenu}/>}
             </div>
+        </div>
         </div>
     )
 }
