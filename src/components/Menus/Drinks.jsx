@@ -1,6 +1,5 @@
-import React from 'react';
-import json from './menu';
-
+import React from 'react'
+import json from './menu'
 
 const menu = json
 
@@ -8,7 +7,7 @@ export default function Drinks(props){
     return(
         <div className="menu-container" style={{color: "white"}}>
         <div className="close-button" onClick={() => props.changeMenu(null)}>&times;</div>
-        <h3 className="menu-category">Soda/Juice</h3>
+            <h3 className="menu-category">Soda/Juice</h3>
         {
             menu[4].Drinks[0].Soda_Juice.map(menuItem => {
                 return(
