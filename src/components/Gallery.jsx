@@ -66,14 +66,13 @@ export default function Gallery () {
                 containerClass="carousel-container"
                 arrows={true}
                 renderButtonGroupsOutside={true}
-                centerMode={true}
                 itemClass="carousel-item-padding-40-px"
                 additionalTransfrom={0}
             >
 
-            {galleryImages.map((image, index) => (
-                <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={image} alt='' /></div>
-            ))}
+                {galleryImages.map((image, index) => (
+                    <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={image} alt='' /></div>
+                ))}
             </Carousel>
         </div>
     )
