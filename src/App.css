@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -10,6 +12,7 @@ body {
 	background-image: url('./assets/images/Tomoe_Background_Final.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	font-family: 'Cinzel', serif;
 }
 
 @media(min-width: 300px){
@@ -68,9 +71,9 @@ body {
 		margin-left: 70px;
 	}
 	.review {
+		margin-left: 30px;
 		max-width: 300px;
 		max-height: 72px;
-		margin-left: 30px;
 		color: white;
 		overflow-wrap: break-word;
 		order: 2;
@@ -109,7 +112,7 @@ body {
 
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
-	.info{
+	.info {
 		color: wheat;
 		display: flex;
 		flex-flow: column;
@@ -123,9 +126,6 @@ body {
 			flex-flow: column;
 			align-items: center;
 		}
-			.info .info-title {
-				font-size: 50px;
-			}
 			.info .info-content {
 				display: flex;
 				flex-flow: row;
@@ -224,7 +224,6 @@ body {
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 0 10px;
-
 	}
 		.menu-item-container .menu-item {
 			white-space: nowrap;
@@ -241,30 +240,17 @@ body {
 		.menu-item-container .price{
 			text-align: right;
 		}
-			.info .week-schedule .weekday-container .open-close.now {
-				/* padding: 0 100px; */
-				font-weight: 900;
-			}
-	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
-	/* ////////////////////////////////////////////////////////////////////////////////////// */
 
 	.close-button {
 		font-size: 42px;
 		color: gray;
-	}
-	.menu-image {
-		width: 80%;
-		height: 80%;
 	}
 }
 
 @media(min-width: 700px){
 
    	.header {
-		background: url('../src/assets/images/Hero.jpg') center;
-		min-height: 188px;
-		background-repeat: no-repeat;
-		background-size: cover;
+		min-height: 488px;
    	}
 	.nav-item-container {
 		/* margin: 0; */
@@ -299,6 +285,8 @@ body {
 
 	.menu-list-title, .menu-title {
 		color: white;
+		justify-self: center;
+		align-self: center;
 	}
 
 	.menu-title-container {
@@ -306,12 +294,6 @@ body {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.menu-title {
-		justify-self: center;
-		align-self: center;
-		font-size: 24px;
 	}
 
 	.menu {
@@ -325,43 +307,9 @@ body {
 
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
-	.info{
-		color: wheat;
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-	}
-		.info .info-title {
-			font-size: 50px;
-		}
-		.info .location {
-			display: flex;
-			flex-flow: column;
-			align-items: center;
-		}
-			.info .location .address {
-				display: flex;
-				flex-flow: column;
-				align-items: center;
-			}
-		.info .week-schedule {
-			display: flex;
-			flex-flow: row;
-			justify-content: center;
-		}
 			.info .week-schedule .weekday-container {
 				margin: 30px 10px;
-				/* padding: 0 50px; */
-				color: wheat;
-				text-align: center;
 			}
-			.info .week-schedule .weekday-container.today {
-				color: red;
-			}
-				.info .week-schedule .weekday-container .open-close.now {
-					/* padding: 0 100px; */
-					font-weight: 900;
-				}
 	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	
@@ -381,15 +329,9 @@ body {
 		margin-left: 70px;
 	}
 	.review {
-		margin-left: 30px;
-		color: white;
 		max-width: 490px;
-		max-height: 72px;
-		overflow-wrap: break-word;
 		order: 2;
-		font-family: 'Gill Sans', sans-serif;
 		font-style: normal;
-		margin: 0;
 		margin-top: 100px;
 		font-size: 22px;
 	}
