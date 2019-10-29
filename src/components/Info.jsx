@@ -145,14 +145,15 @@ export default function Info({dt}){
             <div className="info-content">
                 <div className="location">
                     <div className="location-text">
+
+                    </div>
+                    <div className="location-map">
+                        <Map />                        
                         <div className='pre'>Located at:</div>
                         <div className="address">
                             <div className="street">172 Thompson St</div>
                             <div className="city-state">New York, NY 10012</div>
                         </div>
-                    </div>
-                    <div className="location-map">
-                        <Map />
                     </div>
                 </div>
                 <div className="week-schedule">
