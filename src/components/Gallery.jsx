@@ -45,7 +45,26 @@ const galleryImages = [
     "cropped_images/Gallery5.jpg",
     "cropped_images/Gallery6.jpg",
     "cropped_images/Gallery7.jpg",
-    "cropped_images/Gallery8.jpg"
+    "cropped_images/Gallery8.jpg",
+    "cropped_images/Gallery9.jpg",
+    "cropped_images/Gallery10.jpg",
+    "cropped_images/Gallery11.jpg",
+    "cropped_images/Gallery12.jpg",
+    "cropped_images/Gallery13.jpg",
+    "cropped_images/Gallery14.jpg",
+    "cropped_images/Gallery15.jpg",
+    "cropped_images/Gallery16.jpg",
+    "cropped_images/Gallery17.jpg",
+    "cropped_images/Gallery18.jpg",
+    "cropped_images/Gallery19.jpg",
+    "cropped_images/Gallery20.jpg",
+    "cropped_images/Gallery21.jpg",
+    "cropped_images/Gallery22.jpg",
+    "cropped_images/Gallery23.jpg",
+    "cropped_images/Gallery24.jpg",
+    "cropped_images/Gallery25.jpg",
+    "cropped_images/Gallery26.jpg",
+    "cropped_images/Gallery27.jpg"
 ]
 
 export default function Gallery () {
