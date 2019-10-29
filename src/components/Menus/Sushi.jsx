@@ -14,6 +14,7 @@ export default function Sushi(props) {
                     <div className="menu-info-container">
                         <div className="menu-item-container">
                             <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
