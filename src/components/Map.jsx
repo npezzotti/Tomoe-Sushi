@@ -58,7 +58,8 @@ const _onViewportChange = viewport => {
                 height={viewport.height}
                 latitude={viewport.latitude}
                 longitude={viewport.longitude}
-                zoom={viewport.zoom}
+				zoom={viewport.zoom}
+				pitch={45}
                 mapStyle="mapbox://styles/bartconsedine/ck2aiog9s37ca1co3xfzyjx63"
                 mapboxApiAccessToken='pk.eyJ1IjoiYmFydGNvbnNlZGluZSIsImEiOiJjazBudWVxajUwMXdlM2hwZzFzcDQ5cWR5In0.376OjUpSFMy-y-PVfAeO9A'
                 
@@ -69,13 +70,13 @@ const _onViewportChange = viewport => {
                 <Marker    
                         className="markers" 
                         key="map" 
-                        latitude={40.724577}
-                        longitude={-74.002860}
+                        latitude={40.724}
+                        longitude={-74.0032}
                         offsetLeft={-10} offsetTop={-50}
 						>
                     <div  >
                                             
-                      <img height="50px" alt="pin" src={`images/pin.png`}/>
+                      <img height="50px" alt="pin" src={`/cropped_images/pin.png`}/>
                     </div>
                 </Marker>
       </ReactMapGL>

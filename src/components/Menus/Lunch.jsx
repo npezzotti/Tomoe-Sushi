@@ -1,18 +1,21 @@
-import React from 'react'
+// react
+import React from 'react';
 
-const menu= [{item: "apple", price: "$15"}]
-export default function Lunch(){
+// functions
+import {buildMenuInfoContainer} from './menuFxns.jsx'
+
+// modules
+import json from './menu';
+const menu = json
+
+export default function Lunch(props){
     return(
-        <div className="menu-container">
+        <div className="menu-container" style={{color: "white"}}>
+        <div className="close-button" onClick={() => props.changeMenu(null)}>&times;</div>
             <h3 className="menu-category">Lunch Special from Sushi Bar</h3>
-            {menu.map(menuItem => {
+            {menu[1].Lunch[0].Lunch_Special_from_Sushi_Bar.map(menuItem => {
                 return(
-                    <div className="menu-info-container">
-                        <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
-                            <div className="price">{menuItem.price}</div>
-                        </div>
-                    </div>
+                    <>{buildMenuInfoContainer(menuItem)}</>
                 )
             })}
         </div>

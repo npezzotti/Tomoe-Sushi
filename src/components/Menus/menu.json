@@ -1,644 +1,896 @@
-{
-    "Dessert": [
-        {
-            "Dessert": [
-                {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
+[
+    {
+        "Dessert": [
+            {
+                "Dessert": [
+                    {
+                    "item":"Green Tea Ice Cream",
+                    "description": "",
+                    "price": "4.00"
+                    },
+                    {
+                    "item":"Red Bean Ice Cream",
+                    "description": "",
+                    "price": "4.00"
                 },
                 {
-                 "item":"Red Bean Ice Cream",
-                 "description": "",
-                 "price": "4.00"
-              },
-              {
-                 "item":"Extra Homeade Red Bean",
-                 "description": "",
-                 "price": "1.00"
-              } 
-            ]
-        }
-    ],
-    "Lunch": [
-        {
-            "Lunch_Special_from _Sushi_Bar": [
-                {
-                    "item":"Sushi Lunch",
-                    "description": "assorted 7 pc of sushi and half-roll",
-                    "price": "17.75"
-                 },
-                 {
-                    "item":"Combination Maki",
-                    "description": "tuna, yellow tail with scallion and california roll",
-                    "price": "17.00"
-                 },
-                 {
-                    "item":"California Maki",
-                    "description": "crabstick, avocado, cucumber, and fish roe- 3 rolls",
-                    "price": "17.50"
-                 },
-                 {
-                    "item":"Sashimi Lunch",
-                    "description": "assorted 10 pc of raw fish- side of rice",
-                    "price": "19.00"
-                 },
-                 {
-                    "item":"Tomoe Special",
-                    "description": "sushi 4 pc, shumai, chicken teriyaki, korroke, breaded deep fried shrimp and rice",
-                    "price": "20.00"
-                 }
-            ]
-        }
-     ],
-    "Sushi_Bar": [
-        {
-            "Sushi-Dinner": [
-                {
-                   "item":"Sushi Regular",
-                   "description": "assorted 8 pc of sushi and half tuna roll",
-                   "price": "27.00"
-                },
-                {
-                    "item":"Sushi-Deluxe",
-                    "description": "assorted 10 pc of sushi and one roll",
-                    "price": "31.50"
-                 },
-                 {
-                    "item":"Sushi-Sashimi Combination",
-                    "description": "10 pc of sashimi, 5 pc of sushi and half spicy tuna",
-                    "price": "35.00"
-                 },
-                 {
-                    "item":"Battera",
-                    "description": "pressed eel, shrimp, mackerel, salmon, on sushi rice",
-                    "price": "16.50"
-                 },
-                 {
-                    "item":"Chirashi",
-                    "description": "assorted raw fish on sushi rice in a box",
-                    "price": "29.50"
-                 },
-                 {
-                    "item":"Tekka-Don",
-                    "description": "raw tuna on sushi rice in a box",
-                    "price": "29.50"
-                 }
-            ],
-            "Regular_Roll/Hand_Roll_a_la_Carte": [
-                {
-                   "item":"Avo-Kan",
-                   "description": "dried ground shavings and avocado",
-                   "price": "4.75"
-                },
-                {
-                    "item":"Ana Kyu",
-                    "description": "sea-eel and cucumber",
-                    "price": "6.75"
-                 },
-                 {
-                    "item":"California Roll",
-                    "description": "avocado, crabstik, cucumber, and fish",
-                    "price": "6.50"
-                 },
-                 {
-                    "item":"Ebi-Lettuce Mayo",
-                    "description": "shrimp tempura and cucumber",
-                    "price": "6.50"
-                 },
-                 {
-                    "item":"Ebiten",
-                    "description": "shrimp, lettuce, mayo and fish roe",
-                    "price": "7.00"
-                 },
-                 {
-                    "item":"Ebiten",
-                    "description": "shrimp tempura cucumber",
-                    "price": "7.00"
-                 },
-                 {
-                    "item":"Ikura",
-                    "description": "salmon roe and cucumber",
-                    "price": "6.50"
-                 },
-                 {
-                    "item":"Kappa",
-                    "description": "cucumber",
-                    "price": "6.50"
-                 },
-                 {
-                    "item":"Spicy Kappa",
-                    "description": "cucumber with spicy sauce",
-                    "price": "4.25"
-                 },
-                 {
-                    "item":"Mentai-Yamaimo",
-                    "description": "spicy cod fish roe and mountain yam",
-                    "price": "5.00"
-                 },
-                 {
-                    "item":"Mentai-Kyuri",
-                    "description": "spicy cod fish rose and cucumber",
-                    "price": "6.00"
-                 },
-                 {
-                    "item":"Mentai-Ika",
-                    "description": "spicy cod fish roe and squid",
-                    "price": "5.50"
-                 },
-                 {
-                    "item":"Negi-Hamachi",
-                    "description": "yellow tail and scallion",
+                    "item":"Extra Homeade Red Bean",
+                    "description": "",
+                    "price": "1.00"
+                } 
+                ]
+            }
+        ]
+    },
+    {    
+        "Lunch": [
+            {
+                "Lunch_Special_from_Sushi_Bar": [
+                    {
+                        "item":"Sushi Lunch",
+                        "description": "assorted 7 pc of sushi and half-roll",
+                        "price": "17.75"
+                    },
+                    {
+                        "item":"Combination Maki",
+                        "description": "tuna, yellow tail with scallion and california roll",
+                        "price": "17.00"
+                    },
+                    {
+                        "item":"California Maki",
+                        "description": "crabstick, avocado, cucumber, and fish roe- 3 rolls",
+                        "price": "17.50"
+                    },
+                    {
+                        "item":"Sashimi Lunch",
+                        "description": "assorted 10 pc of raw fish- side of rice",
+                        "price": "19.00"
+                    },
+                    {
+                        "item":"Tomoe Special",
+                        "description": "sushi 4 pc, shumai, chicken teriyaki, korroke, breaded deep fried shrimp and rice",
+                        "price": "20.00"
+                    }
+                ]
+            }
+        ]
+        },
+    {
+        "Sushi_Bar": [
+            {
+                "Sushi_Dinner": [
+                    {
+                    "item":"Sushi Regular",
+                    "description": "assorted 8 pc of sushi and half tuna roll",
+                    "price": "27.00"
+                    },
+                    {
+                        "item":"Sushi-Deluxe",
+                        "description": "assorted 10 pc of sushi and one roll",
+                        "price": "31.50"
+                    },
+                    {
+                        "item":"Sushi-Sashimi Combination",
+                        "description": "10 pc of sashimi, 5 pc of sushi and half spicy tuna",
+                        "price": "35.00"
+                    },
+                    {
+                        "item":"Battera",
+                        "description": "pressed eel, shrimp, mackerel, salmon, on sushi rice",
+                        "price": "16.50"
+                    },
+                    {
+                        "item":"Chirashi",
+                        "description": "assorted raw fish on sushi rice in a box",
+                        "price": "29.50"
+                    },
+                    {
+                        "item":"Tekka-Don",
+                        "description": "raw tuna on sushi rice in a box",
+                        "price": "29.50"
+                    }
+                ]
+            },
+            {
+                "Regular_Roll_Hand_Roll_a_la_Carte": [
+                    {
+                    "item":"Avo-Kan*",
+                    "description": "dried ground shavings and avocado",
                     "price": "4.75"
-                 },
-                 {
-                    "item":"Negi-Toro",
-                    "description": "fatty tuna and scallion",
-                    "price": "6.75"
-                 },
-                 {
-                    "item":"Oshinko",
-                    "description": "japanese pickles either radish or burdock",
-                    "price": "7.25"
-                 },
-                 {
-                    "item":"Saki-Negi",
-                    "description": "fermented soybeans",
-                    "price": "6.00"
-                 },
-                 {
-                    "item":"Natto",
-                    "description": "fermented soybeans",
-                    "price": "6.00"
-                 },
-                 {
-                    "item":"Natto",
-                    "description": "fermented soybeans",
-                    "price": "6.00"
-                 },
-                 {
-                    "item":"Natto",
-                    "description": "fermented soybeans",
-                    "price": "6.00"
-                 }
-            ],
-            "Sushi-Dinner": [
-                {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
-                }
-            ],
-            "Sushi-Dinner": [
-                {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
-                }
-            ],
-            "Sushi-Dinner": [
-                {
-                   "item":"Green Tea Ice Cream",
-                   "description": "",
-                   "price": "4.00"
-                }
-            ]
-        }
-    ],
-    "Kitchen": [
-        {
-            "": [
-                {
-                   "item":"Chicken-Donburi",
-                   "description": "chicken teriyaki over rice",
-                   "price": "9.00"
+                    },
+                    {
+                        "item":"Ana Kyu",
+                        "description": "sea-eel and cucumber",
+                        "price": "6.75"
+                    },
+                    {
+                        "item":"California Roll",
+                        "description": "avocado, crabstik, cucumber, and fish",
+                        "price": "6.50"
+                    },
+                    {
+                        "item":"Ebi-Lettuce Mayo",
+                        "description": "shrimp tempura and cucumber",
+                        "price": "6.50"
+                    },
+                    {
+                        "item":"Ebiten",
+                        "description": "shrimp, lettuce, mayo and fish roe",
+                        "price": "7.00"
+                    },
+                    {
+                        "item":"Ebiten",
+                        "description": "shrimp tempura cucumber",
+                        "price": "7.00"
+                    },
+                    {
+                        "item":"Ikura",
+                        "description": "salmon roe and cucumber",
+                        "price": "6.50"
+                    },
+                    {
+                        "item":"Kappa*",
+                        "description": "cucumber",
+                        "price": "6.50"
+                    },
+                    {
+                        "item":"Spicy Kappa*",
+                        "description": "cucumber with spicy sauce",
+                        "price": "4.25"
+                    },
+                    {
+                        "item":"Mentai-Yamaimo",
+                        "description": "spicy cod fish roe and mountain yam",
+                        "price": "5.00"
+                    },
+                    {
+                        "item":"Mentai-Kyuri",
+                        "description": "spicy cod fish rose and cucumber",
+                        "price": "6.00"
+                    },
+                    {
+                        "item":"Mentai-Ika",
+                        "description": "spicy cod fish roe and squid",
+                        "price": "5.50"
+                    },
+                    {
+                        "item":"Negi-Hamachi",
+                        "description": "yellow tail and scallion",
+                        "price": "4.75"
+                    },
+                    {
+                        "item":"Natto*",
+                        "description": "fermented soybeans",
+                        "price": "6.00"
+                    },
+                    {
+                        "item":"Negi-Toro",
+                        "description": "fatty tuna and scallion",
+                        "price": "6.75"
+                    },
+                    {
+                        "item":"Oshinko*",
+                        "description": "japanese pickles either radish or burdock",
+                        "price": "7.25"
+                    },
+                    {
+                        "item":"Saki-Negi",
+                        "description": "salmon and scallion",
+                        "price": "4.75"
+                    },
+                    {
+                        "item":"Salmon Skin",
+                        "description": "fried salmon skin and cucumbers",
+                        "price": "5.50"
+                    },
+                    {
+                        "item":"Tama-Mayo",
+                        "description": "omlette, fish roe, cucumber and mayo",
+                        "price": "6.00"
+                    },
+                    {
+                        "item":"Tekka",
+                        "description": "tuna",
+                        "price": "5.25"
+                    },
+                    {
+                        "item":"Spicy Hotate",
+                        "description": "spicy scallop, cucumber, and fish roe",
+                        "price": "6.50"
+                    },
+                    {
+                        "item":"Spicy Tekka",
+                        "description": "spicy mayo tuna",
+                        "price": "7.00"
+                    },
+                    {
+                        "item":"Spider Roll (2 rolls)",
+                        "description": "soft shell crab and cucumber",
+                        "price": "7.25"
+                    },
+                    {
+                        "item":"Tekka-Avo",
+                        "description": "tuna and avocado",
+                        "price": "14.00"
+                    },
+                    {
+                        "item":"Ume-Shiso*",
+                        "description": "pickled plum and mint leaf",
+                        "price": "7.75"
+                    },
+                    {
+                        "item":"Ume-Shiso-Yamaimo",
+                        "description": "uma- shiso and mountain",
+                        "price": "4.25"
+                    },
+                    {
+                        "item":"Una-Kyu",
+                        "description": "sea urchin",
+                        "price": "4.75"
+                    },
+                    {
+                        "item":"Una-Avo",
+                        "description": "fresh water eel and cucumber",
+                        "price": "6.75"
+                    },
+                    {
+                        "item":"Uni",
+                        "description": "fresh water eel and avocado",
+                        "price": "7.50"
+                    }
+                ]
+            },
+            {
+                "Maki_Dinner": [
+                    {
+                    "item":"Tekka (3 rolls)",
+                    "description": "tuna roll",
+                    "price": "18.75"
+                    },
+                    {
+                        "item":"California (3 rolls)",
+                        "description": "crabstick, avocado, cucumber, and fish roe",
+                        "price": "18.75"
+                    },
+                    {
+                        "item":"Futo (1 roll)",
+                        "description": "shrimp, egg, pickles, fish roe, and vegetables",
+                        "price": "16.25"
+                    },
+                    {
+                        "item":"Kappa (3 rolls)",
+                        "description": "cucumber roll",
+                        "price": "12.75"
+                    },
+                    {
+                        "item":"Combination",
+                        "description": "tuna, yellow tail with scallion and california roll",
+                        "price": "18.75"
+                    }
+                ]
+            },
+            {
+                "Sushi_Sashimi_a_la_Carte": [
+                    {
+                    "item":"Amaebi",
+                    "description": "sweet shrimp",
+                    "price": "4.75"
+                    },
+                    {
+                        "item":"Anago",
+                        "description": "sea eel",
+                        "price": "5.75"
+                    },
+                    {
+                        "item":"Ebi",
+                        "description": "shrimp",
+                        "price": "4.25"
+                    },
+                    {
+                        "item":"Hamachi",
+                        "description": "regular yellow tail",
+                        "price": "5.25"
+                    },
+                    {
+                        "item":"Amaebi",
+                        "description": "yellow tail",
+                        "price": "6.00"
+                    },
+                    {
+                        "item":"Hirame",
+                        "description": "fluke",
+                        "price": "4.50"
+                    },
+                    {
+                        "item":"Hikkigai",
+                        "description": "Stimpson clam",
+                        "price": "4.00"
+                    },
+                    {
+                        "item":"Hotate",
+                        "description": "scallop",
+                        "price": "4.75"
+                    },
+                    {
+                        "item":"Ika",
+                        "description": "squid",
+                        "price": "4.25"
+                    },
+                    {
+                        "item":"Ikura",
+                        "description": "salmon roe",
+                        "price": "4.75"
+                    },
+                    {
+                        "item":"Kanikama",
+                        "description": "crabstick",
+                        "price": "4.00"
+                    },
+                    {
+                        "item":"Katsuo",
+                        "description": "bonito",
+                        "price": "4.50"
+                    },
+                    {
+                        "item":"Kanpachi",
+                        "description": "baby yellow tail",
+                        "price": "6.00"
+                    },
+                    {
+                        "item":"Maguro",
+                        "description": "tuna",
+                        "price": "5.25"
+                    },
+                    {
+                        "item":"Masago",
+                        "description": "smelt fish roe",
+                        "price": "4.00"
+                    },
+                    {
+                        "item":"Mentaiko",
+                        "description": "spicy cod fish roe",
+                        "price": "4.50"
+                    },
+                    {
+                        "item":"Mirugai",
+                        "description": "giant clam",
+                        "price": "5.50"
+                    },
+                    {
+                        "item":"Saba",
+                        "description": "mackerel",
+                        "price": "4.25"
+                    },
+                    {
+                        "item":"Saba",
+                        "description": "mackerel",
+                        "price": "4.25"
+                    },
+                    {
+                        "item":"Shima",
+                        "description": "aji striped jack",
+                        "price": "6.00"
+                    },
+                    {
+                        "item":"Shake",
+                        "description": "salmon",
+                        "price": "4.75"
+                    },
+                    {
+                        "item":"Shiro Maguro",
+                        "description": "smoked white tuna",
+                        "price": "4.50"
+                    },
+                    {
+                        "item":"Sawara",
+                        "description": "spanish mackerel",
+                        "price": "4.25"
+                    },
+                    {
+                        "item":"Tai",
+                        "description": "japanese red snapper",
+                        "price": "5.50"
+                    },
+                    {
+                        "item":"Tako",
+                        "description": "octopus",
+                        "price": "4.50"
+                    },
+                    {
+                        "item":"Tamago",
+                        "description": "sweet omlette",
+                        "price": "3.00"
+                    },
+                    {
+                        "item":"Tobiko",
+                        "description": "flying fish roe",
+                        "price": "4.50"
+                    },
+                    {
+                        "item":"Toro",
+                        "description": "fatty tuna",
+                        "price": "Market Price"
+                    },
+                    {
+                        "item":"Unagi",
+                        "description": "fresh water eel",
+                        "price": "5.75"
+                    },
+                    {
+                        "item":"Uni",
+                        "description": "sea urchin",
+                        "price": "6.75"
+                    }
+                ]
+            },
+            {
+                "Sashimi_Dinner": [
+                    {
+                    "item":"Sashimi Regular",
+                    "description": "assorted 12 pc of raw fish",
+                    "price": "27.50"
+                    },
+                    {
+                        "item":"Sashimi Deluxe",
+                        "description": "assorted 16 pc of raw fish",
+                        "price": "36.00"
+                    }
+                ]
+            }
+        ]
+        },
+    {
+        "Kitchen": [
+            {
+                "unDefined": [
+                    {
+                    "item":"Chicken-Donburi",
+                    "description": "chicken teriyaki over rice",
+                    "price": "9.00"
+                    },
+                    {
+                    "item":"Yasai-Donburi",
+                    "description": "sauteed vegetables over rice",
+                    "price": "8.50"
                 },
                 {
-                 "item":"Yasai-Donburi",
-                 "description": "sauteed vegetables over rice",
-                 "price": "8.50"
-              },
-              {
-                 "item":"Oyako-Donburi",
-                 "description": "",
-                 "price": "9.00"
-              },
-              {
-                "item":"Kitsune-Soba or Udon",
-                "description": "cooked bean curd over noodle in broth",
-                "price": "8.00"
-             },
-             {
-                "item":"Ramen Miso or Shoyu",
-                "description": "egg noodle with vegetables in broth",
-                "price": "8.50"
-             },
-             {
-                "item":"Zaru Soba",
-                "description": "cold buck wheat noodle with dipping sauce",
-                "price": "8.25"
-             },
-             {
-                "item":"Yakisoba",
-                "description": "pan-fried noodle with vegetables",
-                "price": "8.25"
-             }  
-            ],
-            "Fresh_Seafood": [
+                    "item":"Oyako-Donburi",
+                    "description": "chicken with egg over rice",
+                    "price": "9.00"
+                },
                 {
-                    "item":"Tako-Su",
-                    "description": "octopus in vinegar sauce",
-                    "price": "10.00"
-                 },
-                 {
-                    "item":"Yamakake",
-                    "description": "raw tuna or ground japanese yam",
-                    "price": "9.00"
-                 },
-                 {
-                    "item":"Negitoro-Yamakake",
-                    "description": "negitoro on ground japanese yam",
-                    "price": "7.50"
-                 },
-                 {
-                    "item":"Sunomono",
-                    "description": "assorted seafood in vinegar sauce",
-                    "price": "9.50"
-                 }
-            ],
-            "Cooked_Seafood": [
+                    "item":"Kitsune-Soba or Udon",
+                    "description": "cooked bean curd over noodle in broth",
+                    "price": "8.00"
+                },
                 {
-                    "item":"SakeKawa-Kobachi",
-                    "description": "fried salmon skin in vinegar sauce",
-                    "price": "6.50"
-                 },
-                 {
-                    "item":"Hamaguri-Sakamushi",
-                    "description": "raw tuna or ground japanese yam",
-                    "price": "9.00"
-                 },
-                 {
-                    "item":"Hamachi-Kama",
-                    "description": "negitoro on ground japanese yam",
-                    "price": "14.00"
-                 },
-                 {
-                    "item":"Sake-Kama",
-                    "description": "grilled salmon neck",
-                    "price": "9.00"
-                 },
-                 {
-                    "item":"Toro-Tsukeyaki",
-                    "description": "grilled, marinated fatty tuna",
-                    "price": "9.00"
-                 },
-                 {
-                    "item":"Komochi-Sishamo",
-                    "description": "grilled smelt fish, 4 pc",
-                    "price": "7.25"
-                 },
-                 {
-                    "item":"Buri-Arani",
-                    "description": "cooked yellow tail in sauce",
-                    "price": "9.00"
-                 },
-                 {
-                    "item":"Ika-Maru",
-                    "description": "broiled squid with ginger sauce",
-                    "price": "7.00"
-                 },
-                 {
-                    "item":"Salmon-Butter or Teriyaki",
-                    "description": "broiled salmon in butter or teriyaki",
+                    "item":"Ramen Miso or Shoyu",
+                    "description": "egg noodle with vegetables in broth",
                     "price": "8.50"
-                 },
-                 {
-                    "item":"Unagi-Kabyaki",
-                    "description": "broiled eel with teriyaki sauce",
-                    "price": "17.00"
-                 },
-                 {
-                    "item":"Ebi-Furai",
-                    "description": "breaded deep-fried shrimp, 4pc",
-                    "price": "12.00"
-                 }
-            ],
-            "Tempura": [
+                },
+                {
+                    "item":"Zaru Soba",
+                    "description": "cold buck wheat noodle with dipping sauce",
+                    "price": "8.25"
+                },
+                {
+                    "item":"Yakisoba",
+                    "description": "pan-fried noodle with vegetables",
+                    "price": "8.25"
+                }  
+                ]
+            },
+            {
+                "Fresh_Seafood": [
+                    {
+                        "item":"Tako-Su",
+                        "description": "octopus in vinegar sauce",
+                        "price": "10.00"
+                    },
+                    {
+                        "item":"Yamakake",
+                        "description": "raw tuna or ground japanese yam",
+                        "price": "9.00"
+                    },
+                    {
+                        "item":"Negitoro-Yamakake",
+                        "description": "negitoro on ground japanese yam",
+                        "price": "7.50"
+                    },
+                    {
+                        "item":"Sunomono",
+                        "description": "assorted seafood in vinegar sauce",
+                        "price": "9.50"
+                    }
+                ]
+            },
+            {
+                "Cooked_Seafood": [
+                    {
+                        "item":"SakeKawa-Kobachi",
+                        "description": "fried salmon skin in vinegar sauce",
+                        "price": "6.50"
+                    },
+                    {
+                        "item":"Hamaguri-Sakamushi",
+                        "description": "raw tuna or ground japanese yam",
+                        "price": "9.00"
+                    },
+                    {
+                        "item":"Hamachi-Kama",
+                        "description": "negitoro on ground japanese yam",
+                        "price": "14.00"
+                    },
+                    {
+                        "item":"Sake-Kama",
+                        "description": "grilled salmon neck",
+                        "price": "9.00"
+                    },
+                    {
+                        "item":"Toro-Tsukeyaki",
+                        "description": "grilled, marinated fatty tuna",
+                        "price": "9.00"
+                    },
+                    {
+                        "item":"Komochi-Sishamo",
+                        "description": "grilled smelt fish, 4 pc",
+                        "price": "7.25"
+                    },
+                    {
+                        "item":"Buri-Arani",
+                        "description": "cooked yellow tail in sauce",
+                        "price": "9.00"
+                    },
+                    {
+                        "item":"Ika-Maru",
+                        "description": "broiled squid with ginger sauce",
+                        "price": "7.00"
+                    },
+                    {
+                        "item":"Salmon-Butter or Teriyaki",
+                        "description": "broiled salmon in butter or teriyaki",
+                        "price": "8.50"
+                    },
+                    {
+                        "item":"Unagi-Kabyaki",
+                        "description": "broiled eel with teriyaki sauce",
+                        "price": "17.00"
+                    },
+                    {
+                        "item":"Ebi-Furai",
+                        "description": "breaded deep-fried shrimp, 4pc",
+                        "price": "12.00"
+                    }
+                ]
+            },
+            {
+                "Tempura": [
+                    {
+                        "item":"Tempura",
+                        "description": "small portion of assorted tempura",
+                        "price": "9.50"
+                    },
+                    {
+                        "item":"Ebi-Tempura",
+                        "description": "shrimp tempura 4 pc",
+                        "price": "11.50"
+                    },
+                    {
+                        "item":"Vegetables-Tempura",
+                        "description": "assorted vegetables tempura",
+                        "price": "8.75"
+                    },
+                    {
+                        "item":"Sweet Potato Tempura",
+                        "description": "yam tempura 8 pc",
+                        "price": "8.75"
+                    }
+                ]
+            },
+            {
+                "Meat": [
+                    {
+                        "item":"Tatsu-Age",
+                        "description": "fried chicken japanese style",
+                        "price": "7.75"
+                    },
+                    {
+                        "item":"Negimake",
+                        "description": "sliced beef wrapped around scallion with teriyaki sauce",
+                        "price": "9.75"
+                    },
+                    {
+                        "item":"Chicken-Teriyaki",
+                        "description": "broiled chicken with teriyaki sauce",
+                        "price": "9.25"
+                    }
+                ]
+            },
+            {
+            "Dinner": [
                 {
                     "item":"Tempura",
-                    "description": "small portion of assorted tempura",
-                    "price": "9.50"
-                 },
-                 {
-                    "item":"Ebi-Tempura",
-                    "description": "shrimp tempura 4 pc",
-                    "price": "11.50"
-                 },
-                 {
-                    "item":"Vegetables-Tempura",
-                    "description": "assorted vegetables tempura",
-                    "price": "8.75"
-                 },
-                 {
-                    "item":"Sweet Potato Tempura",
-                    "description": "yam tempura 8 pc",
-                    "price": "8.75"
-                 }
-            ],
-            "Meat": [
+                    "description": "fried shrimp, vegetables with tempura sauce",
+                    "price": "23.00"
+                },
                 {
-                    "item":"Tatsu-Age",
-                    "description": "fried chicken japanese style",
-                    "price": "7.75"
-                 },
-                 {
-                    "item":"Negimake",
-                    "description": "sliced beef wrapped around scallion with teriyaki sauce",
-                    "price": "9.75"
-                 },
-                 {
-                    "item":"Chicken-Teriyaki",
+                    "item":"Chicken Teriyaki",
                     "description": "broiled chicken with teriyaki sauce",
-                    "price": "9.25"
-                 }
-            ],
-        "Dinner": [
-            {
-                "item":"Tempura",
-                "description": "fried shrimp, vegetables with tempura sauce",
-                "price": "23.00"
-             },
-             {
-                "item":"Chicken Teriyaki",
-                "description": "broiled chicken with teriyaki sauce",
-                "price": "19.00"
-             },
-             {
-                "item":"Negi-Maki",
-                "description": "broiled sliced beef wrapped around scallion with teriyaki",
-                "price": "21.50"
-             },
-             {
-                "item":"Salmon Butter or Teriyaki",
-                "description": "grilled salmon neck",
-                "price": "19.00"
-             },
-             {
-                "item":"Beef-Steak Teriyaki/Ponzu",
-                "description": "broiled beef marinated with teriyaki or ponzu sauce",
-                "price": "28.00"
-             },
-             {
-                "item":"Una-Ju",
-                "description": "broiled eel with teriyaki sauce over rice",
-                "price": "23.50"
-             },
-             {
-                "item":"Yasai-Itame",
-                "description": "sauteed vegetables with o without chicken",
-                "price": "16.00"
-             },
-             {
-                "item":"Chicken-Katsu",
-                "description": "deep fried, breaded chicken with japanese bbq",
-                "price": "21.00"
-             },
-             {
-                "item":"Yose-Nabe",
-                "description": "assorted seafood, veg-beancurd in hot broth with ponzu",
-                "price": "21.00"
-             }
-        ],
-        "Noodles": [
-            {
-                "item":"Kitune-Udon",
-                "description": "cooked fried bean curd over noodles in broth",
-                "price": "8.00"
-             },
-             {
-                "item":"Tempura-Udon",
-                "description": "tempura over noodles in broth",
-                "price": "13.50"
-             },
-             {
-                "item":"Ramen (Miso-Shoyu)",
-                "description": "egg noodles with miso or soy sauce in broth",
-                "price": "8.50"
-             },
-             {
-                "item":"Yaki-Soba",
-                "description": "assorted sauted noodles and vegetables",
-                "price": "8.25"
-             },
-             {
-                "item":"Zaru- Soba/Udon",
-                "description": "cold buckweat noodles with dipping",
-                "price": "8.25"
-             }
-        ],
-        "Fried_&_Steamed Dishes": [
-            {
-                "item":"Korroke",
-                "description": "deep-fried potato croquette",
-                "price": "7.00"
-             },
-             {
-                "item":"Age-Tamago-Ankake",
-                "description": "deep-fried egg in special soup",
-                "price": "6.50"
-             },
-             {
-                "item":"Shumai",
-                "description": "steamed shrimp dumplings 7 pc",
-                "price": "6.75"
-             },
-             {
-                "item":"Gyoza",
-                "description": "fried pork dumplings 5pc",
-                "price": "6.75"
-             },
-             {
-                "item":"Spicy Gyoza",
-                "description": "fried spicy pork dumplings 5 pc",
-                "price": "6.75"
-             }
-        ],
-        "Tofu_&_Vegetables": [
-            {
-                "item":"Oshitashi",
-                "description": "broiled spinach with bonito flake",
-                "price": "5.00"
-             },
-             {
-                "item":"Hijiki",
-                "description": "cooked sea plants",
-                "price": "5.50"
-             },
-             {
-                "item":"Mushroom",
-                "description": "marinated mushrooms in garlic butter soy sauce",
-                "price": "7.75"
-             },
-             {
-                "item":"Edamame",
-                "description": "broiled soy beans",
-                "price": "4.75"
-             },
-             {
-                "item":"Agedashi Tofu",
-                "description": "fried bean curd in tempura sauce",
-                "price": "7.50"
-             },
-             {
-                "item":"Mabo-Tofu",
-                "description": "cooked bean curd in hot pepper sauce",
-                "price": "8.00"
-             },
-             {
-                "item":"Yu-Dofu",
-                "description": "broiled bean curd served in ponzu sauce",
-                "price": "7.50"
-             }
-        ],
-        "Extras": [
-            {
-                "item":"Rice",
-                "description": "",
-                "price": "2.50"
-             },
-             {
-                "item":"Spicy Mayo Sauce",
-                "description": "",
-                "price": "1.50"
-             },
-             {
-                "item":"Spicy Mayo Sauce for Roll",
-                "description": "",
-                "price": "1.00"
-             },
-             {
-                "item":"Spicy Mayo Sauce on the side",
-                "description": "",
-                "price": "1.50"
-             },
-             {
-                "item":"Avocado for roll",
-                "description": "",
-                "price": "1.75"
-             },
-             {
-                "item":"Tobiko for roll",
-                "description": "",
-                "price": "1.75"
-             },
-             {
-                "item":"Uzura (Quail Egg)",
-                "description": "",
-                "price": "1.75"
-             },
-             {
-                "item":"Spicy Sauce on the side",
-                "description": "",
-                "price": "1.50"
-             }
-        ]
-        }
-    ],
-    "Drinks": [
-        {
-            "Soda/Juice_Beer": [
-                {
-                   "item":"Coca-Cola",
-                   "description": "",
-                   "price": "2.00"
+                    "price": "19.00"
                 },
                 {
-                 "item":"Sprite",
-                 "description": "",
-                 "price": "2.00"
-              },
-              {
-                 "item":"Diet Coke",
-                 "description": "",
-                 "price": "2.00"
-              },
-              {
-                "item":"Club Soda",
-                "description": "",
-                "price": "2.00"
-             },
-             {
-                "item":"Orange Juice",
-                "description": "",
-                "price": "2.00"
-             }  
-            ],
-            "Beer": [
-                {
-                   "item":"Asahi/Sapporo",
-                   "description": "",
-                   "price": [
-                        {"12oz sm": "4.00"},
-                        {"21oz lg": "6.75"}
-                   ]
+                    "item":"Negi-Maki",
+                    "description": "broiled sliced beef wrapped around scallion with teriyaki",
+                    "price": "21.50"
                 },
                 {
-                 "item":"Kirin Light",
-                 "description": "",
-                 "price": [
-                    {"12oz sm": "4.00"},
-                    {"21oz lg": "6.75"}
-               ]
-              },
-              {
-                 "item":"Kirin Ichiban",
-                 "description": "",
-                 "price": [
-                    {"21oz lg": "6.75"}
-               ]
-              } 
-            ],
-            "Sake": [
-                {
-                   "item":"Sake cold or hot",
-                   "description": "",
-                   "price": "4.00"
+                    "item":"Salmon Butter or Teriyaki",
+                    "description": "grilled salmon neck",
+                    "price": "19.00"
                 },
                 {
-                 "item":"Cold Shirayuki",
-                 "description": "",
-                 "price": ""
-              },
-              {
-                 "item":"Onigoroshi cold",
-                 "description": "",
-                 "price": "5.00"
-              },
-              {
-                "item":"Cold- Nigori Sake Ginjo",
-                "description": "",
-                "price": [
-                    {"10 oz": "15.00"}
-                ]
-             }  
-            ],
-            "Wine": [
-                {
-                   "item":"Plum Wine",
-                   "description": "",
-                   "price": "4.00"
+                    "item":"Beef-Steak Teriyaki/Ponzu",
+                    "description": "broiled beef marinated with teriyaki or ponzu sauce",
+                    "price": "28.00"
                 },
                 {
-                 "item":"White Wine",
-                 "description": "",
-                 "price": "4.00"
-              },
-              {
-                "item":"Red Wine black, stone, Napa Valley",
-                "description": "",
-                "price": "4.00"
-             }
+                    "item":"Una-Ju",
+                    "description": "broiled eel with teriyaki sauce over rice",
+                    "price": "23.50"
+                },
+                {
+                    "item":"Yasai-Itame",
+                    "description": "sauteed vegetables with o without chicken",
+                    "price": "16.00"
+                },
+                {
+                    "item":"Chicken-Katsu",
+                    "description": "deep fried, breaded chicken with japanese bbq",
+                    "price": "21.00"
+                },
+                {
+                    "item":"Yose-Nabe",
+                    "description": "assorted seafood, veg-beancurd in hot broth with ponzu",
+                    "price": "21.00"
+                }
             ]
-        }
-    ]
- }
+        },
+        {
+            "Noodles": [
+                {
+                    "item":"Kitune-Udon",
+                    "description": "cooked fried bean curd over noodles in broth",
+                    "price": "8.00"
+                },
+                {
+                    "item":"Tempura-Udon",
+                    "description": "tempura over noodles in broth",
+                    "price": "13.50"
+                },
+                {
+                    "item":"Ramen (Miso-Shoyu)",
+                    "description": "egg noodles with miso or soy sauce in broth",
+                    "price": "8.50"
+                },
+                {
+                    "item":"Yaki-Soba",
+                    "description": "assorted sauted noodles and vegetables",
+                    "price": "8.25"
+                },
+                {
+                    "item":"Zaru- Soba/Udon",
+                    "description": "cold buckweat noodles with dipping",
+                    "price": "8.25"
+                }
+            ]
+        },
+        {
+            "Fried_and_Steamed_Dishes": [
+                {
+                    "item":"Korroke",
+                    "description": "deep-fried potato croquette",
+                    "price": "7.00"
+                },
+                {
+                    "item":"Age-Tamago-Ankake",
+                    "description": "deep-fried egg in special soup",
+                    "price": "6.50"
+                },
+                {
+                    "item":"Shumai",
+                    "description": "steamed shrimp dumplings 7 pc",
+                    "price": "6.75"
+                },
+                {
+                    "item":"Gyoza",
+                    "description": "fried pork dumplings 5pc",
+                    "price": "6.75"
+                },
+                {
+                    "item":"Spicy Gyoza",
+                    "description": "fried spicy pork dumplings 5 pc",
+                    "price": "6.75"
+                }
+            ]
+        },
+        {
+            "Tofu_and_Vegetables": [
+                {
+                    "item":"Oshitashi",
+                    "description": "broiled spinach with bonito flake",
+                    "price": "5.00"
+                },
+                {
+                    "item":"Hijiki",
+                    "description": "cooked sea plants",
+                    "price": "5.50"
+                },
+                {
+                    "item":"Mushroom",
+                    "description": "marinated mushrooms in garlic butter soy sauce",
+                    "price": "7.75"
+                },
+                {
+                    "item":"Edamame",
+                    "description": "broiled soy beans",
+                    "price": "4.75"
+                },
+                {
+                    "item":"Agedashi Tofu",
+                    "description": "fried bean curd in tempura sauce",
+                    "price": "7.50"
+                },
+                {
+                    "item":"Mabo-Tofu",
+                    "description": "cooked bean curd in hot pepper sauce",
+                    "price": "8.00"
+                },
+                {
+                    "item":"Yu-Dofu",
+                    "description": "broiled bean curd served in ponzu sauce",
+                    "price": "7.50"
+                }
+            ]
+        },
+        {
+            "Extras": [
+                {
+                    "item":"Rice",
+                    "description": "",
+                    "price": "2.50"
+                },
+                {
+                    "item":"Spicy Mayo Sauce",
+                    "description": "",
+                    "price": "1.50"
+                },
+                {
+                    "item":"Spicy Mayo Sauce for Roll",
+                    "description": "",
+                    "price": "1.00"
+                },
+                {
+                    "item":"Spicy Mayo Sauce on the side",
+                    "description": "",
+                    "price": "1.50"
+                },
+                {
+                    "item":"Avocado for roll",
+                    "description": "",
+                    "price": "1.75"
+                },
+                {
+                    "item":"Tobiko for roll",
+                    "description": "",
+                    "price": "1.75"
+                },
+                {
+                    "item":"Uzura (Quail Egg)",
+                    "description": "",
+                    "price": "1.75"
+                },
+                {
+                    "item":"Spicy Sauce on the side",
+                    "description": "",
+                    "price": "1.50"
+                }
+            ]
+            }
+        ]
+        },
+    {
+        "Drinks": [
+            {
+                "Soda_Juice": [
+                {
+                    "item":"Coca-Cola",
+                    "description": "",
+                    "price": "2.00"
+                },
+                {
+                    "item":"Sprite",
+                    "description": "",
+                    "price": "2.00"
+                },
+                {
+                    "item":"Diet Coke",
+                    "description": "",
+                    "price": "2.00"
+                },
+                {
+                    "item":"Club Soda",
+                    "description": "",
+                    "price": "2.00"
+                },
+                {
+                    "item":"Orange Juice",
+                    "description": "",
+                    "price": "2.00"
+                }  
+                ]
+            },
+            {
+                "Beer": [
+                {
+                    "item":"Asahi/Sapporo",
+                    "description": "",
+                    "price": "12oz sm: 4.00, 21oz lg: 6.75"
+                },
+                {
+                    "item":"Kirin Light",
+                    "description": "",
+                    "price": "12oz sm: 4.00, 21oz lg: 6.75"
+                },
+                {
+                    "item":"Kirin Ichiban",
+                    "description": "",
+                    "price": "21oz lg: 6.75"
+                } 
+                ]
+            },
+            {
+                "Sake": [
+                    {
+                    "item":"Sake cold or hot",
+                    "description": "",
+                    "price": "4.00"
+                    },
+                    {
+                    "item":"Cold Shirayuki",
+                    "description": "",
+                    "price": ""
+                },
+                {
+                    "item":"Onigoroshi cold",
+                    "description": "",
+                    "price": "5.00"
+                },
+                {
+                    "item":"Cold- Nigori Sake Ginjo",
+                    "description": "",
+                    "price": "10 oz: 15.00"
+                }  
+                ]
+            },
+            {
+                "Wine": [
+                    {
+                    "item":"Plum Wine",
+                    "description": "",
+                    "price": "4.00"
+                    },
+                    {
+                    "item":"White Wine",
+                    "description": "",
+                    "price": "4.00"
+                },
+                {
+                    "item":"Red Wine black, stone, Napa Valley",
+                    "description": "",
+                    "price": "4.00"
+                }
+                ]
+            }
+        ]
+    }
+]

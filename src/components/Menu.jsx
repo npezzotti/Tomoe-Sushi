@@ -13,43 +13,45 @@ export default function Menu() {
     const menus = [
         {
             title: "LUNCH",
-            img: "../../assets/images/Lunch.jpg"
+            img: "/menu_images/Lunch.jpg"
         },
         {
             title: "SUSHI-BAR",
-            img: "../assets/images/SushiBar.jpg"
+            img: "/menu_images/SushiBar.jpg"
         },
         {
             title: "KITCHEN",
-            img: "../assets/images/Kitchen.jpg"
+            img: "/menu_images/Kitchen.jpg"
         },
         {
             title: "DESSERT",
-            img: "../assets/images/Dessert.jpg"
+            img: "/menu_images/Dessert.jpg"
         },
         {
             title: "DRINKS",
-            img: "../assets/images/Drinks.jpg"
+            img: "/menu_images/Drinks.jpg"
         }
     ]
     return(
-        <div>
+        <div className="menu-container">
             <h1 className="menu-list-title" id='menu'>Menu:</h1>
             <div className="menu-list">
                 {menus.map(item => {
                     return(
-                        <div className="menu" onClick={() => changeMenu(item.title)}>
+                        <div className="menu" onClick={() => {
+                            changeMenu(item.title)
+                            }}>
                             <h2 className="menu-title">{item.title}</h2>
                             <img className="menu-image" src={item.img} alt={item.title} />
                         </div>)
                 })}
             </div>
             <div className="menu-content">
-                {menu==="DESSERT" && <Dessert />}
-                {menu==="LUNCH" && <Lunch />}
-                {menu==="SUSHI-BAR" && <Sushi />}
-                {menu==="KITCHEN" && <Kitchen />}
-                {menu==="DRINKS" && <Drinks />}
+                {menu==="DESSERT" && <Dessert changeMenu={changeMenu}/>}
+                {menu==="LUNCH" && <Lunch changeMenu={changeMenu}/>}
+                {menu==="SUSHI-BAR" && <Sushi changeMenu={changeMenu}/>}
+                {menu==="KITCHEN" && <Kitchen changeMenu={changeMenu}/>}
+                {menu==="DRINKS" && <Drinks changeMenu={changeMenu}/>}
             </div>
         </div>
     )

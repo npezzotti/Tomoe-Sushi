@@ -1,51 +1,41 @@
-import React from 'react'
+// react
+import React from 'react';
 
-const menu= [{item: "apple", price: "$15"}]
-export default function Drinks(){
+// functions
+import {buildMenuInfoContainer} from './menuFxns.jsx'
+
+// modules
+import json from './menu';
+const menu = json
+
+export default function Drinks(props){
     return(
-        <div className="menu-container">
+        <div className="menu-container" style={{color: "white"}}>
+        <div className="close-button" onClick={() => props.changeMenu(null)}>&times;</div>
             <h3 className="menu-category">Soda/Juice</h3>
-            {menu.map(menuItem => {
+        {
+            menu[4].Drinks[0].Soda_Juice.map(menuItem => {
                 return(
-                    <div className="menu-info-container">
-                        <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
-                            <div className="price">{menuItem.price}</div>
-                        </div>
-                    </div>
+                    <>{buildMenuInfoContainer(menuItem)}</>
                 )
-            })}
+            })
+        }
             <h3 className="menu-category">Beer</h3>
-            {menu.map(menuItem => {
+            {menu[4].Drinks[1].Beer.map(menuItem => {
                 return(
-                    <div className="menu-info-container">
-                        <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
-                            <div className="price">{menuItem.price}</div>
-                        </div>
-                    </div>
+                    <>{buildMenuInfoContainer(menuItem)}</>
                 )
             })}
             <h3 className="menu-category">Sake</h3>
-            {menu.map(menuItem => {
+            {menu[4].Drinks[2].Sake.map(menuItem => {
                 return(
-                    <div className="menu-info-container">
-                        <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
-                            <div className="price">{menuItem.price}</div>
-                        </div>
-                    </div>
+                    <>{buildMenuInfoContainer(menuItem)}</>
                 )
             })}
             <h3 className="menu-category">Wine</h3>
-            {menu.map(menuItem => {
+            {menu[4].Drinks[3].Wine.map(menuItem => {
                 return(
-                    <div className="menu-info-container">
-                        <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
-                            <div className="price">{menuItem.price}</div>
-                        </div>
-                    </div>
+                    <>{buildMenuInfoContainer(menuItem)}</>
                 )
             })}
         </div>
