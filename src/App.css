@@ -1,74 +1,157 @@
-.App {
-  	text-align: center;
-}
-
-/* //////////////////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////// Navigation (BELOW) //////////////////////////////////// */
-/* .nav {
-	display: flex;
-	flex-flow: row;
-	text-align: center;
-	justify-content: space-around;
-} */
-	.nav .nav-time {
-		/* position: absolute;
-		right: 0;
-		font-size: 20px;
-		margin: 10px 20px 0 0;
-		color:white; */
-		font-size: 20px;
-		color:white;
+@media(min-width: 300px){
+	html,body
+	{
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		overflow-x: hidden; 
 	}
 
-	
-
-	  .mask {
-		/* width: 100%;
-		height: 701px; */
+   	body {
 		width: 100%;
-		background-color: #d8d8d8;
-	  }
-	
-	.nav .nav-item-container {
+		background-image: url('./assets/images/Tomoe_Background_Final.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+   	}
+
+   	.header {
+		background: url('../src/assets/images/Hero.jpg') center;
+		min-height: 188px;
+		background-repeat: no-repeat;
+		background-size: cover;
+   	}
+
+	.nav-item-container {
+		/* margin: 0; */
+		width: 100%;
 		display: flex;
 		flex-direction: row;
-		justify-content:space-around;
+		justify-content: space-evenly;
 	}
-    	.nav .nav-item-container .nav-item {
-			all: unset;
-			font-weight: 800;
-			padding: 0 10px;
-			/* font-size: 30px; */
-			font-family: TrajanPro3;
-			font-size: 25px;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: normal;
-			color: white;
-		}
-		.nav .nav-item-container .nav-item.center {
-			font-size:40px;
-		}
-/* //////////////////////////////////// Navigation (ABOVE) //////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////////////////////////////// */
+	.nav-item {
+		align-self: baseline;
+		text-decoration: none;
+		font-family: TrajanPro3;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: normal;
+		/* letter-spacing: -0.01px; */
+		color: white;
+	}
+
+	.open-until {
+		width: 92.5%;
+		text-align: right;
+		color: white;
+	}
+
+
+	.center {
+		font-size: 30px;
+	}
 
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
 .info{
 	color: wheat;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
-	.info .weekly-times {
+	.info .info-title {
+		font-size: 50px;
+	}
+	.info .info-content {
 		display: flex;
 		flex-flow: row;
-		justify-content: center;
+		width: 100%;
+		justify-content: space-between;
 	}
-		.info .weekly-times .weekday {
-			margin: 30px 40px;
-			color: wheat;
+		.info .info-content .location {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			margin: 0 150px;
 		}
+			.info .info-content .location .address {
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+			}
+		.info .info-content .week-schedule {
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+		}
+			.info .info-content .week-schedule .weekday-container {
+				display: flex;
+				flex-flow: row;
+				margin: 5px 10px;
+				/* padding: 0 50px; */
+				color: wheat;
+				text-align: center;
+				justify-content: space-between;
+			}
+			.info .info-content .week-schedule .weekday-container.today {
+				color: rgb(235, 146, 146);
+			}
+				.info .info-content .week-schedule .weekday-container .title {
+					width: 125px;
+					text-align: right;
+					margin: 0 10px;
+				}
+				.info .info-content .week-schedule .weekday-container .open-close-container {
+					display: flex;
+					flex-flow: column;
+					justify-content: left;
+					text-align: left;
+				}
+					.info .info-content .week-schedule .weekday-container .open-close-container .open-close.now {
+						/* padding: 0 100px; */
+						font-weight: 900;
+					}
 /* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 body {
-	background-image: url(./assets/images/Tomoe_Background_Final.jpg);
+	background-image: url("./assets/images/Tomoe_Background_Final.jpg");
 }
 
+.menu-image {
+	width: 10%;
+	height: 10%;
+	border-radius: 50%;
+}
+
+.menu-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-list-title {
+	align-self: center;
+}
+
+.menu-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.menu-category {
+	align-self: center;
+}
+
+.menu-item {
+	font-weight: 600;
+}
+
+.menu-item-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+
+}
