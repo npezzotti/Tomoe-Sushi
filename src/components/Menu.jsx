@@ -13,23 +13,23 @@ export default function Menu() {
     const menus = [
         {
             title: "LUNCH",
-            img: "../assets/images/Lunch.jpg"
+            img: "./images/Lunch.jpg"
         },
         {
             title: "SUSHI-BAR",
-            img: "../assets/images/SushiBar.jpg"
+            img: "./images/SushiBar.jpg"
         },
         {
             title: "KITCHEN",
-            img: "../assets/images/Kitchen.jpg"
+            img: "./images/Kitchen.jpg"
         },
         {
             title: "DESSERT",
-            img: "../assets/images/Dessert.jpg"
+            img: "./images/Dessert.jpg"
         },
         {
             title: "DRINKS",
-            img: "../assets/images/Drinks.jpg"
+            img: "./images/Drinks.jpg"
         }
     ]
     return(
@@ -48,11 +48,11 @@ export default function Menu() {
                 })}
             </div>
             <div className="menu-content">
-                {menu==="DESSERT" && <Dessert />}
-                {menu==="LUNCH" && <Lunch />}
-                {menu==="SUSHI-BAR" && <Sushi />}
-                {menu==="KITCHEN" && <Kitchen />}
-                {menu==="DRINKS" && <Drinks />}
+                {menu==="DESSERT" && <Dessert changeMenu={changeMenu}/>}
+                {menu==="LUNCH" && <Lunch changeMenu={changeMenu}/>}
+                {menu==="SUSHI-BAR" && <Sushi changeMenu={changeMenu}/>}
+                {menu==="KITCHEN" && <Kitchen changeMenu={changeMenu}/>}
+                {menu==="DRINKS" && <Drinks changeMenu={changeMenu}/>}
             </div>
         </div>
     )

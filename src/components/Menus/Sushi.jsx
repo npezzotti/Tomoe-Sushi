@@ -1,17 +1,20 @@
 import React from 'react'
 import json from './menu'
+import { Icon } from '@opuscapita/react-icons';
+
 
 const menu = json
 
-export default function Sushi() {
+export default function Sushi(props) {
     return(
         <div className="menu-container" style={{color: "white"}}>
+        <Icon className="remove-button" type="indicator" name="remove" onClick={props.changeMenu}/>
             <h3 className="menu-category">Sushi Dinner</h3>
             {menu[2].Sushi_Bar[0].Sushi_Dinner.map(menuItem => {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
@@ -22,7 +25,7 @@ export default function Sushi() {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
                             <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
@@ -34,7 +37,7 @@ export default function Sushi() {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
                             <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
@@ -46,7 +49,7 @@ export default function Sushi() {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
                             <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>
@@ -58,7 +61,7 @@ export default function Sushi() {
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <div className="menu-item">{menuItem.item}</div>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
                             <div className="description">{menuItem.description}</div>
                             <div className="price">{menuItem.price}</div>
                         </div>

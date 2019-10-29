@@ -1,12 +1,14 @@
 import React from 'react'
 import json from './menu'
+import { Icon } from '@opuscapita/react-icons';
+
 
 const menu = json
-console.log(menu[4].Drinks[0].Soda_Juice)
 
-export default function Drinks(){
+export default function Drinks(props){
     return(
         <div className="menu-container" style={{color: "white"}}>
+        <Icon className="remove-button" type="indicator" name="remove" onClick={props.changeMenu}/>
         <h3 className="menu-category">Soda/Juice</h3>
         {
             menu[4].Drinks[0].Soda_Juice.map(menuItem => {
