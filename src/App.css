@@ -32,7 +32,7 @@
 	.nav-item {
 		align-self: baseline;
 		text-decoration: none;
-		font-family: TrajanPro3;
+		font-family: 'TrajanPro3', sans-serif;
 		font-size: 20px;
 		font-weight: 600;
 		line-height: normal;
@@ -258,10 +258,6 @@
 		display: grid;
 	}
 
-	/* .pressTitle {
-		text-align: center;
-	} */
-
 	.gridContainer {
 		display: grid;
 		grid-template-columns: auto;
@@ -278,8 +274,6 @@
 	}
 
 	.img {
-		/* height: 156px;
-		width: 311px;  */
 		margin-top: 20px;
 		order: 1;
 		margin-left: 70px;
@@ -302,7 +296,6 @@
 	.infatuationImg {
 		height: 302px;
 		width: 511px;
-		/* margin-top: -30px; */
 		margin-left: -20px;
 		order: 1;
 	}
@@ -316,8 +309,6 @@
 		height: 117px;
 		width: 309px;
 		margin-top: 10px;
-		/* margin-right: 100px;
-		margin: 0; */
 	}
 
 	.timeOutP {
