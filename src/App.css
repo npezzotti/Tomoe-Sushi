@@ -47,85 +47,70 @@ body {
 		font-size: 30px;
 	}
 
-	/* Christina - Press Reviews */
+	/* /////////////////////////////////////   Christina  //////////////////////////////////// */
+	/* //////////////////////////////////// Press (BELOW) //////////////////////////////////// */
 	.press-Reviews {
 		display: grid;
 	}
-
 	.gridContainer {
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-gap: 10px;
 		margin-left: 0px;
 	}
-
 	.fullReview {
 		margin-top: 10px;
 	}
-
 	.img {
 		width: 125px; 
 		margin-top: 33px;
 		order: 1;
 		margin-left: 70px;
 	}
-
 	.review {
-		margin-left: 30px;
-		color: white;
 		max-width: 300px;
 		max-height: 72px;
+		margin-left: 30px;
+		color: white;
 		overflow-wrap: break-word;
 		order: 2;
 		font-family: 'Gill Sans', sans-serif;
 		font-style: italic;
 		margin: 0;
 	}
-
 	.infatuationImg {
 		width: 290px;
 		margin-top: -30px;
 		order: 1;
 	}
-
 	.infatuationP {
 		margin-left: 20px;
 	}
-
 	.timeOutImg {
 		width: 190px;
 		margin-right: 100px;
 		margin: 0;
 	}
-
 	.timeOutP {
 		margin-bottom: 20px;
 	}
-
 	.thrillistImg {
 		margin: 0;
 		margin-top: 5px;
 		margin-left: 20px;
 		width: 190px;
 	}
-
 	.thrillist {
 		margin-top: -20px;
 		margin-left: 20px;
 	}
+	/* //////////////////////////////////// Press (ABOVE) /////////////////////////////////////// */
+	/* ///////////////////////////////////////////////////////////////////////////////////////// */
 
-/* ////////////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
-.info{
-	color: wheat;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-	.info .info-title {
-		font-size: 50px;
-	}
-	.info .location {
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
+	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
+	.info{
+		color: wheat;
 		display: flex;
 		flex-flow: column;
 		align-items: center;
@@ -133,56 +118,64 @@ body {
 		.info .info-title {
 			font-size: 50px;
 		}
-		.info .info-content {
+		.info .location {
 			display: flex;
-			flex-flow: row;
-			width: 100%;
-			justify-content: space-between;
+			flex-flow: column;
+			align-items: center;
 		}
-			.info .info-content .location {
-				display: flex;
-				flex-flow: column;
-				align-items: center;
-				margin: 0 150px;
+			.info .info-title {
+				font-size: 50px;
 			}
-				.info .info-content .location .address {
+			.info .info-content {
+				display: flex;
+				flex-flow: row;
+				width: 100%;
+				justify-content: space-between;
+			}
+				.info .info-content .location {
 					display: flex;
 					flex-flow: column;
 					align-items: center;
+					margin: 0 150px;
 				}
-			
-			.info .info-content .week-schedule {
-				display: flex;
-				flex-flow: column;
-				justify-content: center;
-			}
-				.info .info-content .week-schedule .weekday-container {
-					display: flex;
-					flex-flow: row;
-					margin: 5px 10px;
-					/* padding: 0 50px; */
-					color: wheat;
-					text-align: center;
-					justify-content: space-between;
-				}
-				.info .info-content .week-schedule .weekday-container.today {
-					color: rgb(235, 146, 146);
-				}
-					.info .info-content .week-schedule .weekday-container .title {
-						width: 125px;
-						text-align: right;
-						margin: 0 10px;
-					}
-					.info .info-content .week-schedule .weekday-container .open-close-container {
+					.info .info-content .location .address {
 						display: flex;
 						flex-flow: column;
-						justify-content: left;
-						text-align: left;
+						align-items: center;
 					}
-						.info .info-content .week-schedule .weekday-container .open-close-container .open-close.now {
-							/* padding: 0 100px; */
-							font-weight: 900;
+				
+				.info .info-content .week-schedule {
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+				}
+					.info .info-content .week-schedule .weekday-container {
+						display: flex;
+						flex-flow: row;
+						margin: 5px 10px;
+						/* padding: 0 50px; */
+						color: wheat;
+						text-align: center;
+						justify-content: space-between;
+					}
+					.info .info-content .week-schedule .weekday-container.today {
+						color: rgb(235, 146, 146);
+					}
+						.info .info-content .week-schedule .weekday-container .title {
+							width: 125px;
+							text-align: right;
+							margin: 0 10px;
 						}
+						.info .info-content .week-schedule .weekday-container .open-close-container {
+							display: flex;
+							flex-flow: column;
+							justify-content: left;
+							text-align: left;
+						}
+							.info .info-content .week-schedule .weekday-container .open-close-container .open-close.now {
+								/* padding: 0 100px; */
+								font-weight: 900;
+							}
 	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -244,72 +237,17 @@ body {
 				/* padding: 0 100px; */
 				font-weight: 900;
 			}
-/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
-/* ////////////////////////////////////////////////////////////////////////////////////// */
+	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
 
-.close-button {
-	font-size: 42px;
-	color: gray;
-}
-
-.menu-image {
-	width: 80%;
-	height: 80%;
-	border-radius: 50%;
-}
-
-.menu-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.menu-list-title {
-	align-self: center;
-}
-
-.menu-list {
-	display: flex;
-	flex-direction: row;
-}
-
-.menu-category {
-	align-self: center;
-}
-
-.menu-item {
-	font-weight: 600;
-}
-
-.menu-item-container {
-	display: flex;
-	flex-direction: row;
-	
-}
-
-.menu-list-title, .menu-title {
-	color: white;
-}
-
-.menu-title-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-menu-title {
-	justify-self: center;
-	align-self: center;
-}
-
-.menu {
-	display: flex;
-	flex-direction: column;
-	justify-items: center;
-	align-items: center;
-}
-
+	.close-button {
+		font-size: 42px;
+		color: gray;
+	}
+	.menu-image {
+		width: 80%;
+		height: 80%;
+	}
 }
 
 @media(min-width: 700px){
@@ -320,11 +258,6 @@ menu-title {
 		background-repeat: no-repeat;
 		background-size: cover;
    	}
-	.img {
-		margin-top: 20px;
-		order: 1;
-		margin-left: 70px;
-	}
 	.nav-item-container {
 		/* margin: 0; */
 		width: 100%;
@@ -343,105 +276,136 @@ menu-title {
 		color: white;
 	}
 	
+	.menu-container {
+		justify-content: space-around;
+	}
+
+	.menu-item {
+		font-weight: 600;
+	}
+
+	.menu-list-title, .menu-title {
+		color: white;
+	}
+
+	.menu-title-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu-title {
+		justify-self: center;
+		align-self: center;
+	}
+
+	.menu {
+		justify-items: center;
+		align-items: center;
+	}
+	.menu-image {
+		min-width: 80%;
+		min-height: 80%;
+	}
+
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
+	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
+	.info{
+		color: wheat;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+		.info .info-title {
+			font-size: 50px;
+		}
+		.info .location {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+		}
+			.info .location .address {
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+			}
+		.info .week-schedule {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+		}
+			.info .week-schedule .weekday-container {
+				margin: 30px 10px;
+				/* padding: 0 50px; */
+				color: wheat;
+				text-align: center;
+			}
+			.info .week-schedule .weekday-container.today {
+				color: red;
+			}
+				.info .week-schedule .weekday-container .open-close.now {
+					/* padding: 0 100px; */
+					font-weight: 900;
+				}
+	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
+	
+	/* /////////////////////////////////////   Christina  //////////////////////////////////// */
+	/* //////////////////////////////////// Press (BELOW) //////////////////////////////////// */
+
 	.gridContainer {
+		grid-template-columns: auto;
+	}
+	.fullReview {
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-gap: 10px;
 		margin-left: 0px;
 	}
-	.infatuationImg {
-		height: 302px;
-		width: 511px;
-		margin-left: -20px;
-		order: 1;
+	.img {
+		margin-top: 20px;
 	}
-	
-
+	.review {
+		max-width: 490px;
+		margin-top: 100px;
+		font-family: 'Gill Sans', sans-serif;
+		font-style: normal;
+		font-size: 22px;
+		order: 2;
+	}
+	.infatuationImg {
+		width: 511px;
+		height: 302px;
+		margin-left: -20px;
+	}
+	.infatuationP {
+		margin-left: -20px;
+		margin-top: 80px;
+	}
 	.timeOutImg {
-		height: 117px;
 		width: 309px;
 		margin-top: 10px;
+		height: 117px;
 	}
-
-/* ////////////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
-.info{
-	color: wheat;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-	.info .info-title {
-		font-size: 50px;
+	.timeOutP {
+		margin-left: 90px;
+		margin-top: 15px;
 	}
-	.info .location {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
+	.thrillistImg {
+		height: 103px;
+		width: 298px;
+		margin: 0;
+		margin-left: 70px;
 	}
-		.info .location .address {
-			display: flex;
-			flex-flow: column;
-			align-items: center;
-		}
-	.info .week-schedule {
-		display: flex;
-		flex-flow: row;
-		justify-content: center;
+	.thrillistP {
+		margin-bottom: 90px;
+		margin-left: 90px;
+		margin-top: 15px;
 	}
-		.info .week-schedule .weekday-container {
-			margin: 30px 10px;
-			/* padding: 0 50px; */
-			color: wheat;
-			text-align: center;
-		}
-		.info .week-schedule .weekday-container.today {
-			color: red;
-		}
-			.info .week-schedule .weekday-container .open-close.now {
-				/* padding: 0 100px; */
-				font-weight: 900;
-			}
-/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
-/* ////////////////////////////////////////////////////////////////////////////////////// */
-
-.menu-image {
-	min-width: 80%;
-	min-height: 80%;
-	border-radius: 50%;
-
+	.thrillist {
+		margin-top: 70px;
+	}
+	/* //////////////////////////////////// Press (ABOVE) /////////////////////////////////////// */
+	/* ////////////////////////////////////////////////////////////////////////////////////////// */
 }
-
-.menu-container {
-	display: flex;
-	flex-direction: column;
-}
-
-.menu-list-title {
-	align-self: center;
-}
-
-.menu-list {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.menu-category {
-	align-self: center;
-}
-
-.menu-item {
-	font-weight: 600;
-}
-
-.menu-item-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	
-}
-
-
-}
-
