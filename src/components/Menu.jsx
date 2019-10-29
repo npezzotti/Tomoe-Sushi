@@ -13,23 +13,23 @@ export default function Menu() {
     const menus = [
         {
             title: "LUNCH",
-            img: "./images/Lunch.jpg"
+            img: "/menu_images/Lunch.jpg"
         },
         {
             title: "SUSHI-BAR",
-            img: "./images/SushiBar.jpg"
+            img: "/menu_images/SushiBar.jpg"
         },
         {
             title: "KITCHEN",
-            img: "./images/Kitchen.jpg"
+            img: "/menu_images/Kitchen.jpg"
         },
         {
             title: "DESSERT",
-            img: "./images/Dessert.jpg"
+            img: "/menu_images/Dessert.jpg"
         },
         {
             title: "DRINKS",
-            img: "./images/Drinks.jpg"
+            img: "/menu_images/Drinks.jpg"
         }
     ]
     return(
@@ -39,7 +39,6 @@ export default function Menu() {
                 {menus.map(item => {
                     return(
                         <div className="menu" onClick={() => {
-                            // console.log('item title', item.title)
                             changeMenu(item.title)
                             }}>
                             <h2 className="menu-title">{item.title}</h2>
