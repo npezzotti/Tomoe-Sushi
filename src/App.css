@@ -51,6 +51,76 @@
 		font-size: 30px;
 	}
 
+	/* Christina - Press Reviews */
+	.press-Reviews {
+		/* display: flex;
+		flex-flow: wrap;
+		justify-content: space-around;  */
+		display: grid;
+	}
+
+	.gridContainer {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+		margin-left: 0px;
+	}
+
+	.fullReview {
+		margin-top: 10px;
+	}
+
+	.img {
+		height: 125px;
+		width: 125px; 
+		margin-top: 33px;
+		order: 1;
+		margin-left: 70px;
+	}
+
+	.review {
+		margin-left: 30px;
+		color: white;
+		max-width: 300px;
+		max-height: 72px;
+		overflow-wrap: break-word;
+		order: 2;
+		font-family: 'Gill Sans', sans-serif;
+		font-style: italic;
+		margin: 0;
+	}
+
+	.infatuationImg {
+		height: 240px;
+		width: 175px;
+		margin-top: -30px;
+		order: 1;
+	}
+
+	.infatuationP {
+		margin-left: 20px;
+	}
+
+	.timeOutImg {
+		width: 190px;
+		margin-right: 100px;
+		margin: 0;
+	}
+
+	.timeOutP {
+		margin-bottom: 20px;
+	}
+
+	.thrillistImg {
+		margin: 0;
+		margin-top: 5px;
+		margin-left: 20px;
+	}
+
+	.thrillist {
+		margin-top: -20px;
+	}
+
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
 .info{
@@ -67,24 +137,106 @@
 		flex-flow: column;
 		align-items: center;
 	}
-		.info .location .address {
-			display: flex;
-			flex-flow: column;
-			align-items: center;
+		.info .info-title {
+			font-size: 50px;
 		}
-	.info .week-schedule {
+		.info .info-content {
+			display: flex;
+			flex-flow: row;
+			width: 100%;
+			justify-content: space-between;
+		}
+			.info .info-content .location {
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				margin: 0 150px;
+			}
+				.info .info-content .location .address {
+					display: flex;
+					flex-flow: column;
+					align-items: center;
+				}
+			
+			.info .info-content .week-schedule {
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+			}
+				.info .info-content .week-schedule .weekday-container {
+					display: flex;
+					flex-flow: row;
+					margin: 5px 10px;
+					/* padding: 0 50px; */
+					color: wheat;
+					text-align: center;
+					justify-content: space-between;
+				}
+				.info .info-content .week-schedule .weekday-container.today {
+					color: rgb(235, 146, 146);
+				}
+					.info .info-content .week-schedule .weekday-container .title {
+						width: 125px;
+						text-align: right;
+						margin: 0 10px;
+					}
+					.info .info-content .week-schedule .weekday-container .open-close-container {
+						display: flex;
+						flex-flow: column;
+						justify-content: left;
+						text-align: left;
+					}
+						.info .info-content .week-schedule .weekday-container .open-close-container .open-close.now {
+							/* padding: 0 100px; */
+							font-weight: 900;
+						}
+	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
+	/* ////////////////////////////////////////////////////////////////////////////////////// */
+	body {
+		background-image: url("./assets/images/Tomoe_Background_Final.jpg");
+	}
+
+	.menu-image {
+		width: 10%;
+		height: 10%;
+		border-radius: 50%;
+	}
+
+	.menu-container {
 		display: flex;
-		flex-flow: row;
+		flex-direction: column;
+	}
+	.menu-list-title {
+		align-self: center;
+	}
+	.menu-list {
+		display: flex;
+		flex-direction: row;
 		justify-content: center;
 	}
-		.info .week-schedule .weekday-container {
-			margin: 30px 10px;
-			/* padding: 0 50px; */
-			color: wheat;
-			text-align: center;
+	.menu-category {
+		align-self: center;
+	}
+	.menu-item-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 10px;
+	}
+		.menu-item-container .menu-item {
+			white-space: nowrap;
+			font-weight: 700;
 		}
-		.info .week-schedule .weekday-container.today {
-			color: red;
+		.menu-item-container .description{
+			font-weight: 200;
+			font-style: italic;
+			margin: 0;
+		}
+		.menu-item-container .description, .menu-item-container .price {
+			width:100%
+		}
+		.menu-item-container .price{
+			text-align: right;
 		}
 			.info .week-schedule .weekday-container .open-close.now {
 				/* padding: 0 100px; */

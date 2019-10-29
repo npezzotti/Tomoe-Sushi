@@ -1,16 +1,8 @@
-import React from 'react'
+// react
+import React from 'react';
 
-// const dateToStr = (dt) => {
-//     let hours = dt.getHours();
-//     let minutes = dt.getMinutes();
-//     let seconds = dt.getSeconds();
-//     hours   = hours === 0  ? 12           : hours;
-//     hours   = hours   > 12 ? hours - 12   : hours;
-//     minutes = minutes < 10 ? `0${minutes}`: minutes;
-//     seconds = seconds < 10 ? `0${seconds}`: seconds;
-//     let dtStr = `${dt.getMonth() + 1}/${dt.getDate()}/${dt.getYear() + 1900} ${hours}:${minutes}:${seconds}`
-//     return dtStr
-//   }
+// components
+import Map from './Map';
 
 const setTimeObj = () => {
     let now = new Date();
@@ -59,8 +51,19 @@ const buildTimeMsg = (timeDiff) => {
     let timeMsg = `${hoursMsg} ${minutesMsg}`
     return timeMsg
 }
+const buildWeekdayContainer = (weekday, openCloseMsg1, openCloseMsg2, todayBool) => {
+    return (
+        <div className={`weekday-container ${weekday} ${todayBool && 'today'}`}>
+            <div className="title">Tues. - Sat.</div>
+            <div className="open-close-container">
+                {openCloseMsg1}
+                {openCloseMsg2}
+            </div>
+        </div>
+    )
+}
+
 export default function Info({dt}){
-    // let [currentTime, setCurrentTime] = useState(dateToStr(new Date()))
     const {setTimeDiff} = dt
     let timeObj = setTimeObj();
     const getTimeDelta = (referenceTime) => {
@@ -102,10 +105,11 @@ export default function Info({dt}){
         let today = now.getDay()
         let daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         weekElem = daysOfTheWeek.map((weekday, idx) => {
-            let todayBool = today === idx
+            let todayBool = today === idx;
+            let weekdayTitle = weekday;
+
             // get the 1st open and close times
             let openCloseMsg1;
-            let openCloseMsg2;
             let openTime1 = timeObj[idx]['open1'].getHours();
             let closeTime1 = timeObj[idx]['close1'].getHours();
             let currentWindow = false;
@@ -114,40 +118,47 @@ export default function Info({dt}){
                 currentWindow = (now > refTime.open1 && now < refTime.close1 && todayBool)
                 openCloseMsg1 = <div className={`open-close ${currentWindow && 'now'}`}>{`${buildHourStr(openTime1, 0)} - ${buildHourStr(closeTime1, 0)}`}</div>
             } else {
-                openCloseMsg1 = `Closed`
+                openCloseMsg1 = `Closed`;
             }
 
             // get the 2nd open and close times
+            let openCloseMsg2;
             if (!!(timeObj[idx]['open2'])) {
                 currentWindow = (now > refTime.open2 && now < refTime.close2 && todayBool)
                 let openTime2 = timeObj[idx]['open2'].getHours();
                 let closeTime2 = timeObj[idx]['close2'].getHours();
                 openCloseMsg2 = <div className={`open-close ${currentWindow && 'now'}`}>{`${buildHourStr(openTime2, 0)} - ${buildHourStr(closeTime2, 0)}`}</div>
             }
-            return (
-                <div className={`weekday-container ${weekday} ${todayBool && 'today'}`}>
-                    <div className="title">{weekday}</div>
-                    {openCloseMsg1}
-                    {openCloseMsg2}
-                </div>
-            )
+
+            if (['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].includes(weekday) && todayBool) {
+                weekdayTitle = 'Tues. - Sat.'
+                return buildWeekdayContainer(weekdayTitle, openCloseMsg1, openCloseMsg2, todayBool)
+            } else if (["Sunday", 'Monday'].includes(weekday)) {
+                return buildWeekdayContainer(weekdayTitle, openCloseMsg1, openCloseMsg2, todayBool)
+            }
         })
         return weekElem
     }
     return(
         <div className="info" id='info'>
             <div className="info-title">Info</div>
-            <div className="location">
-                <div className='pre'>Located at:</div>
-                <div className="address">
-                    <div className="street">172 Thompson St</div>
-                    <div className="city-state">New York, NY 10012</div>
+            <div className="info-content">
+                <div className="location">
+                    <div className="location-text">
+                        <div className='pre'>Located at:</div>
+                        <div className="address">
+                            <div className="street">172 Thompson St</div>
+                            <div className="city-state">New York, NY 10012</div>
+                        </div>
+                    </div>
+                    <div className="location-map">
+                        <Map />
+                    </div>
+                </div>
+                <div className="week-schedule">
+                    {makeWeekElem(timeObj)}
                 </div>
             </div>
-            <div className="week-schedule">
-                {makeWeekElem(timeObj)}
-            </div>
-            {/* <div className="current-time">{currentTime}</div> */}
         </div>
     )
 }

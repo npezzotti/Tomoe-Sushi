@@ -94,7 +94,7 @@
             {
                 "Regular_Roll_Hand_Roll_a_la_Carte": [
                     {
-                    "item":"Avo-Kan",
+                    "item":"Avo-Kan*",
                     "description": "dried ground shavings and avocado",
                     "price": "4.75"
                     },
@@ -129,12 +129,12 @@
                         "price": "6.50"
                     },
                     {
-                        "item":"Kappa",
+                        "item":"Kappa*",
                         "description": "cucumber",
                         "price": "6.50"
                     },
                     {
-                        "item":"Spicy Kappa",
+                        "item":"Spicy Kappa*",
                         "description": "cucumber with spicy sauce",
                         "price": "4.25"
                     },
@@ -159,12 +159,17 @@
                         "price": "4.75"
                     },
                     {
+                        "item":"Natto*",
+                        "description": "fermented soybeans",
+                        "price": "6.00"
+                    },
+                    {
                         "item":"Negi-Toro",
                         "description": "fatty tuna and scallion",
                         "price": "6.75"
                     },
                     {
-                        "item":"Oshinko",
+                        "item":"Oshinko*",
                         "description": "japanese pickles either radish or burdock",
                         "price": "7.25"
                     },
@@ -209,7 +214,7 @@
                         "price": "14.00"
                     },
                     {
-                        "item":"Ume-Shiso",
+                        "item":"Ume-Shiso*",
                         "description": "pickled plum and mint leaf",
                         "price": "7.75"
                     },
