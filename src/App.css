@@ -137,7 +137,6 @@ body {
 			flex-flow: column;
 			width: 100%;
 			justify-content: space-between;
-			/* margin: 0 20px; */
 		}
 			.info .info-content .location {
 				display: flex;
@@ -157,28 +156,25 @@ body {
 				flex-flow: column;
 				justify-content: center;
 				align-items: center;
-				/* width: 100%; */
+				width: 85%;
 				margin: auto;
+				border: thin solid white;
 			}
 				.info .info-content .week-schedule .weekday-container {
-					/* margin: 5px 10px; */
-					/* padding: 0 50px; */
 					display: flex;
 					flex-flow: row;
 					width: 100%;
-					/* margin: 5px 10px; */
-					/* padding: 0 50px; */
-					/* color: wheat; */
-					/* text-align: center; */
 					justify-content: center;
 				}
-				.info .info-content .week-schedule .weekday-container.today {
-					color: rgb(235, 146, 146);
+				.info .info-content .week-schedule .weekday-container.today .title {
+					color: rgb(145, 184, 152);
+					font-weight: 900;
 				}
 					.info .info-content .week-schedule .weekday-container .title {
-						/* width: 100%; */
+						width: 100%;
 						text-align: left;
-						/* margin: 0 10px; */
+						white-space: nowrap;
+						margin-left: 5px;
 					}
 					.info .info-content .week-schedule .weekday-container .open-close-container {
 						display: flex;
@@ -186,10 +182,13 @@ body {
 						justify-content: left;
 						text-align: right;
 						width: 100%;
+						white-space: nowrap;
+						margin-right: 5px;
 					}
 						.info .info-content .week-schedule .weekday-container .open-close-container .open-close.now {
-							/* padding: 0 100px; */
+							color: rgb(145, 184, 152);
 							font-weight: 900;
+							text-align: right;
 						}
 	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
