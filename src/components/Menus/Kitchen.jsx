@@ -12,9 +12,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -24,9 +24,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -36,9 +36,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -48,9 +48,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -60,9 +60,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -72,9 +72,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -84,9 +84,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -96,9 +96,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -108,9 +108,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{`${menuItem.item}-`}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{`${menuItem.item}-`}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
@@ -120,9 +120,9 @@ export default function Kitchen(props){
                 return(
                     <div className="menu-info-container">
                         <div className="menu-item-container">
-                            <span className="menu-item">{menuItem.item}</span>
-                            <span className="description">{menuItem.description}</span>
-                            <span className="price">{menuItem.price}</span>
+                            <div className="menu-item">{menuItem.item}</div>
+                            <div className="description">{menuItem.description}</div>
+                            <div className="price">{menuItem.price}</div>
                         </div>
                     </div>
                 )
