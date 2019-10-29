@@ -1,16 +1,8 @@
-import React from 'react'
+// react
+import React from 'react';
 
-// const dateToStr = (dt) => {
-//     let hours = dt.getHours();
-//     let minutes = dt.getMinutes();
-//     let seconds = dt.getSeconds();
-//     hours   = hours === 0  ? 12           : hours;
-//     hours   = hours   > 12 ? hours - 12   : hours;
-//     minutes = minutes < 10 ? `0${minutes}`: minutes;
-//     seconds = seconds < 10 ? `0${seconds}`: seconds;
-//     let dtStr = `${dt.getMonth() + 1}/${dt.getDate()}/${dt.getYear() + 1900} ${hours}:${minutes}:${seconds}`
-//     return dtStr
-//   }
+// components
+import Map from './Map';
 
 const setTimeObj = () => {
     let now = new Date();
@@ -60,7 +52,6 @@ const buildTimeMsg = (timeDiff) => {
     return timeMsg
 }
 export default function Info({dt}){
-    // let [currentTime, setCurrentTime] = useState(dateToStr(new Date()))
     const {setTimeDiff} = dt
     let timeObj = setTimeObj();
     const getTimeDelta = (referenceTime) => {
@@ -105,7 +96,6 @@ export default function Info({dt}){
             let todayBool = today === idx
             // get the 1st open and close times
             let openCloseMsg1;
-            let openCloseMsg2;
             let openTime1 = timeObj[idx]['open1'].getHours();
             let closeTime1 = timeObj[idx]['close1'].getHours();
             let currentWindow = false;
@@ -118,6 +108,7 @@ export default function Info({dt}){
             }
 
             // get the 2nd open and close times
+            let openCloseMsg2;
             if (!!(timeObj[idx]['open2'])) {
                 currentWindow = (now > refTime.open2 && now < refTime.close2 && todayBool)
                 let openTime2 = timeObj[idx]['open2'].getHours();
@@ -127,8 +118,10 @@ export default function Info({dt}){
             return (
                 <div className={`weekday-container ${weekday} ${todayBool && 'today'}`}>
                     <div className="title">{weekday}</div>
-                    {openCloseMsg1}
-                    {openCloseMsg2}
+                    <div className="open-close-container">
+                        {openCloseMsg1}
+                        {openCloseMsg2}
+                    </div>
                 </div>
             )
         })
@@ -137,15 +130,22 @@ export default function Info({dt}){
     return(
         <div className="info" id='info'>
             <div className="info-title">Info</div>
-            <div className="location">
-                <div className='pre'>Located at:</div>
-                <div className="address">
-                    <div className="street">172 Thompson St</div>
-                    <div className="city-state">New York, NY 10012</div>
+            <div className="info-content">
+                <div className="location">
+                    <div className="location-text">
+                        <div className='pre'>Located at:</div>
+                        <div className="address">
+                            <div className="street">172 Thompson St</div>
+                            <div className="city-state">New York, NY 10012</div>
+                        </div>
+                    </div>
+                    <div className="location-map">
+                        <Map />
+                    </div>
                 </div>
-            </div>
-            <div className="week-schedule">
-                {makeWeekElem(timeObj)}
+                <div className="week-schedule">
+                    {makeWeekElem(timeObj)}
+                </div>
             </div>
             {/* <div className="current-time">{currentTime}</div> */}
         </div>
