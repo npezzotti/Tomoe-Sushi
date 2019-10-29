@@ -71,9 +71,9 @@ export default function Gallery () {
                 additionalTransfrom={0}
             >
 
-                {galleryImages.map((image, index) => (
-                    <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={image} alt='' /></div>
-                ))}
+            {galleryImages.map((image, index) => (
+                <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px 0px 30px 0px" }} src={image} alt='' /></div>
+            ))}
             </Carousel>
         </div>
     )
