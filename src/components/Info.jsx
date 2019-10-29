@@ -51,6 +51,18 @@ const buildTimeMsg = (timeDiff) => {
     let timeMsg = `${hoursMsg} ${minutesMsg}`
     return timeMsg
 }
+const buildWeekdayContainer = (weekday, openCloseMsg1, openCloseMsg2, todayBool) => {
+    return (
+        <div className={`weekday-container ${weekday} ${todayBool && 'today'}`}>
+            <div className="title">Tues. - Sat.</div>
+            <div className="open-close-container">
+                {openCloseMsg1}
+                {openCloseMsg2}
+            </div>
+        </div>
+    )
+}
+
 export default function Info({dt}){
     const {setTimeDiff} = dt
     let timeObj = setTimeObj();
@@ -93,7 +105,9 @@ export default function Info({dt}){
         let today = now.getDay()
         let daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         weekElem = daysOfTheWeek.map((weekday, idx) => {
-            let todayBool = today === idx
+            let todayBool = today === idx;
+            let weekdayTitle = weekday;
+
             // get the 1st open and close times
             let openCloseMsg1;
             let openTime1 = timeObj[idx]['open1'].getHours();
@@ -104,7 +118,7 @@ export default function Info({dt}){
                 currentWindow = (now > refTime.open1 && now < refTime.close1 && todayBool)
                 openCloseMsg1 = <div className={`open-close ${currentWindow && 'now'}`}>{`${buildHourStr(openTime1, 0)} - ${buildHourStr(closeTime1, 0)}`}</div>
             } else {
-                openCloseMsg1 = `Closed`
+                openCloseMsg1 = `Closed`;
             }
 
             // get the 2nd open and close times
@@ -115,15 +129,13 @@ export default function Info({dt}){
                 let closeTime2 = timeObj[idx]['close2'].getHours();
                 openCloseMsg2 = <div className={`open-close ${currentWindow && 'now'}`}>{`${buildHourStr(openTime2, 0)} - ${buildHourStr(closeTime2, 0)}`}</div>
             }
-            return (
-                <div className={`weekday-container ${weekday} ${todayBool && 'today'}`}>
-                    <div className="title">{weekday}</div>
-                    <div className="open-close-container">
-                        {openCloseMsg1}
-                        {openCloseMsg2}
-                    </div>
-                </div>
-            )
+
+            if (['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].includes(weekday) && todayBool) {
+                weekdayTitle = 'Tues. - Sat.'
+                return buildWeekdayContainer(weekdayTitle, openCloseMsg1, openCloseMsg2, todayBool)
+            } else if (["Sunday", 'Monday'].includes(weekday)) {
+                return buildWeekdayContainer(weekdayTitle, openCloseMsg1, openCloseMsg2, todayBool)
+            }
         })
         return weekElem
     }
@@ -147,7 +159,6 @@ export default function Info({dt}){
                     {makeWeekElem(timeObj)}
                 </div>
             </div>
-            {/* <div className="current-time">{currentTime}</div> */}
         </div>
     )
 }
