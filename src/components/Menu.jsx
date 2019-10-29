@@ -10,7 +10,6 @@ import Sushi from './Menus/Sushi.jsx'
 
 export default function Menu() {
     const [menu, changeMenu] = useState(null)
-    const [isClicked, addUnderline] = useState('none')
     const menus = [
         {
             title: "LUNCH",
