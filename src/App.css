@@ -149,25 +149,27 @@ body {
 				.info .info-content .week-schedule .weekday-container {
 					display: flex;
 					flex-flow: row;
+					width: 100%;
 					/* margin: 5px 10px; */
 					/* padding: 0 50px; */
 					/* color: wheat; */
 					/* text-align: center; */
-					/* justify-content: space-between; */
+					justify-content: center;
 				}
 				.info .info-content .week-schedule .weekday-container.today {
 					color: rgb(235, 146, 146);
 				}
 					.info .info-content .week-schedule .weekday-container .title {
-						/* width: 125px; */
-						/* text-align: right; */
-						/* margin: 0 10px; */
+						width: 100%;
+						text-align: right;
+						margin: 0 10px;
 					}
 					.info .info-content .week-schedule .weekday-container .open-close-container {
-						/* display: flex; */
-						/* flex-flow: column; */
-						/* justify-content: left; */
-						/* text-align: left; */
+						display: flex;
+						flex-flow: column;
+						justify-content: left;
+						text-align: left;
+						width: 100%;
 					}
 						.info .info-content .week-schedule .weekday-container .open-close-container .open-close.now {
 							/* padding: 0 100px; */
