@@ -1,3 +1,14 @@
+/* 
+DONT DELETE - FOR DESKTOP MEDIA QUERY
+-----------------------------------------
+
+
+.info .info-content .week-schedule .weekday-container {
+	margin: 0 150px;
+	margin: 5px 10px;
+	padding: 0 50px;
+}
+*/
 @media(min-width: 300px){
 	html,body
 	{
@@ -67,12 +78,13 @@
 			flex-flow: row;
 			width: 100%;
 			justify-content: space-between;
+			/* margin: 0 20px; */
 		}
 			.info .info-content .location {
 				display: flex;
 				flex-flow: column;
 				align-items: center;
-				margin: 0 150px;
+				/* margin: 0 10px; */
 			}
 				.info .info-content .location .address {
 					display: flex;
@@ -86,10 +98,10 @@
 				justify-content: center;
 			}
 				.info .info-content .week-schedule .weekday-container {
+					/* margin: 5px 10px; */
+					/* padding: 0 50px; */
 					display: flex;
 					flex-flow: row;
-					margin: 5px 10px;
-					/* padding: 0 50px; */
 					color: wheat;
 					text-align: center;
 					justify-content: space-between;

@@ -136,6 +136,7 @@ export default function Info({dt}){
             } else if (["Sunday", 'Monday'].includes(weekday)) {
                 return buildWeekdayContainer(weekdayTitle, openCloseMsg1, openCloseMsg2, todayBool)
             }
+            return <></>
         })
         return weekElem
     }
