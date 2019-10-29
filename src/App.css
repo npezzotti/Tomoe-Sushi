@@ -71,9 +71,9 @@ body {
 		margin-left: 70px;
 	}
 	.review {
+		margin-left: 30px;
 		max-width: 300px;
 		max-height: 72px;
-		margin-left: 30px;
 		color: white;
 		overflow-wrap: break-word;
 		order: 2;
@@ -247,10 +247,7 @@ body {
 @media(min-width: 700px){
 
    	.header {
-		background: url('../src/assets/images/Hero.jpg') center;
-		min-height: 188px;
-		background-repeat: no-repeat;
-		background-size: cover;
+		min-height: 488px;
    	}
 	.nav-item-container {
 		/* margin: 0; */
@@ -324,15 +321,9 @@ body {
 		margin-left: 70px;
 	}
 	.review {
-		margin-left: 30px;
-		color: white;
 		max-width: 490px;
-		max-height: 72px;
-		overflow-wrap: break-word;
 		order: 2;
-		font-family: 'Gill Sans', sans-serif;
 		font-style: normal;
-		margin: 0;
 		margin-top: 100px;
 		font-size: 22px;
 	}
