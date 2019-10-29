@@ -209,7 +209,7 @@ body {
 	}
 	.menu-title {
 		color: white;
-		font-size: 16px;
+		font-size: 10px;
 		font-family: TrajanPro3;
 	}
 	.menu-image {
@@ -236,6 +236,8 @@ body {
 	}
 	.menu-content {
 		background: rgba(0, 0, 0, .3);
+		margin: 15px auto auto auto;
+		font-size: 8px;
 	}
 	.menu-item-container {
 		display: flex;
@@ -278,7 +280,9 @@ body {
 	.menu-item {
 		font-weight: 600;
 	}
-
+	.menu-title {
+		font-size: 18px;
+	}
 	.menu-list-title, .menu-title {
 		color: white;
 		justify-self: center;
@@ -300,7 +304,9 @@ body {
 		min-width: 80%;
 		min-height: 80%;
 	}
-
+	.menu-content {
+		font-size: 16px;
+	}
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	/* //////////////////////////////////// Info (BELOW) //////////////////////////////////// */
 	.info {}
