@@ -134,7 +134,8 @@ body {
 				align-items: center;
 				margin: 30px 150px;
 			}
-				.info .info-content .location .address {
+				.info .info-content .location .location-map {}
+				.info .info-content .location .location-map .address {
 					display: flex;
 					flex-flow: column;
 					align-items: center;
