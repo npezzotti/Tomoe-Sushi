@@ -96,9 +96,26 @@ body {
 	background-image: url("./assets/images/Tomoe_Background_Final.jpg");
 }
 
-}
 .menu-image {
 	width: 10%;
 	height: 10%;
 	border-radius: 50%;
+}
+
+.menu-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-list-title {
+	align-self: center;
+}
+
+.menu-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
 }
