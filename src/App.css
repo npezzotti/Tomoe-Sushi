@@ -117,10 +117,12 @@
 	body {
 		background-image: url("./assets/images/Tomoe_Background_Final.jpg");
 	}
-
+	.menu-title {
+		color: white;
+	}
 	.menu-image {
-		width: 10%;
-		height: 10%;
+		width: 50%;
+		height: 65%;
 		border-radius: 50%;
 	}
 
