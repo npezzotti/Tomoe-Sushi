@@ -323,14 +323,16 @@ body {
 		align-self: baseline;
 		text-decoration: none;
 		font-family: 'Cinzel', serif;
-		font-size: 40px;
+		/* font-size: 40px; */
+		font-size: 25px;
 		font-weight: 200;
 		line-height: normal;
 		/* letter-spacing: -0.01px; */
 		color: white;
 	}
 	.center {
-		font-size: 50px;
+		/* font-size: 50px; */
+		font-size: 30px;
 	}
 
    	.header {
@@ -488,11 +490,9 @@ body {
 	/* ///////////////////////////////////////////////////////////////////////////////////////// */
 
 	.gallery-img{
-
 		width: auto; 
 		height: 250px; 
 		padding: 20px;
-
 	}
 
 	/* //////////////////////////////////// Gallery (ABOVE) /////////////////////////////////////// */
@@ -501,9 +501,9 @@ body {
 
 @media(min-width: 1000px) {
 	.nav-item {
-		font-size: 30px;
+		font-size: 40px;
 	}
 	.nav-item.center {
-		font-size: 40px;
+		font-size: 50px;
 	}
 }
