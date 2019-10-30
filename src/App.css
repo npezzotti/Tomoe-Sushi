@@ -17,6 +17,8 @@ body {
 	font-family: 'Cinzel', serif;
 }
 
+
+
 @media(min-width: 300px){
    	.header {
 		background: url('../src/assets/images/Hero.jpg') center;
@@ -236,10 +238,12 @@ body {
 		font-family: 'Cinzel', serif;
 	}
 	.menu-image {
-		width: 65%;
-		height: auto;
+		width: 58px;
+		height: 58px;
 		border-radius: 50%;
+		padding:5px;
 	}
+	
 
 	.menu-container {
 		display: flex;
