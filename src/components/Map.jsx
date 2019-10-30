@@ -12,13 +12,13 @@ const viewPortWidth = () => {
 }
 const viewPortHeight = () => {
     if(window.innerWidth < 700){
-    return window.innerHeight*.5
+    return window.innerHeight*.35
     }return window.innerHeight*.5
 
 }
 const viewPortZoom = () => {
   if(window.innerWidth < 700){
-  return 15
+  return 14
   }return 15
 
 }
