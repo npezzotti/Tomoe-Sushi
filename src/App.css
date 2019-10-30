@@ -157,6 +157,7 @@ body {
 				justify-content: center;
 				align-items: center;
 				width: 85%;
+				max-width: 275px;
 				margin: auto;
 				border: thin solid white;
 			}
@@ -315,10 +316,17 @@ body {
 		.info .info-title {}
 		.info .info-content {}
 			.info .info-content .location {}
-			.info .info-content .week-schedule {}
+			.info .info-content .week-schedule {
+				width: 65%;
+				max-width: 650px;
+			}
 				.info .info-content .week-schedule .weekday-container {
-					/* margin: 30px 10px; */
+					margin: 2px 0;
+					font-size: 30px;
 				}
+					.info .info-content .week-schedule .weekday-container .title, .info .info-content .week-schedule .weekday-container .open-close-container {
+						margin: 0 5%;
+					}
 	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
 	
