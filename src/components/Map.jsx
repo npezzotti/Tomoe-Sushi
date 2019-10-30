@@ -7,7 +7,7 @@ const Map = () => {
 const viewPortWidth = () => {
     if(window.innerWidth < 700){
     return window.innerWidth*.8
-    }return window.innerWidth*.4
+    }return window.innerWidth*.45
 
 }
 const viewPortHeight = () => {
