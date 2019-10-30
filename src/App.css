@@ -9,7 +9,6 @@ html, body {
 }
 
 
-
 body {
 	background-image: url('./assets/images/Tomoe_Background_Final.jpg');
 	background-repeat: no-repeat;
@@ -265,7 +264,7 @@ body {
 	.menu-list {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-between;
 	}
 	.menu-category {
 		align-self: center;
@@ -302,6 +301,12 @@ body {
 }
 
 @media(min-width: 700px){
+
+	.address{
+		font-size: 25px;
+	}
+	
+
 	.open-until {
 		width: 92.5%;
 		text-align: right;
@@ -356,11 +361,11 @@ body {
 
 	.menu {
 		justify-items: center;
-		align-items: center;
+		align-items: center;	
 	}
 	.menu-image {
-		min-width: 80%;
-		min-height: 80%;
+		min-width: 150px;
+		min-height: 150px;
 	}
 	.menu-content {
 		font-size: 16px;
