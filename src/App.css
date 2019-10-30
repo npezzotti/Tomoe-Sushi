@@ -266,6 +266,7 @@ body {
 	.close-button {
 		font-size: 42px;
 		color: gray;
+		cursor: pointer;
 	}
 }
 
