@@ -83,7 +83,7 @@ export default function Gallery () {
                 customTransition="transform 1000ms ease-in-out"
                 transitionDuration={1000}
                 containerClass="carousel-container"
-                arrows={true}
+                arrows={false}
                 autoPlay={true}
                 renderButtonGroupsOutside={true}
                 itemClass="carousel-item-padding-40-px"
