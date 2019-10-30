@@ -215,22 +215,24 @@ body {
 	}
 	.menu-title {
 		color: white;
-		font-size: 10px;
+		font-size: 14px;
 		font-family: TrajanPro3;
 	}
 	.menu-image {
-		width: 50%;
-		height: 50%;
+		width: 65%;
+		height: 65%;
 		border-radius: 50%;
 	}
 
 	.menu-container {
 		display: flex;
 		flex-direction: column;
-		padding: 30px;
+		padding: 10px;
+		align-self: center;
 	}
 	.menu-list-title {
 		align-self: center;
+		margin-bottom: 0;
 	}
 	.menu-list {
 		display: flex;
@@ -242,7 +244,7 @@ body {
 	}
 	.menu-content {
 		background: rgba(0, 0, 0, .3);
-		margin: 15px auto auto auto;
+		margin: 15px 0 0 0;
 		font-size: 8px;
 	}
 	.menu-item-container {
@@ -282,12 +284,11 @@ body {
 	.menu-container {
 		justify-content: space-around;
 	}
-
 	.menu-item {
 		font-weight: 600;
 	}
 	.menu-title {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.menu-list-title, .menu-title {
 		color: white;
