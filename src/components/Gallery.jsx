@@ -83,14 +83,17 @@ export default function Gallery () {
                 customTransition="transform 1000ms ease-in-out"
                 transitionDuration={1000}
                 containerClass="carousel-container"
-                arrows={true}
+                arrows={false}
+                autoPlay={true}
                 renderButtonGroupsOutside={true}
                 itemClass="carousel-item-padding-40-px"
                 additionalTransfrom={0}
             >
 
                 {galleryImages.map((image, index) => (
-                    <div key={index}><img style={{ width: "75%", height: "75%", borderRadius: "50%", padding: "30px" }} src={image} alt='' /></div>
+                    <div key={index}><img className="gallery-img" 
+                    style={{ borderRadius: "50%"}} 
+                    src={image} alt='' /></div>
                 ))}
             </Carousel>
         </div>

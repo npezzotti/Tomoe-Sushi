@@ -8,12 +8,16 @@ html, body {
 	overflow-x: hidden; 
 }
 
+
+
 body {
 	background-image: url('./assets/images/Tomoe_Background_Final.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Cinzel', serif;
 }
+
+
 
 @media(min-width: 300px){
    	.header {
@@ -34,7 +38,7 @@ body {
 	.nav-item {
 		align-self: baseline;
 		text-decoration: none;
-		font-family: 'TrajanPro3', sans-serif;
+		font-family: 'Cinzel', serif;
 		font-size: 15px;
 		font-weight: 600;
 		line-height: normal;
@@ -80,7 +84,7 @@ body {
 		color: white;
 		overflow-wrap: break-word;
 		order: 2;
-		font-family: 'Gill Sans', sans-serif;
+		font-family: 'Cinzel', serif;
 		font-style: italic;
 		margin: 0;
 	}
@@ -126,6 +130,20 @@ body {
 		margin-left: 20px;
 	}
 	/* //////////////////////////////////// Press (ABOVE) /////////////////////////////////////// */
+	/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+		/* //////////////////////////////////// Gallery (BELOW) /////////////////////////////////////// */
+	/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+	.gallery-img{
+
+		width: auto; 
+		height: 100px; 
+		padding: 12px;
+
+	}
+
+	/* //////////////////////////////////// Gallery (ABOVE) /////////////////////////////////////// */
 	/* ///////////////////////////////////////////////////////////////////////////////////////// */
 
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
@@ -211,10 +229,10 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-family: TrajanPro3;
+		font-family: 'Cinzel', serif;
 	}
 	.menu-title-container {
-		font-family: TrajanPro3;
+		font-family: 'Cinzel', serif;
 		color: white;
 		display: flex;
 		flex-direction: row;
@@ -224,13 +242,15 @@ body {
 	.menu-title {
 		color: white;
 		font-size: 14px;
-		font-family: TrajanPro3;
+		font-family: 'Cinzel', serif;
 	}
 	.menu-image {
-		width: 65%;
-		height: 65%;
+		width: 58px;
+		height: 58px;
 		border-radius: 50%;
+		padding:5px;
 	}
+	
 
 	.menu-container {
 		display: flex;
@@ -254,6 +274,7 @@ body {
 		background: rgba(0, 0, 0, .3);
 		margin: 15px 0 0 0;
 		font-size: 8px;
+		margin-top:30px;
 	}
 	.menu-item-container {
 		display: flex;
@@ -277,11 +298,7 @@ body {
 			text-align: right;
 		}
 
-	.close-button {
-		font-size: 42px;
-		color: gray;
-		cursor: pointer;
-	}
+	
 }
 
 @media(min-width: 700px){
@@ -290,6 +307,27 @@ body {
 		text-align: right;
 		font-size: 18px;
 	}
+	.close-button {
+		font-size: 42px;
+		color: gray;
+		cursor: pointer;
+		padding-top: 20px;
+	}
+
+	.nav-item {
+		align-self: baseline;
+		text-decoration: none;
+		font-family: 'Cinzel', serif;
+		font-size: 40px;
+		font-weight: 200;
+		line-height: normal;
+		/* letter-spacing: -0.01px; */
+		color: white;
+	}
+	.center {
+		font-size: 50px;
+	}
+
    	.header {
 		min-height: 488px;
    	}
@@ -368,6 +406,20 @@ body {
 						}
 	/* //////////////////////////////////// Info (ABOVE) //////////////////////////////////// */
 	/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+			/* //////////////////////////////////// Gallery (BELOW) /////////////////////////////////////// */
+	/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+	.gallery-img{
+
+		width: auto; 
+		height: 10px; 
+		padding: 20px;
+
+	}
+
+	/* //////////////////////////////////// Gallery (ABOVE) /////////////////////////////////////// */
+	/* ///////////////////////////////////////////////////////////////////////////////////////// */
 	
 	/* /////////////////////////////////////   Christina  //////////////////////////////////// */
 	/* //////////////////////////////////// Press (BELOW) //////////////////////////////////// */
@@ -392,14 +444,13 @@ body {
 		font-size: 22px;
 	}
 	.infatuationImg {
-		height: 302px;
-		width: 511px;
-		margin-left: -20px;
-		order: 1;
+		margin-left: 70px;
+		height: auto;
+		width: 298px;
 	}
 	.infatuationP {
-		margin-left: -20px;
-		margin-top: 80px;
+		margin-left: 90px;
+		margin-top: 15px;
 	}
 	.timeOutImg {
 		width: 309px;
@@ -425,5 +476,20 @@ body {
 	}
 
 	/* //////////////////////////////////// Press (ABOVE) /////////////////////////////////////// */
+	/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+
+	/* //////////////////////////////////// Gallery (BELOW) /////////////////////////////////////// */
+	/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+	.gallery-img{
+
+		width: auto; 
+		height: 250px; 
+		padding: 20px;
+
+	}
+
+	/* //////////////////////////////////// Gallery (ABOVE) /////////////////////////////////////// */
 	/* ///////////////////////////////////////////////////////////////////////////////////////// */
 }
