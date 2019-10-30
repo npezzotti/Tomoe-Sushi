@@ -63,29 +63,32 @@ const buildWeekdayContainer = (weekday, openCloseMsg1, openCloseMsg2, todayBool)
     )
 }
 
+const buildDtStr = (open1, close1, open2, close2) => {
+    const getHourStr = (hour) => {
+        if (hour > 12) {
+            return `${hour - 12}:00 pm`
+        } else if (hour === 0) {
+            return `12:00 am`
+        } else {
+            return `${hour}:00 am`
+        }
+    }
+    let open1Str = `${getHourStr(open1.getHours())}`
+    let close1Str = `${getHourStr(close1.getHours())}`
+    let dtStr1 = `Open from ${open1Str} to ${close1Str}`
+    let dtStr2 = ``;
+    if (open2 && close2) {
+        let open2Str = `${getHourStr(open2.getHours())}`
+        let close2Str = `${getHourStr(close2.getHours())}`
+        dtStr2 = ` and ${open2Str} to ${close2Str}`
+    }
+    return dtStr1 + dtStr2
+}
 export default function Info({dt}){
     const {setTimeDiff} = dt
     let timeObj = setTimeObj();
     const getTimeDelta = (referenceTime) => {
-        let dt = new Date()
-        let msg;
-        let secTillOpen1 = (referenceTime.open1 - dt) / 1000
-        let secTillClose1 = (referenceTime.close1 - dt) / 1000
-        let secTillOpen2 = (referenceTime.open2 - dt) / 1000
-        let secTillClose2 = (referenceTime.close2 - dt) / 1000
-
-        if (dt < referenceTime.open1) {
-            msg = `Opening in ${buildTimeMsg(secTillOpen1)}`
-        } else if (dt > referenceTime.open1 && dt < referenceTime.close1) {
-            msg = `Closing in ${buildTimeMsg(secTillClose1)}`
-        } else if (dt < referenceTime.open2) {
-            msg = `Opening in ${buildTimeMsg(secTillOpen2)}`
-        } else if (dt > referenceTime.open2 && dt < referenceTime.close2) {
-            msg = `Closing in ${buildTimeMsg(secTillClose2)}`
-        } else {
-            msg = `Closed for the night.`
-        }
-        return msg
+        return buildDtStr(referenceTime.open1, referenceTime.close1, referenceTime.open2, referenceTime.close2)
     }
 
     // interval for timer
@@ -144,15 +147,17 @@ export default function Info({dt}){
                 <div className="location">
                     <div className="location-map">
                         <Map />                        
-                        <div className="address">
-                            <div className='pre'>Located at:</div>
-                            <div className="street">172 Thompson St</div>
-                            <div className="city-state">New York, NY 10012</div>
-                        </div>
                     </div>
                 </div>
-                <div className="week-schedule">
-                    {makeWeekElem(timeObj)}
+                <div className="info-right">
+                    <div className="address">
+                        <div className='pre'>Located at:</div>
+                        <div className="street">172 Thompson St</div>
+                        <div className="city-state">New York, NY 10012</div>
+                    </div>
+                    <div className="week-schedule">
+                        {makeWeekElem(timeObj)}
+                    </div>
                 </div>
             </div>
         </div>
