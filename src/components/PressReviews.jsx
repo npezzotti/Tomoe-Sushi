@@ -11,7 +11,7 @@ export default function PressReviews(){
                         "Waiting in a line outside of any restaurant seems 
                         a bit silly to us, but Tomoe is arguably one of the best."
                     </p>
-                    <img className="infatuationImg" src={"/cropped_images/infatuation.png"} alt="infatuation" />
+                    <img className="infatuationImg" src={"/cropped_images/infatuatio.png"} alt="infatuation" />
                 </div>
                 
                 <div className="timeOut fullReview">

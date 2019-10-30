@@ -21,7 +21,9 @@ body {
 		min-height: 188px;
 		background-repeat: no-repeat;
 		background-size: cover;
-   	}
+	   }
+	   
+	   
 	.nav-item-container {
 		/* margin: 0; */
 		width: 100%;
@@ -33,7 +35,7 @@ body {
 		align-self: baseline;
 		text-decoration: none;
 		font-family: 'TrajanPro3', sans-serif;
-		font-size: 20px;
+		font-size: 15px;
 		font-weight: 600;
 		line-height: normal;
 		/* letter-spacing: -0.01px; */
@@ -47,7 +49,7 @@ body {
 	}
 
 	.center {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	/* /////////////////////////////////////   Christina  //////////////////////////////////// */
@@ -82,8 +84,12 @@ body {
 		margin: 0;
 	}
 	.infatuationImg {
-		width: 290px;
 		order: 1;
+		width: 190px;
+		margin-top: 30px;
+		margin-right: 100px;
+		margin: 0;
+		margin-left: 45px;
 	}
 	.infatuationP {
 		margin-bottom: 20px;
